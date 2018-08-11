@@ -33,7 +33,7 @@ $(document).ready(function() {
   function about() {
 
     // Number of spray images to choose from.
-    var imgNum = 5;
+    var imgNum = 6;
 
     // Randomly arrange spray images on page.
     $('body').css({'background':'red'});
