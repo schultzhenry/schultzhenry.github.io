@@ -245,12 +245,6 @@ $(document).ready(function() {
     });
   }
 
-  $('.menuButton').click(function() {
-    $('#content').empty();
-    $('#content').removeAttr('style');
-    $('body').removeAttr('style');
-  });
-
   function respond() {
     let loc = window.location.href;
     console.log("hashchange event detected: " + String(loc));
@@ -272,5 +266,13 @@ $(document).ready(function() {
     }
   }
 
-  $(window).on('hashchange', respond());
+  $('.menuButton').click(function() {
+    $('#content').empty();
+    $('#content').removeAttr('style');
+    $('body').removeAttr('style');
+    respond();
+  });
+
+
+  // $(window).on('hashchange', respond());
 });
