@@ -62,7 +62,8 @@ $(document).ready(function() {
     };
   };
 
-  if (window.location.href == 'http://schultzhenry.com' ||
+  if (window.location.href == 'schultzhenry.com' ||
+      window.location.href == 'http://schultzhenry.com' ||
       window.location.href == 'http://www.schultzhenry.com' ||
       window.location.href == 'https://schultzhenry.com' ||
       window.location.href == 'https://www.schultzhenry.com' ||
