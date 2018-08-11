@@ -42,7 +42,7 @@ $(document).ready(function() {
     function randomizer(range) {
       return Math.floor(Math.random()*range);
     }
-    for (i=1; i < 160; i++) {
+    for (i=1; i < 180; i++) {
       $('#content').append(
         '<img class="spray" '+
         'id="spray'+String(i)+'" '+
