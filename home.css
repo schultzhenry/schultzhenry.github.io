@@ -13,7 +13,6 @@
   width: 360px;
   transition: all 0.6s;
   overflow: auto;
-  background: rgba(255, 255, 255, 0.6);
   z-index: 1000;
 }
 
@@ -27,15 +26,19 @@
 }
 
 #menu:hover {
-  background: AntiqueWhite;
+  background: White;
 }
 #menu a:hover {
   text-decoration: underline;
 }
 
-.closed {left: calc(44px - 360px)}
+.closed {
+  left: calc(44px - 360px);
+}
 
-.open {left:0vw}
+.open {
+  left:0vw;
+}
 
 .cursorDefault {
   transition: background 0.4s;
@@ -62,5 +65,6 @@
   top: -40px;
   right: 12px;
   font-size: 28pt;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1.5px black;
+  font-weight: bold;
 }

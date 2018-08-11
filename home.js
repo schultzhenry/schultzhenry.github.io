@@ -3,6 +3,8 @@ $(document).ready(function() {
   var menuToggle = false;
   var curSize = 26;
   var touchDevice = false;
+  var menuBg = 'rgba(255, 0, 0, 0.8)';
+  var menuBgHover = 'rgba(255, 0, 0, 1)';
 
   // Remember device as touch capable if touch
   // action detected.
@@ -36,6 +38,8 @@ $(document).ready(function() {
 
     // Randomly arrange spray images on page.
     $('body').css({'background':'red'});
+    $('#menu').css('background',menuBg);
+
     function randomizer(range) {
       return Math.floor(Math.random()*range);
     }
@@ -73,10 +77,10 @@ $(document).ready(function() {
   });
 
   $('#menu').mouseenter(function() {
-    $('#menuButton').css('color','black');
+    $(this).css('background',menuBgHover);
   });
   $('#menu').mouseleave(function() {
-    $('#menuButton').css('color','transparent');
+    $(this).css('background',menuBg);
   });
 
   // Update cursor div coordinates
