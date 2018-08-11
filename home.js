@@ -249,12 +249,10 @@ $(document).ready(function() {
     $('#content').empty();
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
-    console.log('loading according to menu click');
-    respond(window.location.href).delay(200);
   });
 
   function respond(href) {
-    console.log(href);
+    console.log("hashchange event detected: " + String(href));
     if ([
       'http://schultzhenry.com/',
       'https://schultzhenry.com/',
@@ -273,5 +271,5 @@ $(document).ready(function() {
     }
   }
 
-  $('body').bind('hashchange', respond(window.location.href));
+  $(window).on('hashchange', respond(window.location.href));
 });
