@@ -250,7 +250,7 @@ $(document).ready(function() {
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
     console.log('loading according to menu click');
-    respond(window.location.href);
+    respond(window.location.href).delay(200);
   });
 
   function respond(href) {
