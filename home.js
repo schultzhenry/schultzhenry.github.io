@@ -104,6 +104,9 @@ $(document).ready(function() {
   };
 
   function analogies() {
+    menuBg = 'rgba(0, 0, 0, 0.75)';
+    menuBgHover = 'rgba(0, 0, 0, 1)';
+    
     $('#content').css({
       'z-index':'1',
       'text-align':'center',
