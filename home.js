@@ -267,12 +267,21 @@ $(document).ready(function() {
   }
 
   respond();
-  
+
   $('.menuButton').click(function() {
     $('#content').empty();
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
-    respond();
+  });
+
+  $('.aboutButton').click(function() {
+    console.log('calling about function');
+    about();
+  });
+
+  $('.analogiesButton').click(function() {
+    console.log('calling analogies function');
+    analogies();
   });
 
 
