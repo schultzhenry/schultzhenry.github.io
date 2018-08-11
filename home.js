@@ -59,6 +59,7 @@ $(document).ready(function() {
   console.log(window.location.href);
   if (window.location.href == 'http://schultzhenry.com/' ||
       window.location.href == 'https://schultzhenry.com/' ||
+      window.location.href == 'http://www.schultzhenry.com/#about' ||
       window.location.href == 'https://www.schultzhenry.com/#about' ||
       window.location.href == 'file:///Users/natalieschultz-henry/sites/schultzhenry.github.io/index.html') {
     console.log('Loading about page.');
