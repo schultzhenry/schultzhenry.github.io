@@ -266,6 +266,8 @@ $(document).ready(function() {
     }
   }
 
+  respond();
+  
   $('.menuButton').click(function() {
     $('#content').empty();
     $('#content').removeAttr('style');
