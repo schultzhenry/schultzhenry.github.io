@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+  var $body = $('body');
+  var detectMouse = function(e){
+      if (e.type === 'touchstart') {
+          e.preventDefault();
+          console.log('trying to prevent touch artifacts');
+      }
+      // remove event bindings, so it only runs once
+      $body.off('mousedown touchstart', detectMouse);
+  }
+  // attach both events to body
+  $body.on('mousedown touchstart', detectMouse);
+
+
   var menuToggle = false;
   var cursorSize = 26;
   var imgNumber = 5;
