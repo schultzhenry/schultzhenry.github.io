@@ -249,6 +249,7 @@ $(document).ready(function() {
     $('#content').empty();
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
+    respond();
   });
 
   function respond() {
