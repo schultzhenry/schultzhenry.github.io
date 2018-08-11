@@ -273,5 +273,5 @@ $(document).ready(function() {
     }
   }
 
-  $(window).bind('hashchange', respond(window.location.href));
+  $('body').bind('hashchange', respond(window.location.href));
 });
