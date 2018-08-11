@@ -270,7 +270,7 @@ $(document).ready(function() {
     $('#content').empty();
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
-    respond().delay(100);
+    respond();
   });
 
 
