@@ -1,52 +1,59 @@
 $(document).ready(function() {
 
   var menuToggle = false;
-  var cursorSize = 26;
-  var imgNumber = 5;
+  var curSize = 26;
   var touchDevice = false;
 
+  // Remember device as touch capable if touch
+  // action detected.
   var detectMouse = function(e){
       if (e.type === 'touchstart') {
         touchDevice = true;
       }
-      // remove event bindings, so it only runs once
-      $('body').off('mousedown touchstart', detectMouse);
+      // Remove after first run.
+      $('body').off(
+        'mousedown touchstart',
+        detectMouse
+      );
   }
-  // attach both events to body
-  $('body').on('mousedown touchstart', detectMouse);
+  // Setup.
+  $('body').on(
+    'mousedown touchstart',
+    detectMouse
+  );
 
-
+  // Setup content for about page.
   function about() {
 
+    // Remove any existing content or style
+    // before appending about-specific divs.
     $('#content').empty();
     $('#content').removeAttr('style');
+    $('body').removeAttr('style');
+
+    // Number of spray images to choose from.
+    var imgNum = 5;
+
+    // Randomly arrange spray images on page.
     $('body').css({'background':'red'});
-
-    var homeImages = [
-      '<img class="spray" id="spray1" src="images/spray-01.png"></img>',
-      '<img class="spray" id="spray2" src="images/spray-02.png"></img>',
-      '<img class="spray" id="spray3" src="images/spray-03.png"></img>',
-      '<img class="spray" id="spray4" src="images/spray-04.png"></img>',
-      '<img class="spray" id="spray5" src="images/spray-05.png"></img>',
-      '<img class="spray" id="spray6" src="images/spray-06.png"></img>'
-    ];
-
+    function randomizer(range) {
+      return Math.floor(Math.random()*range);
+    }
     for (i=1; i < 160; i++) {
       $('#content').append(
-        '<img '+
-        'class="spray" '+
+        '<img class="spray" '+
         'id="spray'+String(i)+'" '+
         'src="images/spray-'+
-        String(Math.floor(Math.random() * imgNumber) + 1)+
-        '.png">'+
-        '</img>');
+        String(randomizer(imgNum)+1)+
+        '.png"></img>');
       $('#spray'+String(i)).css({
         'position':'fixed',
-        'bottom':String(Math.floor(Math.random() * 140) - 40) + 'vh',
-        'left':String(Math.floor(Math.random() * 140) - 40) + 'vw',
-        'transform':'rotate('+ String(Math.floor(Math.random() * 360)) + 'deg)',
+        'bottom':String(randomizer(140)-40)+'vh',
+        'left':String(randomizer(140)-40)+'vw',
+        'transform':'rotate('+String(randomizer(360))+'deg)',
         'width':'Calc(12vmin + 160px)',
-        'height':'Calc(12vmin + 160px)'
+        'height':'Calc(12vmin + 160px)',
+        'pointer-events':'none'
       });
     };
   };
@@ -71,16 +78,24 @@ $(document).ready(function() {
   $('#menu').mouseleave(function() {
     $('#menuButton').css('color','transparent');
   });
+
+  // Update cursor div coordinates
+  // according to mouse location.
   onmousemove = function(e) {
+
+    // Assume touch device and hide
+    // cursor.
+    $('#cursor').css({
+      'left':'-10vw',
+      'top':'-10vh'
+    });
+
+    // If mouse in use, update
+    // coordinates with mousemove.
     if (touchDevice == false) {
       $('#cursor').css({
-        'left': String(e.clientX- (cursorSize / 2)) + 'px',
-        'top': String(e.clientY - (cursorSize / 2)) + 'px'
-      });
-    } else {
-      $('#cursor').css({
-        'left': '-10vw',
-        'top': '-10vh'
+        'left':String(e.clientX-(curSize/2))+'px',
+        'top':String(e.clientY-(curSize/2))+'px'
       });
     }
   };
