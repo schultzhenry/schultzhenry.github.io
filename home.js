@@ -252,16 +252,15 @@ $(document).ready(function() {
       'http://schultzhenry.com/',
       'https://schultzhenry.com/',
       'http://schultzhenry.com/#about',
-      'https://schultzhenry.com/#about',
-      'file:///Users/natalieschultz-henry/sites/schultzhenry.github.io/index.html'
+      'https://schultzhenry.com/#about'
     ].indexOf(loc) >= 0) {
-      console.log('Loading about.');
+      console.log('Loading about page.');
       about();
     } else if ([
       'http://schultzhenry.com/#analogies',
       'https://schultzhenry.com/#analogies'
     ].indexOf(loc) >= 0) {
-      console.log('Loading analogies.');
+      console.log('Loading analogies page.');
       analogies();
     }
   }
@@ -275,12 +274,12 @@ $(document).ready(function() {
   });
 
   $('.aboutButton').click(function() {
-    console.log('calling about function');
+    console.log('Loading about page.');
     about();
   });
 
   $('.analogiesButton').click(function() {
-    console.log('calling analogies function');
+    console.log('Loading analogies page.');
     analogies();
   });
 
