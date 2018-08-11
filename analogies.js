@@ -1,5 +1,26 @@
 $(document).ready(function() {
 
+  var touchDevice = false;
+
+  // Remember device as touch capable if touch
+  // action detected.
+  var detectMouse = function(e){
+      if (e.type === 'touchstart') {
+        touchDevice = true;
+      }
+      // Remove after first run.
+      $('body').off(
+        'mousedown touchstart',
+        detectMouse
+      );
+  }
+
+  // Setup.
+  $('body').on(
+    'mousedown touchstart',
+    detectMouse
+  );
+
   var delay;
   var interval;
   var play = true;
@@ -130,15 +151,17 @@ $(document).ready(function() {
     });
 
     $('.item').click(function() {
-      if (play == false) {
-        animate();
-        $('#control').attr('src', 'pause.svg');
-        play = true;
-      } else {
-        clearTimeout(delay);
-        clearInterval(interval);
-        $('#control').attr('src', 'play.svg');
-        play = false;
+      if (touchDevice == false) {
+        if (play == false) {
+          animate();
+          $('#control').attr('src', 'pause.svg');
+          play = true;
+        } else {
+          clearTimeout(delay);
+          clearInterval(interval);
+          $('#control').attr('src', 'play.svg');
+          play = false;
+        }
       }
     });
   }
