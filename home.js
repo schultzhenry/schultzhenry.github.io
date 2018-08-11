@@ -273,7 +273,7 @@ $(document).ready(function() {
     $('body').removeAttr('style');
   });
 
-  $('.aboutButton').click(function() {
+  $('.homeButton').click(function() {
     console.log('Loading about page.');
     about();
   });
