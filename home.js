@@ -61,16 +61,6 @@ $(document).ready(function() {
     };
   };
 
-  console.log(window.location.href);
-  if (window.location.href == 'http://schultzhenry.com/' ||
-      window.location.href == 'https://schultzhenry.com/' ||
-      window.location.href == 'http://schultzhenry.com/#about' ||
-      window.location.href == 'https://schultzhenry.com/#about' ||
-      window.location.href == 'file:///Users/natalieschultz-henry/sites/schultzhenry.github.io/index.html') {
-    console.log('Loading about page.');
-    about();
-  }
-
   $( "#menu" ).click(function() {
     if (menuToggle == false) {
       menuToggle = true;
@@ -261,11 +251,25 @@ $(document).ready(function() {
     $('body').removeAttr('style');
   });
 
-  $('.aboutButton').click(function() {
-    about();
-  });
+  function respond() {
+    console.log(window.location.href);
+    if ([
+      'http://schultzhenry.com/',
+      'https://schultzhenry.com/',
+      'http://schultzhenry.com/#about',
+      'https://schultzhenry.com/#about',
+      'file:///Users/natalieschultz-henry/sites/schultzhenry.github.io/index.html'
+    ].indexOf(window.location.href) >= 0) {
+      console.log('Loading about.');
+      about();
+    } else if ([
+      'http://schultzhenry.com/#analogies',
+      'https://schultzhenry.com/#analogies'
+    ].indexOf(window.location.href) >= 0) {
+      console.log('Loading analogies.');
+      analogies();
+    }
+  }
 
-  $('.analogiesButton').click(function() {
-    analogies();
-  });
+  $(window).bind('hashchange', respond());
 });
