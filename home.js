@@ -4,11 +4,15 @@ $(document).ready(function() {
 
   var detectMouse = function(e){
       if (e.type === 'touchstart') {
-        alert('that was a touch!');
+        alert(
+          'Looks like you\'re using a touch device. ' +
+          'I\'ll be limiting some of the cursor effects. ' +
+          'Try me on desktop if you\'d like to see them.'
+        );
         touchDevice = true;
       }
       // remove event bindings, so it only runs once
-      // $('body').off('mousedown touchstart', detectMouse);
+      $('body').off('mousedown touchstart', detectMouse);
   }
   // attach both events to body
   $('body').on('mousedown touchstart', detectMouse);
