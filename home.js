@@ -3,7 +3,7 @@ $(document).ready(function() {
   var menuToggle = false;
   var curSize = 26;
   var touchDevice = false;
-  var menuBg = 'rgba(255, 255, 0, 0.65)';
+  var menuBg = 'rgba(255, 0, 0, 0.85)';
   var menuBgHover = 'rgba(255, 255, 0, 1)';
   var delay;
   var interval;
