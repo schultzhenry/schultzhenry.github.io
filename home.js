@@ -249,28 +249,28 @@ $(document).ready(function() {
     $('#content').empty();
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
-    respond();
+    respond(window.location.href);
   });
 
-  function respond() {
-    console.log(window.location.href);
+  function respond(href) {
+    console.log(href);
     if ([
       'http://schultzhenry.com/',
       'https://schultzhenry.com/',
       'http://schultzhenry.com/#about',
       'https://schultzhenry.com/#about',
       'file:///Users/natalieschultz-henry/sites/schultzhenry.github.io/index.html'
-    ].indexOf(window.location.href) >= 0) {
+    ].indexOf(href) >= 0) {
       console.log('Loading about.');
       about();
     } else if ([
       'http://schultzhenry.com/#analogies',
       'https://schultzhenry.com/#analogies'
-    ].indexOf(window.location.href) >= 0) {
+    ].indexOf(href) >= 0) {
       console.log('Loading analogies.');
       analogies();
     }
   }
 
-  $(window).bind('hashchange', respond());
+  $(window).bind('hashchange', respond(window.location.href));
 });
