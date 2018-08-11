@@ -154,7 +154,7 @@ $(document).ready(function() {
     $('.item').css({
       'vertical-align':'center',
       'display':'inline',
-      'font-size':'58px',
+      'font-size':'7vmin',
       'padding':'8px 8px 0px 8px',
       'line-height':'2em'
     });
