@@ -1,18 +1,17 @@
 $(document).ready(function() {
 
-  var $body = $('body');
+  var touchDevice = false;
+
   var detectMouse = function(e){
       if (e.type === 'touchstart') {
-          e.preventDefault();
-          alert('that was a touch!');
-          console.log('trying to prevent touch artifacts');
+        alert('that was a touch!');
+        touchDevice = true;
       }
       // remove event bindings, so it only runs once
-      $body.off('mousedown touchstart', detectMouse);
+      // $('body').off('mousedown touchstart', detectMouse);
   }
   // attach both events to body
-  $body.on('mousedown touchstart', detectMouse);
-
+  $('body').on('mousedown touchstart', detectMouse);
 
   var menuToggle = false;
   var cursorSize = 26;
@@ -73,10 +72,17 @@ $(document).ready(function() {
     $('#menuButton').css('color','transparent');
   });
   onmousemove = function(e) {
-    $('#cursor').css({
-      'left': String(e.clientX- (cursorSize / 2)) + 'px',
-      'top': String(e.clientY - (cursorSize / 2)) + 'px'
-    });
+    if (touchDevice == false) {
+      $('#cursor').css({
+        'left': String(e.clientX- (cursorSize / 2)) + 'px',
+        'top': String(e.clientY - (cursorSize / 2)) + 'px'
+      });
+    } else {
+      $('#cursor').css({
+        'left': '-10vw',
+        'top': '-10vh'
+      });
+    }
   };
 
   about();
