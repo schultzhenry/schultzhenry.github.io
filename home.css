@@ -34,7 +34,7 @@
 }
 
 .closed {
-  left: calc(44px - 360px);
+  left: calc(44px - 320px);
 }
 
 .open {
