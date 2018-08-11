@@ -45,8 +45,8 @@ $(document).ready(function() {
         'bottom':String(Math.floor(Math.random() * 140) - 40) + 'vh',
         'left':String(Math.floor(Math.random() * 140) - 40) + 'vw',
         'transform':'rotate('+ String(Math.floor(Math.random() * 360)) + 'deg)',
-        'width':'18vmax',
-        'height':'18vmax'
+        'width':'Calc(12vmin + 160px)',
+        'height':'Calc(12vmin + 160px)'
       });
     };
   };
