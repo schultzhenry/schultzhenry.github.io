@@ -61,7 +61,7 @@
 
 #menuButton {
   transition: color 0.2s;
-  color: transparent;
+  color: red;
   position: absolute;
   top: -40px;
   right: 12px;
