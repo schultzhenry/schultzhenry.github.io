@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+  var menuToggle = false;
+  var cursorSize = 26;
+  var imgNumber = 5;
   var touchDevice = false;
 
   var detectMouse = function(e){
@@ -12,9 +15,6 @@ $(document).ready(function() {
   // attach both events to body
   $('body').on('mousedown touchstart', detectMouse);
 
-  var menuToggle = false;
-  var cursorSize = 26;
-  var imgNumber = 5;
 
   function about() {
 
@@ -29,7 +29,6 @@ $(document).ready(function() {
       '<img class="spray" id="spray4" src="images/spray-04.png"></img>',
       '<img class="spray" id="spray5" src="images/spray-05.png"></img>',
       '<img class="spray" id="spray6" src="images/spray-06.png"></img>'
-      // '<img class="homeImage" id="bg" src="images/collage.jpg"></img>',
     ];
 
     for (i=1; i < 160; i++) {
@@ -45,7 +44,9 @@ $(document).ready(function() {
         'position':'fixed',
         'bottom':String(Math.floor(Math.random() * 140) - 40) + 'vh',
         'left':String(Math.floor(Math.random() * 140) - 40) + 'vw',
-        'transform':'rotate('+ String(Math.floor(Math.random() * 360)) + 'deg)'
+        'transform':'rotate('+ String(Math.floor(Math.random() * 360)) + 'deg)',
+        'width':'18vmax',
+        'height':'18vmax'
       });
     };
   };
