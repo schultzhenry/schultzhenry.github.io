@@ -4,6 +4,7 @@ $(document).ready(function() {
   var detectMouse = function(e){
       if (e.type === 'touchstart') {
           e.preventDefault();
+          alert('that was a touch!');
           console.log('trying to prevent touch artifacts');
       }
       // remove event bindings, so it only runs once
