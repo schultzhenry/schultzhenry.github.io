@@ -30,7 +30,7 @@ $(document).ready(function() {
   );
 
   // Setup content for about page.
-  function about() {
+  function home() {
 
     // Number of spray images to choose from.
     var imgNum = 10;
@@ -251,11 +251,11 @@ $(document).ready(function() {
     if ([
       'http://schultzhenry.com/',
       'https://schultzhenry.com/',
-      'http://schultzhenry.com/#about',
-      'https://schultzhenry.com/#about'
+      'http://schultzhenry.com/#home',
+      'https://schultzhenry.com/#home'
     ].indexOf(loc) >= 0) {
       console.log('Loading about page.');
-      about();
+      home();
     } else if ([
       'http://schultzhenry.com/#analogies',
       'https://schultzhenry.com/#analogies'
@@ -275,7 +275,7 @@ $(document).ready(function() {
 
   $('.homeButton').click(function() {
     console.log('Loading about page.');
-    about();
+    home();
   });
 
   $('.analogiesButton').click(function() {
