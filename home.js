@@ -32,6 +32,9 @@ $(document).ready(function() {
   // Setup content for about page.
   function home() {
 
+    menuBg = 'rgba(255, 0, 0, 0.75)';
+    menuBgHover = 'rgba(255, 0, 0, 1)';
+
     // Number of spray images to choose from.
     var imgNum = 10;
 
