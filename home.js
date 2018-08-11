@@ -146,7 +146,7 @@ $(document).ready(function() {
       'display':'inline',
       'font-size':'7vmin',
       'padding':'8px 8px 0px 8px',
-      'line-height':'2em'
+      'line-height':'2.2em'
     });
 
     var emojis = [
