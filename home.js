@@ -36,7 +36,7 @@ $(document).ready(function() {
     menuButton = 'rgba(255, 0, 0, 1)';
 
     // Number of spray images to choose from.
-    var imgNum = 10;
+    var imgNum = 15;
 
     // Randomly arrange spray images on page.
     $('body').css({'background':'red'});
