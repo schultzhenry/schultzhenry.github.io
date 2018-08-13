@@ -111,7 +111,7 @@ $(document).ready(function() {
   function analogies() {
     menuBg = 'rgba(255, 255, 255, 1)';
     menuBgHover = 'rgba(255, 255, 255, 1)';
-    menuButton = 'rgba(255, 0, 0, 1)';
+    menuButton = 'rgba(255, 255, 255, 1)';
 
     $('#menu').css('background',menuBg);
     $('#menuButton').css('color',menuButton);
