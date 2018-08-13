@@ -52,12 +52,10 @@ $(document).ready(function() {
       return Math.floor(Math.random()*range);
     }
     for (i=1; i < 140; i++) {
-      let png = String(randomizer(imgNum)+1);
       $('#content').append(
-        '<img class="spray png'+png+'" '+
+        '<img class="spray" '+
         'id="spray'+String(i)+'" '+
-        'src="images/spray-'+
-        png+
+        'src="images/spray-'+String(randomizer(imgNum)+1)+
         '.png"></img>');
       $('#spray'+String(i)).css({
         'position':'fixed',
