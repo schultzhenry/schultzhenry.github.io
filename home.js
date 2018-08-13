@@ -5,6 +5,7 @@ $(document).ready(function() {
   var touchDevice = false;
   var menuBg = 'rgba(255, 0, 0, 0.75)';
   var menuBgHover = 'rgba(255, 0, 0, 1)';
+  var menuButton = 'rgba(255, 0, 0, 1)';
   var delay;
   var interval;
   var play = true;
@@ -34,6 +35,7 @@ $(document).ready(function() {
 
     menuBg = 'rgba(255, 0, 0, 0.75)';
     menuBgHover = 'rgba(255, 0, 0, 1)';
+    menuButton = 'rgba(255, 0, 0, 1)';
 
     // Number of spray images to choose from.
     var imgNum = 10;
@@ -41,6 +43,7 @@ $(document).ready(function() {
     // Randomly arrange spray images on page.
     $('body').css({'background':'red'});
     $('#menu').css('background',menuBg);
+    $('#menuButton').css('color',menuButton);
 
     function randomizer(range) {
       return Math.floor(Math.random()*range);
