@@ -51,7 +51,7 @@ $(document).ready(function() {
     function randomizer(range) {
       return Math.floor(Math.random()*range);
     }
-    for (i=1; i < 180; i++) {
+    for (i=1; i < 100; i++) {
       let png = String(randomizer(imgNum)+1);
       $('#content').append(
         '<img class="spray" '+
