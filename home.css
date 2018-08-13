@@ -8,7 +8,7 @@
 
 #menu, #more {
   padding-top: 16px;
-  position: absolute;
+  position: fixed;
   top: 0px;
   height: 100vh;
   width: 320px;
