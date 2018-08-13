@@ -153,8 +153,8 @@ $(document).ready(function() {
         "vertical-align:center;" +
         "display:inline;" +
         "padding:8px 8px 0px 8px;" +
-        "line-height:2.2em;"
-      "}"
+        "line-height:2.2em;" +
+      "}" +
       "@media screen and (min-width: 888px) {" +
         ".item {" +
           "font-size:56px;" +
