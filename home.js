@@ -54,9 +54,8 @@ $(document).ready(function() {
     for (i=1; i < 100; i++) {
       let png = String(randomizer(imgNum)+1);
       $('#content').append(
-        '<img class="spray" '+
+        '<img class="spray png'+png+'" '+
         'id="spray'+String(i)+'" '+
-        'class="png"'+png+' '+
         'src="images/spray-'+
         png+
         '.png"></img>');
@@ -78,8 +77,8 @@ $(document).ready(function() {
   });
 
   $('.png11', '.png12', '.png13', '.png14', '.png15').css({
-    'width':'Calc(13vmin + 150px)',
-    'height':'Calc(13vmin + 150px)',
+    'width':'Calc(15vmin + 200px)',
+    'height':'Calc(15vmin + 200px)',
   });
 
   $( "#menu" ).click(function() {
