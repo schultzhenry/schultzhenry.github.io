@@ -78,8 +78,8 @@ $(document).ready(function() {
   });
 
   $('.png11', '.png12', '.png13', '.png14', '.png15').css({
-    'width':'Calc(18vmin + 300px)',
-    'height':'Calc(18vmin + 300px)',
+    'width':'Calc(15vmin + 200px)',
+    'height':'Calc(15vmin + 200px)',
   });
 
   $( "#menu" ).click(function() {
