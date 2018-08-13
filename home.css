@@ -23,6 +23,7 @@
   font-size: 28pt;
   text-decoration: none;
   display: block;
+  color: black;
 }
 
 #info a, #info a:visited {
@@ -31,7 +32,9 @@
   font-size: 28pt;
   text-decoration: none;
   display: block;
+  color: black;
 }
+
 #menu a:hover, #info a:hover {
   text-decoration: underline;
 }
