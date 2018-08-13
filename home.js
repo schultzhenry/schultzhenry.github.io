@@ -73,13 +73,13 @@ $(document).ready(function() {
     if (menuToggle == false) {
       menuToggle = true;
       $('#menuButton').text('−');
-      $(this).removeClass('closed');
-      $(this).addClass('open');
+      $(this).removeClass('closedMenu');
+      $(this).addClass('openMenu');
     } else {
       menuToggle = false;
       $('#menuButton').text('+');
-      $(this).removeClass('open');
-      $(this).addClass('closed');
+      $(this).removeClass('openMenu');
+      $(this).addClass('closedMenu');
     }
   });
   $('#menu').mouseenter(function() {

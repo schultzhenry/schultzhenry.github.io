@@ -6,7 +6,7 @@
           box-sizing: border-box;
 }
 
-#menu #more {
+#menu, #more {
   padding-top: 16px;
   position: absolute;
   top: 0px;
@@ -34,19 +34,19 @@
   text-decoration: underline;
 }
 
-#menu .closed {
+.closedMenu {
   left: calc(44px - 320px);
 }
 
-#more .closed {
-  right: calc(44px - 320px);
-}
-
-#menu .open {
+.openMenu {
   left: 0vw;
 }
 
-#more .open {
+.closedMore {
+  right: calc(44px - 320px);
+}
+
+.openMore {
   right: 0vw;
 }
 
