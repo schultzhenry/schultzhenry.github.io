@@ -150,10 +150,22 @@ $(document).ready(function() {
     $('.item').css({
       'vertical-align':'center',
       'display':'inline',
-      'font-size':'56px',
       'padding':'8px 8px 0px 8px',
       'line-height':'2.2em'
     });
+
+    $('.analogiesStyles').text(
+      "@media screen and (min-width: 888px) { " +
+        ".item { " +
+          "font-size: 56px; " +
+        "} " +
+      "} " +
+      "@media screen and (max-width: 888px) { " +
+        ".item { " +
+          "font-size: 36px; " +
+        "} " +
+      "} "
+    );
 
     var emojis = [
       "💀", "💩", "🌂", "👑", "🕶", "👖",
