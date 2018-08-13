@@ -51,7 +51,7 @@ $(document).ready(function() {
     function randomizer(range) {
       return Math.floor(Math.random()*range);
     }
-    for (i=1; i < 170; i++) {
+    for (i=1; i < 190; i++) {
       $('#content').append(
         '<img class="spray" '+
         'id="spray'+String(i)+'" '+
@@ -62,8 +62,8 @@ $(document).ready(function() {
         'bottom':String(randomizer(140)-40)+'vh',
         'left':String(randomizer(140)-40)+'vw',
         'transform':'rotate('+String(randomizer(360))+'deg)',
-        'width':'Calc(16vmin + 150px)',
-        'height':'Calc(16vmin + 150px)',
+        'width':'Calc(11vmin + 150px)',
+        'height':'Calc(11vmin + 150px)',
         'pointer-events':'none'
       });
     };
