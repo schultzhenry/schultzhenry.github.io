@@ -169,7 +169,12 @@ $(document).ready(function() {
         ".item { " +
           "font-size: 24px; " +
         "} " +
-      "} "
+      "} " +
+      "@media screen and (max-width: 480px) { " +
+        ".item { " +
+          "font-size: 18px; " +
+        "} " +
+      "} " +
     );
 
     var emojis = [
