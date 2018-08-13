@@ -74,6 +74,7 @@
 }
 
 #menuButton, #infoButton {
+  font-family: Garamond;
   transition: color 0.4s;
   position: absolute;
   top: -40px;
