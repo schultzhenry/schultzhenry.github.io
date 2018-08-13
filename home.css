@@ -73,7 +73,7 @@
   pointer-events: none;
 }
 
-#menuButton {
+#menuButton, #infoButton {
   transition: color 0.4s;
   position: absolute;
   top: -40px;
