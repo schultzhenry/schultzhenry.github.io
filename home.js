@@ -11,6 +11,11 @@ $(document).ready(function() {
   var menuButton = 'rgba(255, 0, 0, 1)';
 
   // Info styling variables
+  var infoBg = 'rgba(255, 0, 0, 0.75)';
+  var infoBgHover = 'rgba(255, 0, 0, 1)';
+  var infoBorder = 'rgba(0, 0, 0, 1)';
+  var infoButton = 'rgba(255, 0, 0, 1)';
+
   var delay;
   var interval;
   var play = true;
@@ -46,17 +51,20 @@ $(document).ready(function() {
     // Randomly arrange spray images on page.
     $('body').css({'background':'red'});
     $('#menuButton').css('color',menuButton);
+    $('#infoButton').css('color',infoButton);
     $('#menu').css({
       'border-right':'1px solid ' + menuBorder
     });
     $('#info').css({
-      'border-left':'1px solid ' + menuBorder
+      'border-left':'1px solid ' + infoBorder
     });
 
     if (touchDevice == true) {
       $('#menu').css('background',menuBgHover);
+      $('#info').css('background',infoBgHover);
     } else {
       $('#menu').css('background',menuBg);
+      $('#info').css('background',infoBg);
     }
 
     function randomizer(range) {
