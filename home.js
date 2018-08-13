@@ -52,23 +52,35 @@ $(document).ready(function() {
       return Math.floor(Math.random()*range);
     }
     for (i=1; i < 180; i++) {
+      let png = String(randomizer(imgNum)+1);
       $('#content').append(
         '<img class="spray" '+
         'id="spray'+String(i)+'" '+
+        'class="png"'+png+' '+
         'src="images/spray-'+
-        String(randomizer(imgNum)+1)+
+        png+
         '.png"></img>');
       $('#spray'+String(i)).css({
         'position':'fixed',
         'bottom':String(randomizer(140)-40)+'vh',
         'left':String(randomizer(140)-40)+'vw',
         'transform':'rotate('+String(randomizer(360))+'deg)',
-        'width':'Calc(13vmin + 150px)',
-        'height':'Calc(13vmin + 150px)',
+        // 'width':'Calc(13vmin + 150px)',
+        // 'height':'Calc(13vmin + 150px)',
         'pointer-events':'none'
       });
     };
   };
+
+  $('.png1, .png2, .png3, .png4, .png5, .png6, .png7, .png8, .png 9,. png10').css({
+    'width':'Calc(13vmin + 150px)',
+    'height':'Calc(13vmin + 150px)',
+  });
+
+  $('.png11, .png12, .png13, .png14, .png15').css({
+    'width':'Calc(26vmin + 300px)',
+    'height':'Calc(26vmin + 300px)',
+  });
 
   $( "#menu" ).click(function() {
     if (menuToggle == false) {
