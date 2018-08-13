@@ -15,7 +15,15 @@
   transition: all 0.6s;
   overflow: auto;
   z-index: 1000;
+}
+
+#menu {
   border-right: 1px solid black;
+}
+
+#more {
+  border-left: 1px solid black;
+  color: blue;
 }
 
 #menu a, #menu a:visited {
