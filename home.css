@@ -5,7 +5,8 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-#menu {
+
+#menu #more {
   padding-top: 16px;
   position: absolute;
   top: 0px;
@@ -33,12 +34,20 @@
   text-decoration: underline;
 }
 
-.closed {
+#menu .closed {
   left: calc(44px - 320px);
 }
 
-.open {
-  left:0vw;
+#more .closed {
+  right: calc(44px - 320px);
+}
+
+#menu .open {
+  left: 0vw;
+}
+
+#more .open {
+  right: 0vw;
 }
 
 .cursorDefault {
