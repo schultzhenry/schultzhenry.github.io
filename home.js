@@ -174,7 +174,7 @@ $(document).ready(function() {
         ".item {" +
           "font-size:18px;" +
         "}" +
-      "}" +
+      "}"
     );
 
     var emojis = [
