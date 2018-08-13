@@ -80,7 +80,6 @@ $(document).ready(function() {
       $(this).addClass('closed');
     }
   });
-
   $('#menu').mouseenter(function() {
     $(this).css('background',menuBgHover);
   });
@@ -112,6 +111,10 @@ $(document).ready(function() {
   function analogies() {
     menuBg = 'rgba(255, 255, 255, 1)';
     menuBgHover = 'rgba(255, 255, 255, 1)';
+    menuButton = 'rgba(255, 0, 0, 1)';
+
+    $('#menu').css('background',menuBg);
+    $('#menuButton').css('color',menuButton);
 
     $('#content').css({
       'z-index':'1',
@@ -258,7 +261,6 @@ $(document).ready(function() {
         'height': '38px',
       });
     });
-
     $('#analogies').mouseleave(function() {
       $('#control').remove();
       $('#cursor').addClass('cursorDefault');
