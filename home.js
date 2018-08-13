@@ -36,7 +36,7 @@ $(document).ready(function() {
     menuButton = 'rgba(255, 0, 0, 1)';
 
     // Number of spray images to choose from.
-    var imgNum = 15;
+    var imgNum = 10;
 
     // Randomly arrange spray images on page.
     $('body').css({'background':'red'});
@@ -51,7 +51,7 @@ $(document).ready(function() {
     function randomizer(range) {
       return Math.floor(Math.random()*range);
     }
-    for (i=1; i < 140; i++) {
+    for (i=1; i < 170; i++) {
       $('#content').append(
         '<img class="spray" '+
         'id="spray'+String(i)+'" '+
