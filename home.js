@@ -18,11 +18,6 @@ $(document).ready(function() {
       if (e.type === 'touchstart') {
         touchDevice = true;
       }
-      // Remove after first run.
-      $('body').off(
-        'mousedown touchstart',
-        detectMouse
-      );
   }
   // Setup.
   $('body').on(
