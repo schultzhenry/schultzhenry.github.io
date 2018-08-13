@@ -164,6 +164,11 @@ $(document).ready(function() {
         ".item { " +
           "font-size: 36px; " +
         "} " +
+      "} " +
+      "@media screen and (max-width: 620px) { " +
+        ".item { " +
+          "font-size: 24px; " +
+        "} " +
       "} "
     );
 
