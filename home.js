@@ -27,6 +27,9 @@ $(document).ready(function() {
 
   // Setup content for about page.
   function home() {
+    $('#content').empty();
+    $('#content').removeAttr('style');
+    $('body').removeAttr('style');
 
     menuBg = 'rgba(255, 0, 0, 0.75)';
     menuBgHover = 'rgba(255, 0, 0, 1)';
@@ -98,7 +101,7 @@ $(document).ready(function() {
     if (e.type == 'touchstart') {
       touchDevice == true;
     }
-    
+
     // Assume touch device and hide
     // cursor.
     $('#cursor').css({
@@ -117,6 +120,10 @@ $(document).ready(function() {
   };
 
   function analogies() {
+    $('#content').empty();
+    $('#content').removeAttr('style');
+    $('body').removeAttr('style');
+
     menuBg = 'rgba(255, 255, 255, 1)';
     menuBgHover = 'rgba(255, 255, 255, 1)';
     menuButton = 'rgba(255, 255, 255, 1)';
@@ -320,11 +327,11 @@ $(document).ready(function() {
   }
   respond();
 
-  $('.menuButton').click(function() {
-    $('#content').empty();
-    $('#content').removeAttr('style');
-    $('body').removeAttr('style');
-  });
+  // $('.menuButton').click(function() {
+  //   $('#content').empty();
+  //   $('#content').removeAttr('style');
+  //   $('body').removeAttr('style');
+  // });
 
   $('.homeButton').click(function() {
     console.log('Loading about page.');
