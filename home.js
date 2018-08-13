@@ -157,22 +157,27 @@ $(document).ready(function() {
       "}" +
       "@media screen and (min-width: 888px) {" +
         ".item {" +
-          "font-size:56px;" +
+          "font-size:64px;" +
         "}" +
       "}" +
       "@media screen and (max-width: 888px) {" +
         ".item {" +
-          "font-size:36px;" +
+          "font-size:48px;" +
         "}" +
       "}" +
       "@media screen and (max-width: 620px) {" +
         ".item{" +
-          "font-size:24px;" +
+          "font-size:32px;" +
         "}" +
       "}" +
       "@media screen and (max-width: 480px) {" +
         ".item {" +
           "font-size:18px;" +
+        "}" +
+      "}" +
+      "@media screen and (max-width: 300px) {" +
+        ".item {" +
+          "font-size:12px;" +
         "}" +
       "}"
     );
