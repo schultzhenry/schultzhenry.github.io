@@ -95,6 +95,10 @@ $(document).ready(function() {
   // according to mouse location.
   onmousemove = function(e) {
 
+    if (e.type == 'touchstart') {
+      touchDevice == true;
+    }
+    
     // Assume touch device and hide
     // cursor.
     $('#cursor').css({
@@ -314,7 +318,6 @@ $(document).ready(function() {
       analogies();
     }
   }
-
   respond();
 
   $('.menuButton').click(function() {
@@ -332,7 +335,4 @@ $(document).ready(function() {
     console.log('Loading analogies page.');
     analogies();
   });
-
-
-  // $(window).on('hashchange', respond());
 });
