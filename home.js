@@ -157,25 +157,25 @@ $(document).ready(function() {
       "@media screen and (min-width: 888px) {" +
         ".item {" +
           "font-size:64px;" +
-          "padding:8px 8px 0px 8px;" +
+          "padding:10px 10px 0px 10px;" +
         "}" +
       "}" +
       "@media screen and (max-width: 888px) {" +
         ".item {" +
           "font-size:48px;" +
-          "padding:6px 6px 0px 6px;" +
+          "padding:8px 8px 0px 8px;" +
         "}" +
       "}" +
       "@media screen and (max-width: 620px) {" +
         ".item{" +
           "font-size:32px;" +
-          "padding:5px 5px 0px 5px;" +
+          "padding:6px 6px 0px 6px;" +
         "}" +
       "}" +
       "@media screen and (max-width: 480px) {" +
         ".item {" +
           "font-size:18px;" +
-          "padding:3px 3px 0px 3px;" +
+          "padding:4px 4px 0px 4px;" +
         "}" +
       "}" +
       "@media screen and (max-width: 300px) {" +
