@@ -84,7 +84,11 @@ $(document).ready(function() {
     $(this).css('background',menuBgHover);
   });
   $('#menu').mouseleave(function() {
-    $(this).css('background',menuBg);
+    if (touchDevice == true) {
+      $(this).css('background',menuBgHover);
+    } else {
+      $(this).css('background',menuBg);
+    }
   });
 
   // Update cursor div coordinates
