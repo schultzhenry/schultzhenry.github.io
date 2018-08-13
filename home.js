@@ -5,6 +5,7 @@ $(document).ready(function() {
   var touchDevice = false;
   var menuBg = 'rgba(255, 0, 0, 0.75)';
   var menuBgHover = 'rgba(255, 0, 0, 1)';
+  var menuBorder = 'rgba(0, 0, 0, 1)';
   var menuButton = 'rgba(255, 0, 0, 1)';
   var delay;
   var interval;
@@ -41,6 +42,12 @@ $(document).ready(function() {
     // Randomly arrange spray images on page.
     $('body').css({'background':'red'});
     $('#menuButton').css('color',menuButton);
+    $('#menu').css({
+      'border-right':'1px solid ' + menuBorder;
+    });
+    $('#more').css({
+      'border-left':'1px solid ' + menuBorder;
+    });
 
     if (touchDevice == true) {
       $('#menu').css('background',menuBgHover);

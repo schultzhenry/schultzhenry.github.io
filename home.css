@@ -17,15 +17,6 @@
   z-index: 1000;
 }
 
-#menu {
-  border-right: 1px solid black;
-}
-
-#more {
-  border-left: 1px solid black;
-  background: blue;
-}
-
 #menu a, #menu a:visited {
   margin-left: 24px;
   margin-right: 108px;
@@ -34,10 +25,14 @@
   display: block;
 }
 
-#menu:hover {
-  background: White;
+#more a, #more a:visited {
+  margin-right: 24px;
+  margin-left: 108px;
+  font-size: 28pt;
+  text-decoration: none;
+  display: block;
 }
-#menu a:hover {
+#menu a:hover, #more a:hover {
   text-decoration: underline;
 }
 
