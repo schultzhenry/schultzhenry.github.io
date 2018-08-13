@@ -3,10 +3,14 @@ $(document).ready(function() {
   var menuToggle = false;
   var curSize = 26;
   var touchDevice = false;
+
+  // Menu styling variables
   var menuBg = 'rgba(255, 0, 0, 0.75)';
   var menuBgHover = 'rgba(255, 0, 0, 1)';
   var menuBorder = 'rgba(0, 0, 0, 1)';
   var menuButton = 'rgba(255, 0, 0, 1)';
+
+  // Info styling variables
   var delay;
   var interval;
   var play = true;
@@ -45,7 +49,7 @@ $(document).ready(function() {
     $('#menu').css({
       'border-right':'1px solid ' + menuBorder;
     });
-    $('#more').css({
+    $('#info').css({
       'border-left':'1px solid ' + menuBorder;
     });
 

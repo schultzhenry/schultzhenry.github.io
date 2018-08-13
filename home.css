@@ -6,7 +6,7 @@
           box-sizing: border-box;
 }
 
-#menu, #more {
+#menu, #info {
   padding-top: 16px;
   position: fixed;
   top: 0px;
@@ -25,14 +25,14 @@
   display: block;
 }
 
-#more a, #more a:visited {
+#info a, #info a:visited {
   margin-right: 24px;
   margin-left: 108px;
   font-size: 28pt;
   text-decoration: none;
   display: block;
 }
-#menu a:hover, #more a:hover {
+#menu a:hover, #info a:hover {
   text-decoration: underline;
 }
 
@@ -44,11 +44,11 @@
   left: 0vw;
 }
 
-.closedMore {
+.closedInfo {
   right: calc(44px - 320px);
 }
 
-.openMore {
+.openInfo {
   right: 0vw;
 }
 
