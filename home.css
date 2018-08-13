@@ -23,7 +23,7 @@
 
 #more {
   border-left: 1px solid black;
-  color: blue;
+  background: blue;
 }
 
 #menu a, #menu a:visited {
