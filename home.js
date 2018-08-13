@@ -42,8 +42,13 @@ $(document).ready(function() {
 
     // Randomly arrange spray images on page.
     $('body').css({'background':'red'});
-    $('#menu').css('background',menuBg);
     $('#menuButton').css('color',menuButton);
+
+    if (touchDevice == true) {
+      $('#menu').css('background',menuBgHover);
+    } else {
+      $('#menu').css('background',menuBg);
+    }
 
     function randomizer(range) {
       return Math.floor(Math.random()*range);
@@ -113,8 +118,12 @@ $(document).ready(function() {
     menuBgHover = 'rgba(255, 255, 255, 1)';
     menuButton = 'rgba(255, 255, 255, 1)';
 
-    $('#menu').css('background',menuBg);
     $('#menuButton').css('color',menuButton);
+    if (touchDevice == true) {
+      $('#menu').css('background',menuBgHover);
+    } else {
+      $('#menu').css('background',menuBg);
+    }
 
     $('#content').css({
       'z-index':'1',
