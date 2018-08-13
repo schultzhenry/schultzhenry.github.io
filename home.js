@@ -47,10 +47,10 @@ $(document).ready(function() {
     $('body').css({'background':'red'});
     $('#menuButton').css('color',menuButton);
     $('#menu').css({
-      'border-right':'1px solid ' + menuBorder;
+      'border-right':'1px solid ' + menuBorder
     });
     $('#info').css({
-      'border-left':'1px solid ' + menuBorder;
+      'border-left':'1px solid ' + menuBorder
     });
 
     if (touchDevice == true) {
