@@ -65,8 +65,8 @@ $(document).ready(function() {
         'bottom':String(randomizer(140)-40)+'vh',
         'left':String(randomizer(140)-40)+'vw',
         'transform':'rotate('+String(randomizer(360))+'deg)',
-        'width':'Calc(15vmin + 60px)',
-        'height':'Calc(15vmin + 60px)',
+        'width':'Calc(20vmin + 60px)',
+        'height':'Calc(20vmin + 60px)',
         'pointer-events':'none'
       });
     };
