@@ -48,6 +48,9 @@ $(document).ready(function() {
       $('#menu').css('background',menuBg);
     }
 
+    $('#content').css({
+      'overflow':'visible'
+    });
     function randomizer(range) {
       return Math.floor(Math.random()*range);
     }
