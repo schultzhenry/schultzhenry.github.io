@@ -303,7 +303,7 @@ $(document).ready(function() {
 
     function setup() {
       console.log('starting setup function');
-      delay = setTimeout( () => {
+      delay = setTimeout(function() {
         console.log('set delay variable');
         $(".item").fadeTo(0,0);
         $("#one").text(pick());
@@ -563,10 +563,13 @@ $(document).ready(function() {
   });
 
   $('.analogiesButton').click(function() {
-    window.clearTimeout(delay);
-    window.clearTimeout(pickDelay);
     window.clearInterval(interval);
-    console.log('Loading analogies page.');
+    console.log('cleared interval');
+    window.clearTimeout(delay);
+    console.log('cleared delay');
+    window.clearTimeout(pickDelay);
+    console.log('cleared pickDelay');
+    console.log('calling analogies()...');
     analogies();
   });
 
