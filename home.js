@@ -17,6 +17,7 @@ $(document).ready(function() {
   var infoButton = 'rgba(255, 0, 0, 1)';
 
   var delay;
+  var delay2;
   var interval;
   var play = true;
   var array = ["#one", "#two", "#three", "#four"];
@@ -209,7 +210,7 @@ $(document).ready(function() {
       $('#analogies').append(analogyTags[i]);
     }
 
-    // $(".item").fadeTo(0,0);
+    $(".item").fadeTo(0,0);
 
     $('.analogiesStyles').text(
       ".item {" +
@@ -281,13 +282,13 @@ $(document).ready(function() {
         let c3 = array[randomizer(array.length)];
         let selectors = c1 + ", " + c2 + ", " + c3;
         $(selectors).fadeTo(speed,0);
-        setTimeout(function() {
+        delay2 = setTimeout(function() {
           $(c1).text(pick());
           $(c2).text(pick());
           $(c3).text(pick());
         }, speed);
         $(selectors).fadeTo(speed,1);
-        // $(".emoji").css("background", "white");
+        $(".emoji").css("background", "white");
       }, (speed * 10));
     };
 
@@ -560,6 +561,7 @@ $(document).ready(function() {
 
   $('.analogiesButton').click(function() {
     clearTimeout(delay);
+    clearTimeout(delay2);
     clearInterval(interval);
     console.log('Loading analogies page.');
     analogies();
