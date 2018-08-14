@@ -295,6 +295,7 @@ $(document).ready(function() {
         $("#three").text(pick());
         $("#four").text(pick());
         $(".item").fadeTo(speed,1);
+        console.log('about to animate...');
         animate();
       }, 600);
     };
