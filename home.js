@@ -160,6 +160,8 @@ $(document).ready(function() {
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
 
+    console.log('got past the first part');
+
     menuBg = 'rgba(255, 255, 255, 1)';
     menuBgHover = 'rgba(255, 255, 255, 1)';
     menuButton = 'rgba(255, 255, 255, 1)';
