@@ -553,6 +553,8 @@ $(document).ready(function() {
   });
 
   $('.analogiesButton').click(function() {
+    clearTimeout(delay);
+    clearInterval(interval);
     console.log('Loading analogies page.');
     analogies();
   });
