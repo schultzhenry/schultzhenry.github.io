@@ -17,7 +17,7 @@ $(document).ready(function() {
   var infoButton = 'rgba(255, 0, 0, 1)';
 
   var delay;
-  var delay2;
+  var pickDelay;
   var interval;
   var play = true;
   var array = ["#one", "#two", "#three", "#four"];
@@ -275,6 +275,14 @@ $(document).ready(function() {
       return emojis[i];
     }
 
+    function pickdelay() {
+      pickDelay = setTimeout(function() {
+        $(c1).text(pick());
+        $(c2).text(pick());
+        $(c3).text(pick());
+      }, speed);
+    }
+
     function animate() {
       interval = setInterval(function() {
         let c1 = array[randomizer(array.length)];
@@ -282,38 +290,27 @@ $(document).ready(function() {
         let c3 = array[randomizer(array.length)];
         let selectors = c1 + ", " + c2 + ", " + c3;
         $(selectors).fadeTo(speed,0);
-        delay2 = setTimeout(function() {
-          $(c1).text(pick());
-          $(c2).text(pick());
-          $(c3).text(pick());
-        }, speed);
-        delay2();
+        pickdelay();
         $(selectors).fadeTo(speed,1);
         $(".emoji").css("background", "white");
       }, (speed * 10));
     };
 
+
     function setup() {
       delay = setTimeout(function() {
         $(".item").fadeTo(0,0);
-        console.log('brought opacity down');
         $("#one").text(pick());
         $("#two").text(pick());
         $("#three").text(pick());
         $("#four").text(pick());
-        console.log('bringing opacity back up...');
         $(".item").fadeTo(speed,1);
-        console.log('brought opacity back up');
         console.log('about to animate...');
       }, 600);
     };
 
-    console.log('setup setup');
-
     setup();
-    console.log('called setup');
     animate();
-    console.log('called animate');
 
     $('#analogies').mouseenter(function() {
       $('#cursor').removeClass('cursorDefault');
@@ -562,7 +559,7 @@ $(document).ready(function() {
 
   $('.analogiesButton').click(function() {
     clearTimeout(delay);
-    clearTimeout(delay2);
+    clearTimeout(pickDelay);
     clearInterval(interval);
     console.log('Loading analogies page.');
     analogies();
