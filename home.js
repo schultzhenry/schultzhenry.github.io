@@ -51,7 +51,6 @@ $(document).ready(function() {
   $('.navIcon').css('position','absolute');
   $('.navIcon').css('z-index','2000');
 
-  console.log('attempting to change nav icon fill colors...');
   $('.navIcon polygon, .navIcon rect').attr('style','fill:green');
 
   // Setup content for about page.
@@ -210,7 +209,7 @@ $(document).ready(function() {
       $('#analogies').append(analogyTags[i]);
     }
 
-    $(".item").fadeTo(0,0);
+    // $(".item").fadeTo(0,0);
 
     $('.analogiesStyles').text(
       ".item {" +
