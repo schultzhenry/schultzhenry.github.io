@@ -249,6 +249,8 @@ $(document).ready(function() {
       "}"
     );
 
+    console.log('got past the styles');
+
     var emojis = [
       "💀", "💩", "🌂", "👑", "🕶", "👖",
       "👣", "👁", "💦", "🍇", "🍼", "🍴",
