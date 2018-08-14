@@ -248,8 +248,6 @@ $(document).ready(function() {
       "}"
     );
 
-    console.log('got past the styles');
-
     var emojis = [
       "💀", "💩", "🌂", "👑", "🕶", "👖",
       "👣", "👁", "💦", "🍇", "🍼", "🍴",
@@ -274,8 +272,6 @@ $(document).ready(function() {
       i = randomizer(emojis.length);
       return emojis[i];
     }
-
-    console.log('setup randomizer and pick');
 
     function animate() {
       interval = setInterval(function() {
@@ -306,6 +302,7 @@ $(document).ready(function() {
         $(".item").fadeTo(speed,1);
         console.log('about to animate...');
         animate();
+        console.log('animated');
       }, 600);
     };
 
