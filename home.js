@@ -287,6 +287,7 @@ $(document).ready(function() {
           $(c2).text(pick());
           $(c3).text(pick());
         }, speed);
+        delay2();
         $(selectors).fadeTo(speed,1);
         $(".emoji").css("background", "white");
       }, (speed * 10));
