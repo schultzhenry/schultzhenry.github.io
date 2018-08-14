@@ -275,7 +275,7 @@ $(document).ready(function() {
       return emojis[i];
     }
 
-    function pickdelay() {
+    function pickdelay(c1, c2, c3) {
       var pickDelay = setTimeout(function() {
         $(c1).text(pick());
         $(c2).text(pick());
@@ -285,12 +285,12 @@ $(document).ready(function() {
 
     function animate() {
       var interval = setInterval(function() {
-        var c1 = array[randomizer(array.length)];
-        var c2 = array[randomizer(array.length)];
-        var c3 = array[randomizer(array.length)];
+        c1 = array[randomizer(array.length)];
+        c2 = array[randomizer(array.length)];
+        c3 = array[randomizer(array.length)];
         let selectors = c1 + ", " + c2 + ", " + c3;
         $(selectors).fadeTo(speed,0);
-        pickdelay();
+        pickdelay(c1, c2, c3);
         $(selectors).fadeTo(speed,1);
         $(".emoji").css("background", "white");
       }, (speed * 10));
