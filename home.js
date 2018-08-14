@@ -311,11 +311,11 @@ $(document).ready(function() {
         $("#three").text(pick());
         $("#four").text(pick());
         $(".item").fadeTo(speed,1);
+        animate();
       }, 600);
     };
 
     setup();
-    animate();
 
     $('#analogies').mouseenter(function() {
       $('#cursor').removeClass('cursorDefault');
