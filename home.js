@@ -47,6 +47,8 @@ $(document).ready(function() {
   $('.navIcon').attr('data-name','Layer 1');
   $('.navIcon').attr('xmlns','http://www.w3.org/2000/svg');
   $('.navIcon').attr('viewBox','0 0 44 44');
+  $('.navIcon').css('position','absolute');
+  $('.navIcon').css('z-index','2000');
 
   console.log('attempting to change nav icon fill colors...');
   $('.navIcon polygon, .navIcon rect').attr('style','fill:green');
