@@ -157,9 +157,13 @@ $(document).ready(function() {
   };
 
   function analogies() {
+    delay = false;
+    interval = false;
+    
     $('#content').empty();
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
+    $('.analogiesStyles').empty();
 
     menuBg = 'rgba(255, 255, 255, 1)';
     menuBgHover = 'rgba(255, 255, 255, 1)';
@@ -302,7 +306,6 @@ $(document).ready(function() {
         $(".item").fadeTo(speed,1);
         console.log('about to animate...');
         animate();
-        console.log('animated');
       }, 600);
     };
 
