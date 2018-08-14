@@ -277,6 +277,7 @@ $(document).ready(function() {
     }
 
     function pickdelay(c1, c2, c3) {
+      console.log('starting pickdelay function');
       pickDelay = setTimeout( (c1, c2, c3) => {
         $(c1).text(pick());
         $(c2).text(pick());
