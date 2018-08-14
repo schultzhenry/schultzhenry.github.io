@@ -277,7 +277,7 @@ $(document).ready(function() {
     }
 
     function pickdelay(c1, c2, c3) {
-      pickDelay = setTimeout(function() {
+      pickDelay = setTimeout( (c1, c2, c3) => {
         $(c1).text(pick());
         $(c2).text(pick());
         $(c3).text(pick());
@@ -296,7 +296,6 @@ $(document).ready(function() {
         $(".emoji").css("background", "white");
       }, (speed * 10));
     };
-
 
     function setup() {
       delay = setTimeout(function() {
