@@ -303,7 +303,7 @@ $(document).ready(function() {
 
     function setup() {
       console.log('starting setup function');
-      delay = setTimeout(function() {
+      delay = setTimeout( () => {
         console.log('set delay variable');
         $(".item").fadeTo(0,0);
         $("#one").text(pick());
