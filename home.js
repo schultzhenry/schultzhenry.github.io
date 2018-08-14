@@ -35,6 +35,22 @@ $(document).ready(function() {
     detectMouse
   );
 
+  $('#menu').append('<svg class="navIcon" id="menuOpen"></svg>');
+  $('#menuOpen').append('<polygon points="25 19 25 8 19 8 19 19 8 19 8 25 19 25 19 36 25 36 25 25 36 25 36 19 25 19" style="fill:none"/>');
+  $('#menu').append('<svg class="navIcon" id="menuClose"></svg>');
+  $('#menuClose').append('<rect x="19" y="8" width="6" height="28" transform="translate(44) rotate(90)" style="fill:none"/>');
+  $('#info').append('<svg class="navIcon" id="infoOpen"></svg>');
+  $('#infoOpen').append('<polygon points="35.62 17.6 32.62 12.4 25 16.8 25 8 19 8 19 16.8 11.38 12.4 8.38 17.6 16 22 8.38 26.4 11.38 31.6 19 27.2 19 36 25 36 25 27.2 32.62 31.6 35.62 26.4 28 22 35.62 17.6" style="fill:none"/>');
+  $('#info').append('<svg class="navIcon" id="infoClose"></svg>');
+  $('#infoClose').append('<rect x="19" y="8" width="6" height="28" style="fill:none"/>');
+
+  $('.navIcon').attr('data-name','Layer 1');
+  $('.navIcon').attr('xmlns','http://www.w3.org/2000/svg');
+  $('.navIcon').attr('viewBox','0 0 44 44');
+
+  console.log('attempting to change nav icon fill colors...');
+  $('.navIcon polygon, .navIcon rect').attr('fill','green');
+
   // Setup content for about page.
   function home() {
     $('#content').empty();
