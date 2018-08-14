@@ -29,6 +29,7 @@ $(document).ready(function() {
       touchDevice = true;
     }
   }
+
   // Setup.
   $('body').on(
     'mousedown touchstart',
@@ -160,8 +161,6 @@ $(document).ready(function() {
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
 
-    console.log('got past the first part');
-
     menuBg = 'rgba(255, 255, 255, 1)';
     menuBgHover = 'rgba(255, 255, 255, 1)';
     menuButton = 'rgba(255, 255, 255, 1)';
@@ -276,6 +275,8 @@ $(document).ready(function() {
       return emojis[i];
     }
 
+    console.log('setup randomizer and pick');
+
     function animate() {
       interval = setInterval(function() {
         let c1 = array[randomizer(array.length)];
@@ -293,6 +294,8 @@ $(document).ready(function() {
       }, (speed * 10));
     };
 
+    console.log('setup animate');
+
     function setup() {
       delay = setTimeout(function() {
         $(".item").fadeTo(0,0);
@@ -306,7 +309,11 @@ $(document).ready(function() {
       }, 600);
     };
 
+    console.log('setup setup');
+
     setup();
+
+    console.log('called setup');
 
     $('#analogies').mouseenter(function() {
       $('#cursor').removeClass('cursorDefault');
