@@ -279,6 +279,7 @@ $(document).ready(function() {
     function pickdelay(c1, c2, c3) {
       console.log('starting pickdelay function');
       pickDelay = setTimeout( (c1, c2, c3) => {
+        console.log('set pickDelay variable');
         $(c1).text(pick());
         $(c2).text(pick());
         $(c3).text(pick());
@@ -286,7 +287,9 @@ $(document).ready(function() {
     }
 
     function animate() {
+      console.log('starting animate function');
       interval = setInterval(function() {
+        console.log('set interval variable');
         c1 = array[randomizer(array.length)];
         c2 = array[randomizer(array.length)];
         c3 = array[randomizer(array.length)];
@@ -299,14 +302,15 @@ $(document).ready(function() {
     };
 
     function setup() {
+      console.log('starting setup function');
       delay = setTimeout(function() {
+        console.log('set delay variable');
         $(".item").fadeTo(0,0);
         $("#one").text(pick());
         $("#two").text(pick());
         $("#three").text(pick());
         $("#four").text(pick());
         $(".item").fadeTo(speed,1);
-        console.log('about to animate...');
       }, 600);
     };
 
