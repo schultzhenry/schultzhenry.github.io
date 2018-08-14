@@ -299,11 +299,14 @@ $(document).ready(function() {
     function setup() {
       delay = setTimeout(function() {
         $(".item").fadeTo(0,0);
+        console.log('brought opacity down');
         $("#one").text(pick());
         $("#two").text(pick());
         $("#three").text(pick());
         $("#four").text(pick());
+        console.log('bringing opacity back up...');
         $(".item").fadeTo(speed,1);
+        console.log('brought opacity back up');
         console.log('about to animate...');
       }, 600);
     };
