@@ -19,6 +19,7 @@ $(document).ready(function() {
   var delay;
   var pickDelay;
   var interval;
+
   var play = true;
   var array = ["#one", "#two", "#three", "#four"];
   var speed = 800;
@@ -276,7 +277,7 @@ $(document).ready(function() {
     }
 
     function pickdelay(c1, c2, c3) {
-      var pickDelay = setTimeout(function() {
+      pickDelay = setTimeout(function() {
         $(c1).text(pick());
         $(c2).text(pick());
         $(c3).text(pick());
@@ -284,7 +285,7 @@ $(document).ready(function() {
     }
 
     function animate() {
-      var interval = setInterval(function() {
+      interval = setInterval(function() {
         c1 = array[randomizer(array.length)];
         c2 = array[randomizer(array.length)];
         c3 = array[randomizer(array.length)];
@@ -298,7 +299,7 @@ $(document).ready(function() {
 
 
     function setup() {
-      var delay = setTimeout(function() {
+      delay = setTimeout(function() {
         $(".item").fadeTo(0,0);
         $("#one").text(pick());
         $("#two").text(pick());
