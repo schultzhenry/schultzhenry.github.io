@@ -285,9 +285,9 @@ $(document).ready(function() {
 
     function animate() {
       interval = setInterval(function() {
-        let c1 = array[randomizer(array.length)];
-        let c2 = array[randomizer(array.length)];
-        let c3 = array[randomizer(array.length)];
+        var c1 = array[randomizer(array.length)];
+        var c2 = array[randomizer(array.length)];
+        var c3 = array[randomizer(array.length)];
         let selectors = c1 + ", " + c2 + ", " + c3;
         $(selectors).fadeTo(speed,0);
         pickdelay();
