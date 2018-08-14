@@ -157,8 +157,6 @@ $(document).ready(function() {
   };
 
   function analogies() {
-    delay = false;
-    interval = false;
 
     $('#content').empty();
     $('#content').removeAttr('style');
@@ -294,8 +292,6 @@ $(document).ready(function() {
       }, (speed * 10));
     };
 
-    console.log('setup animate');
-
     function setup() {
       delay = setTimeout(function() {
         $(".item").fadeTo(0,0);
@@ -314,9 +310,9 @@ $(document).ready(function() {
     console.log('setup setup');
 
     setup();
-    animate();
-
     console.log('called setup');
+    animate();
+    console.log('called animate');
 
     $('#analogies').mouseenter(function() {
       $('#cursor').removeClass('cursorDefault');
@@ -557,12 +553,6 @@ $(document).ready(function() {
     }
   }
   respond();
-
-  // $('.menuButton').click(function() {
-  //   $('#content').empty();
-  //   $('#content').removeAttr('style');
-  //   $('body').removeAttr('style');
-  // });
 
   $('.homeButton').click(function() {
     console.log('Loading about page.');
