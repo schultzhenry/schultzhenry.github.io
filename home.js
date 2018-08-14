@@ -276,7 +276,7 @@ $(document).ready(function() {
     }
 
     function pickdelay() {
-      pickDelay = setTimeout(function() {
+      var pickDelay = setTimeout(function() {
         $(c1).text(pick());
         $(c2).text(pick());
         $(c3).text(pick());
@@ -284,7 +284,7 @@ $(document).ready(function() {
     }
 
     function animate() {
-      interval = setInterval(function() {
+      var interval = setInterval(function() {
         var c1 = array[randomizer(array.length)];
         var c2 = array[randomizer(array.length)];
         var c3 = array[randomizer(array.length)];
@@ -298,7 +298,7 @@ $(document).ready(function() {
 
 
     function setup() {
-      delay = setTimeout(function() {
+      var delay = setTimeout(function() {
         $(".item").fadeTo(0,0);
         $("#one").text(pick());
         $("#two").text(pick());
