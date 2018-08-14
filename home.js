@@ -49,7 +49,7 @@ $(document).ready(function() {
   $('.navIcon').attr('viewBox','0 0 44 44');
 
   console.log('attempting to change nav icon fill colors...');
-  $('.navIcon polygon, .navIcon rect').attr('fill','green');
+  $('.navIcon polygon, .navIcon rect').attr('style','fill:green');
 
   // Setup content for about page.
   function home() {
