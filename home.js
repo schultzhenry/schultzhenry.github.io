@@ -558,9 +558,9 @@ $(document).ready(function() {
   });
 
   $('.analogiesButton').click(function() {
-    clearTimeout(delay);
-    clearTimeout(pickDelay);
-    clearInterval(interval);
+    window.clearTimeout(delay);
+    window.clearTimeout(pickDelay);
+    window.clearInterval(interval);
     console.log('Loading analogies page.');
     analogies();
   });
