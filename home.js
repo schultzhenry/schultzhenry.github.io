@@ -159,7 +159,7 @@ $(document).ready(function() {
   function analogies() {
     delay = false;
     interval = false;
-    
+
     $('#content').empty();
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
@@ -305,13 +305,13 @@ $(document).ready(function() {
         $("#four").text(pick());
         $(".item").fadeTo(speed,1);
         console.log('about to animate...');
-        animate();
       }, 600);
     };
 
     console.log('setup setup');
 
     setup();
+    animate();
 
     console.log('called setup');
 
