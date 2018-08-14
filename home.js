@@ -35,7 +35,7 @@ $(document).ready(function() {
     detectMouse
   );
 
-  $('#menu').append('<svg class="navIcon" id="menuOpen"></svg>');
+  $('#content').append('<svg class="navIcon" id="menuOpen"></svg>');
   $('#menuOpen').append('<polygon points="25 19 25 8 19 8 19 19 8 19 8 25 19 25 19 36 25 36 25 25 36 25 36 19 25 19" style="fill:none"/>');
   $('#menu').append('<svg class="navIcon" id="menuClose"></svg>');
   $('#menuClose').append('<rect x="19" y="8" width="6" height="28" transform="translate(44) rotate(90)" style="fill:none"/>');
