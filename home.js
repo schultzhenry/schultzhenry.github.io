@@ -592,7 +592,7 @@ $(document).ready(function() {
 
   respond();
 
-  window.onhashchange = respond();
+  window.onpopstate = respond();
 
   $('.homeButton').click(function() {
     console.log('Loading homepage...')
