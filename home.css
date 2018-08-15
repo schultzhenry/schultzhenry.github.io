@@ -23,7 +23,6 @@
   font-size: 28pt;
   text-decoration: none;
   display: block;
-  color: black;
 }
 
 #info a, #info a:visited {
@@ -32,7 +31,6 @@
   font-size: 28pt;
   text-decoration: none;
   display: block;
-  color: black;
 }
 
 #menu a:hover, #info a:hover {
@@ -88,4 +86,12 @@
   left: 44px;
   font-size: 18pt;
   padding-right: 44px;
+}
+
+.menuBlack {
+  color: black;
+}
+
+.menuWhite {
+  color: white;
 }

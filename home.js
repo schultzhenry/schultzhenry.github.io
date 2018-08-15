@@ -61,6 +61,8 @@ $(document).ready(function() {
     'height':'36px'
   });
 
+  $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
+
   $('#menu').click(function() {
     if (menuToggle == false) {
       if (infoToggle == true) {
@@ -546,6 +548,8 @@ $(document).ready(function() {
     } else {
       $('#menu, #info').css('background',navBg);
     }
+
+    $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
 
   }
 
