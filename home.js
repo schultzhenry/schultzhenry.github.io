@@ -53,6 +53,7 @@ $(document).ready(function() {
   $('.navIcon').attr('viewBox','0 0 44 44');
   $('.navIcon').css('position','absolute');
   $('.navIcon').css('z-index','2000');
+  $('.navIcon').css('fill','green');
 
   $('.navIcon polygon, .navIcon rect').attr('style','fill:green');
 
