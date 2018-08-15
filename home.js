@@ -594,7 +594,7 @@ $(document).ready(function() {
 
     if (touchDevice == true) {
       $('#content').append(
-        '<p color="white">Searchlight is a bookmarklet that ' +
+        '<p style="color:white">Searchlight is a bookmarklet that ' +
         'lets you view webpages with your cursor ' +
         'as you would a dark room with a ' +
         'flashlight. To try it, Visit this page ' +
