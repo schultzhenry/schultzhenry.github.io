@@ -572,21 +572,27 @@ $(document).ready(function() {
 
   function respond() {
     let loc = window.location.href;
-    console.log("hashchange event detected: " + String(loc));
+    console.log("Visiting " + String(loc));
     if ([
       'http://schultzhenry.com/',
       'https://schultzhenry.com/',
       'http://schultzhenry.com/#home',
       'https://schultzhenry.com/#home'
     ].indexOf(loc) >= 0) {
-      console.log('Loading about page.');
+      console.log('Loading about page...');
       home();
     } else if ([
       'http://schultzhenry.com/#analogies',
       'https://schultzhenry.com/#analogies'
     ].indexOf(loc) >= 0) {
-      console.log('Loading analogies page.');
+      console.log('Loading analogies page...');
       analogies();
+    } else if ([
+      'http://schultzhenry.com/#engender',
+      'https://schultzhenry.com/#engender'
+    ].indexOf(loc) >= 0) {
+      console.log('Loading engender page...');
+      engender();
     }
   }
 
