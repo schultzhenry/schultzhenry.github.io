@@ -248,6 +248,7 @@ $(document).ready(function() {
 
     $('#menu, #info').css('border','none');
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
+    $('body').css('background','white');
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
     $('.navIcon polygon, .navIcon rect').css('stroke',navIconStroke);
@@ -613,7 +614,7 @@ $(document).ready(function() {
       'margin':'auto',
       'overflow':'auto'
     });
-    
+
     if (touchDevice == true) {
       $('#content').append(
         '<p style="color:white">Searchlight is a bookmarklet that ' +
