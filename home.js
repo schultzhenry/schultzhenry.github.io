@@ -78,72 +78,24 @@ $(document).ready(function() {
     'height':'44px'
   });
 
-  // Setup content for about page.
-  function home() {
-    $('#content').empty();
-    $('#content').removeAttr('style');
-    $('body').removeAttr('style');
-
-    menuBg = 'rgba(255, 0, 0, 0.75)';
-    menuBgHover = 'rgba(255, 0, 0, 1)';
-    menuButton = 'rgba(255, 0, 0, 1)';
-
-    // Number of spray images to choose from.
-    var imgNum = 10;
-
-    // Randomly arrange spray images on page.
-    $('body').css({'background':'red'});
-    $('#menuButton').css('color',menuButton);
-    $('#infoButton').css('color',infoButton);
-    $('#menu').css({
-      'border-right':'1px solid ' + menuBorder
-    });
-    $('#info').css({
-      'border-left':'1px solid ' + infoBorder
-    });
-
-    if (touchDevice == true) {
-      $('#menu').css('background',menuBgHover);
-      $('#info').css('background',infoBgHover);
-    } else {
-      $('#menu').css('background',menuBg);
-      $('#info').css('background',infoBg);
-    }
-
-    function randomizer(range) {
-      return Math.floor(Math.random()*range);
-    }
-    for (i=1; i < 230; i++) {
-      $('#content').append(
-        '<img class="spray" '+
-        'id="spray'+String(i)+'" '+
-        'src="images/spray-'+String(randomizer(imgNum)+1)+
-        '.png"></img>');
-      $('#spray'+String(i)).css({
-        'position':'fixed',
-        'bottom':String(randomizer(140)-40)+'vh',
-        'left':String(randomizer(140)-40)+'vw',
-        'transform':'rotate('+String(randomizer(360))+'deg)',
-        'width':'Calc(23vmin + 60px)',
-        'height':'Calc(23vmin + 60px)',
-        'pointer-events':'none'
-      });
-    };
-  };
-
   $( "#menu" ).click(function() {
     if (menuToggle == false) {
       menuToggle = true;
-      $('#menuButton').text('−');
+      $('#menuOpen').css('visibility','hidden');
+      $('#menuClose').css('visibility','visible');
+      $(this).
       $(this).removeClass('closedMenu');
       $(this).addClass('openMenu');
     } else {
       menuToggle = false;
+      $('#menuClose').css('visibility','hidden');
+      $('#menuOpen').css('visibility','visible');
       $('#menuButton').text('+');
       $(this).removeClass('openMenu');
       $(this).addClass('closedMenu');
     }
   });
+
   $('#menu').mouseenter(function() {
     $(this).css('background',menuBgHover);
   });
@@ -180,6 +132,61 @@ $(document).ready(function() {
     }
   };
 
+  // Setup content for about page.
+  function home() {
+    $('#content').empty();
+    $('#content').removeAttr('style');
+    $('body').removeAttr('style');
+
+    menuBg = 'rgba(255, 0, 0, 0.75)';
+    menuBgHover = 'rgba(255, 0, 0, 1)';
+    menuBorder = 'rgba(0, 0, 0, 1)';
+    navIconColor = 'rgba(255, 255, 255, 1)';
+
+    // Number of spray images to choose from.
+    var imgNum = 10;
+
+    // Randomly arrange spray images on page.
+    $('body').css({'background':'red'});
+
+    $('#menu').css({
+      'border-right':'1px solid ' + menuBorder
+    });
+    $('#info').css({
+      'border-left':'1px solid ' + infoBorder
+    });
+
+    if (touchDevice == true) {
+      $('#menu').css('background',menuBgHover);
+      $('#info').css('background',infoBgHover);
+    } else {
+      $('#menu').css('background',menuBg);
+      $('#info').css('background',infoBg);
+    }
+
+    $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
+
+    function randomizer(range) {
+      return Math.floor(Math.random()*range);
+    }
+    for (i=1; i < 230; i++) {
+      $('#content').append(
+        '<img class="spray" '+
+        'id="spray'+String(i)+'" '+
+        'src="images/spray-'+String(randomizer(imgNum)+1)+
+        '.png"></img>');
+      $('#spray'+String(i)).css({
+        'position':'fixed',
+        'bottom':String(randomizer(140)-40)+'vh',
+        'left':String(randomizer(140)-40)+'vw',
+        'transform':'rotate('+String(randomizer(360))+'deg)',
+        'width':'Calc(23vmin + 60px)',
+        'height':'Calc(23vmin + 60px)',
+        'pointer-events':'none'
+      });
+    };
+  };
+
   function analogies() {
 
     $('#content').empty();
@@ -189,14 +196,23 @@ $(document).ready(function() {
 
     menuBg = 'rgba(255, 255, 255, 1)';
     menuBgHover = 'rgba(255, 255, 255, 1)';
-    menuButton = 'rgba(255, 255, 255, 1)';
+    menuBorder = 'rgba(255, 255, 255, 1)';
+    infoBorder = 'rgba(255, 255, 255, 1)';
+    navIconColor = 'rgba(255, 255, 255, 1)';
 
-    $('#menuButton').css('color',menuButton);
+    $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
     if (touchDevice == true) {
       $('#menu').css('background',menuBgHover);
     } else {
       $('#menu').css('background',menuBg);
     }
+
+    $('#menu').css({
+      'border-right':'1px solid ' + menuBorder
+    });
+    $('#info').css({
+      'border-left':'1px solid ' + infoBorder
+    });
 
     $('#content').css({
       'z-index':'1',
