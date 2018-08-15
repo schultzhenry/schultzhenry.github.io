@@ -73,16 +73,11 @@
   pointer-events: none;
 }
 
-#menuOpen, #menuClose {
-  transition: color 0.4s;
+#menuOpen, #infoOpen {
+  transition: all 0.4s;
   position: absolute;
   top: 0px;
-  right: 0px;
 }
 
-#infoOpen, #infoClose {
-  transition: color 0.4s;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-}
+#menuOpen {right: 0px;}
+#infoOpen {left: 0px;}
