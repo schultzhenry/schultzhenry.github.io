@@ -39,33 +39,34 @@ $(document).ready(function() {
     detectMouse
   );
 
-  navSvg1 = '<svg version="1.1" id="Layer_1" ' +
-            'class="navIcon"' +
+  navSvg1 = '<svg version="1.1" ';
+
+  navSvg2 = 'class="navIcon"' +
             'xmlns="http://www.w3.org/2000/svg" ' +
             'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
             'x="0px" y="0px" viewBox="0 0 44 44" ' +
             'style="enable-background:new 0 0 44 44;" ' +
             'xml:space="preserve">'
 
-  navSvg2 = '</svg>'
+  navSvg3 = '</svg>'
 
-  menuOpen = navSvg1 +
+  menuOpen = navSvg1 + 'id="menuOpen" ' + navSvg2 +
              '<polygon fill="white" ' +
              'points="25,19 25,8 19,8 19,19 8,19 8,25 19,25 19,36 25,36 25,25 36,25 36,19 	"/>' +
-             navSvg2;
+             navSvg3;
 
-  menuClose = navSvg1 +
+  menuClose = navSvg1 + 'id="menuClose" ' + navSvg2 +
               '<polygon fill="white" ' +
               'points="35.6,17.6 32.6,12.4 25,16.8 25,8 19,8 19,16.8 11.4,12.4 8.4,17.6 16,22 8.4,26.4 11.4,31.6 19,27.2 19,36 25,36 25,27.2 32.6,31.6 35.6,26.4 28,22 	"/>'
-              navSvg2;
+              navSvg3;
 
-  infoOpen = navSvg1 +
+  infoOpen = navSvg1 + 'id="infoOpen" ' + navSvg2 +
              '<rect fill="white" x="8" y="19" class="st0" width="28" height="6"/>'
-             navSvg2;
+             navSvg3;
 
-  infoClose = navSvg1 +
+  infoClose = navSvg1 + 'id="infoClose" ' + navSvg2 +
               '<rect fill="white" x="19" y="8" class="st0" width="6" height="28"/>'
-              navSvg2;
+              navSvg3;
 
   $('#menu').append(menuOpen);
   $('#menu').append(menuClose);
