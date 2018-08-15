@@ -70,8 +70,8 @@ $(document).ready(function() {
   $('#menu').append(menuOpen);
   $('#menu').append(menuClose);
   $('#menuClose').css('visibility','hidden');
-  $('#menu').append(infoOpen);
-  $('#menu').append(infoClose);
+  $('#info').append(infoOpen);
+  $('#info').append(infoClose);
   $('#infoClose').css('visibility','hidden');
 
   $('.navIcon').css({
