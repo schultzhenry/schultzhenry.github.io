@@ -57,8 +57,8 @@ $(document).ready(function() {
   $('#info').append(infoOpen);
 
   $('.navIcon').css({
-    'width':'44px',
-    'height':'44px'
+    'width':'40px',
+    'height':'40px'
   });
 
   $('#menu').click(function() {
