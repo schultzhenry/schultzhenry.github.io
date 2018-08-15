@@ -193,7 +193,7 @@ $(document).ready(function() {
 
     $('#infoText').text(
       'Thanks for visiting my website. ' +
-      'It\'s still under develop&#173;ment. Check back soon to see more! '
+      'It\'s still under development. Check back soon to see more! '
     );
   };
 
