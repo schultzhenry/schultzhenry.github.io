@@ -136,12 +136,15 @@ $(document).ready(function() {
     }
   };
 
-  // Setup content for about page.
-  function home() {
-
+  function clearPage() {
     $('#content').empty();
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
+  }
+  // Setup content for about page.
+  function home() {
+
+    clearPage();
 
     navBg = 'rgba(255, 0, 0, 0.75)';
     navBgHover = 'rgba(255, 0, 0, 1)';
@@ -199,9 +202,8 @@ $(document).ready(function() {
 
   function analogies() {
 
-    $('#content').empty();
-    $('#content').removeAttr('style');
-    $('body').removeAttr('style');
+    clearPage();
+
     $('.analogiesStyles').empty();
 
     navBg = 'rgba(255, 255, 255, 1)';
@@ -392,9 +394,7 @@ $(document).ready(function() {
 
   function engender() {
 
-    $('#content').empty();
-    $('#content').removeAttr('style');
-    $('body').removeAttr('style');
+    clearPage();
 
     $('#content').css({
       'text-align':'center',
@@ -503,11 +503,17 @@ $(document).ready(function() {
 
   };
 
+  function searchlight() {
+
+    clearPage();
+
+    $('body').css('background','black');
+    $('#content').append('<p>working on this one...</p>');
+    
+  }
   function contact() {
 
-    $('#content').empty();
-    $('#content').removeAttr('style');
-    $('body').removeAttr('style');
+    clearPage();
 
     $('#content').css({
       'position': 'fixed',
@@ -607,6 +613,10 @@ $(document).ready(function() {
     engender();
   });
 
+  $('.searchlightButton').click(function() {
+    console.log('Loading searchlight page.');
+    searchlight();
+  })
   $('.contactButton').click(function() {
     console.log('Loading contact page.');
     contact();
