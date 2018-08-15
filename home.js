@@ -65,6 +65,7 @@ $(document).ready(function() {
     if (menuToggle == false) {
       if (infoToggle == true) {
         infoToggle = false;
+        $('#infoOpen').css('visibility','visible');
         $('#info').removeClass('openInfo');
         $('#info').addClass('closedInfo');
       }
