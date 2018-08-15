@@ -450,7 +450,7 @@ $(document).ready(function() {
 
     $('.engenderStyles').text(
       "@media screen and (min-width: 888px) { " +
-        "#engenderContent { width: 800px; } " +
+        "#engenderContent { width: 802px; } " +
         ".engenderText { " +
           "font-size: 24px; " +
           "padding-left: 64px;" +
@@ -459,7 +459,7 @@ $(document).ready(function() {
       "} " +
       "@media screen and (max-width: 888px) { " +
         "#engenderContent { " +
-          "width: Calc(100vw - 88px); " +
+          "width: Calc(100vw - 86px); " +
         "} " +
         ".engenderText { " +
           "font-size: 16px; " +
