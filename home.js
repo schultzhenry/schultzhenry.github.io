@@ -211,7 +211,6 @@ $(document).ready(function() {
     navBorder = 'rgba(0, 0, 0, 1)';
     navIconColor = 'rgba(255, 255, 255, 1)';
 
-    console.log('about to set nav color...');
     $('#menu, #info').css('border','none');
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
@@ -509,7 +508,7 @@ $(document).ready(function() {
 
     $('body').css('background','black');
     $('#content').append('<p>working on this one...</p>');
-    
+
   }
   function contact() {
 
@@ -594,10 +593,12 @@ $(document).ready(function() {
   respond();
 
   $('.homeButton').click(function() {
+    console.log('Loading homepage...')
     home();
   });
 
   $('.analogiesButton').click(function() {
+    console.log('Loading analogies page...')
     if (play == false) {
       $('#control').attr('src', 'pause.svg');
       play = true;
@@ -609,16 +610,17 @@ $(document).ready(function() {
   });
 
   $('.engenderButton').click(function() {
-    console.log('Loading Engender page.');
+    console.log('Loading Engender page...');
     engender();
   });
 
   $('.searchlightButton').click(function() {
-    console.log('Loading searchlight page.');
+    console.log('Loading searchlight page...');
     searchlight();
   })
+
   $('.contactButton').click(function() {
-    console.log('Loading contact page.');
+    console.log('Loading contact page...');
     contact();
   });
 
