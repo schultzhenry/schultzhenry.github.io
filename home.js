@@ -143,6 +143,14 @@ $(document).ready(function() {
     $('#content').empty();
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
+
+    $('#infoText').css({
+      'position': 'absolute',
+      'top': '16px',
+      'left': '44px',
+      'font-size': '18pt',
+      'padding-right': '44px'
+    });
   }
 
   // Setup content for about page.
