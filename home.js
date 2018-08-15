@@ -210,8 +210,7 @@ $(document).ready(function() {
     navIconColor = 'rgba(255, 255, 255, 1)';
 
     console.log('about to set nav color...');
-    // $('#menu').css('border-right','1px solid '+navBorder);
-    // $('#info').css('border-left','1px solid '+navBorder);
+    $('#menu, #info').css('border','none');
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
     $('.navIcon polygon, .navIcon rect').css('stroke','rgba(0, 0, 0, 1)');
