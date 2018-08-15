@@ -586,6 +586,14 @@ $(document).ready(function() {
     $('#menu a, #menu a:visited, #info a, #info a:visited').removeClass('menuBlack');
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuWhite');
 
+    if (touchDevice == true) {
+      $('#content').append(
+        '<p>Searchlight is a bookmarklet that ' +
+        'lets you view webpages with your cursor ' +
+        'as you would a dark room with a ' +
+        'flashlight. To try it, Visit this page ' +
+        'while using a mouse.</p>');
+    }
   }
 
   function contact() {
