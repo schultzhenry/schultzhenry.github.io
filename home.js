@@ -556,7 +556,7 @@ $(document).ready(function() {
 
     $('body').css('background','black');
     $('#content').append('<p color="white">working on this one...</p>');
-    $('#info').css('color','white');
+    $('#infoText').css('color','white');
 
     navBg = 'rgba(0, 0, 0, 1)';
     navBgHover = 'rgba(0, 0, 0, 1)';
