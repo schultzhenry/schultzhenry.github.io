@@ -4,18 +4,12 @@ $(document).ready(function() {
   var curSize = 26;
   var touchDevice = false;
 
-  // Menu styling variables
-  var menuBg = 'rgba(255, 0, 0, 0.75)';
-  var menuBgHover = 'rgba(255, 0, 0, 1)';
-  var menuBorder = 'rgba(0, 0, 0, 1)';
+  // Nav styling variables
+  var navBg = 'rgba(255, 0, 0, 0.75)';
+  var navBgHover = 'rgba(255, 0, 0, 1)';
+  var navBorder = 'rgba(0, 0, 0, 1)';
   var navIconColor = 'rgba(255, 0, 0, 1)';
 
-  // Info styling variables
-  var infoBg = 'rgba(255, 0, 0, 0.75)';
-  var infoBgHover = 'rgba(255, 0, 0, 1)';
-  var infoBorder = 'rgba(0, 0, 0, 1)';
-
-  // var delay;
   var delay;
   var pickDelay;
   var interval;
@@ -95,14 +89,14 @@ $(document).ready(function() {
     }
   });
 
-  $('#menu').mouseenter(function() {
-    $(this).css('background',menuBgHover);
+  $('#menu, #info').mouseenter(function() {
+    $(this).css('background',navBgHover);
   });
-  $('#menu').mouseleave(function() {
+  $('#menu, #info').mouseleave(function() {
     if (touchDevice == true) {
-      $(this).css('background',menuBgHover);
+      $(this).css('background',navBgHover);
     } else {
-      $(this).css('background',menuBg);
+      $(this).css('background',navBg);
     }
   });
 
@@ -137,9 +131,9 @@ $(document).ready(function() {
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
 
-    menuBg = 'rgba(255, 0, 0, 0.75)';
-    menuBgHover = 'rgba(255, 0, 0, 1)';
-    menuBorder = 'rgba(0, 0, 0, 1)';
+    navBg = 'rgba(255, 0, 0, 0.75)';
+    navBgHover = 'rgba(255, 0, 0, 1)';
+    navBorder = 'rgba(0, 0, 0, 1)';
     navIconColor = 'rgba(255, 255, 255, 1)';
 
     // Number of spray images to choose from.
@@ -149,18 +143,18 @@ $(document).ready(function() {
     $('body').css({'background':'red'});
 
     $('#menu').css({
-      'border-right':'1px solid ' + menuBorder
+      'border-right':'1px solid ' + navBorder
     });
     $('#info').css({
-      'border-left':'1px solid ' + infoBorder
+      'border-left':'1px solid ' + navBorder
     });
 
     if (touchDevice == true) {
-      $('#menu').css('background',menuBgHover);
-      $('#info').css('background',infoBgHover);
+      $('#menu').css('background',navBgHover);
+      $('#info').css('background',navBgHover);
     } else {
-      $('#menu').css('background',menuBg);
-      $('#info').css('background',infoBg);
+      $('#menu').css('background',navBg);
+      $('#info').css('background',navBg);
     }
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
@@ -193,24 +187,24 @@ $(document).ready(function() {
     $('body').removeAttr('style');
     $('.analogiesStyles').empty();
 
-    menuBg = 'rgba(255, 255, 255, 1)';
-    menuBgHover = 'rgba(255, 255, 255, 1)';
-    menuBorder = 'rgba(255, 255, 255, 1)';
-    infoBorder = 'rgba(255, 255, 255, 1)';
+    navBg = 'rgba(255, 255, 255, 1)';
+    navBgHover = 'rgba(255, 255, 255, 1)';
+    navBorder = 'rgba(255, 255, 255, 1)';
+    navBorder = 'rgba(255, 255, 255, 1)';
     navIconColor = 'rgba(255, 255, 255, 1)';
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
     if (touchDevice == true) {
-      $('#menu').css('background',menuBgHover);
+      $('#menu').css('background',navBgHover);
     } else {
-      $('#menu').css('background',menuBg);
+      $('#menu').css('background',navBg);
     }
 
     $('#menu').css({
-      'border-right':'1px solid ' + menuBorder
+      'border-right':'1px solid ' + navBorder
     });
     $('#info').css({
-      'border-left':'1px solid ' + infoBorder
+      'border-left':'1px solid ' + navBorder
     });
 
     $('#content').css({
