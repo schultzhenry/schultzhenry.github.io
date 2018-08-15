@@ -537,8 +537,8 @@ $(document).ready(function() {
     $('body').css('background','black');
     $('#content').append('<p color="white">working on this one...</p>');
 
-    navBg = 'rgba(255, 255, 255, 0.2)';
-    navBgHover = 'rgba(255, 255, 255, 1)';
+    navBg = 'rgba(0, 0, 0, 1)';
+    navBgHover = 'rgba(0, 0, 0, 1)';
     navBorder = 'rgba(0, 0, 0, 0)';
     navIconColor = 'rgba(0, 0, 0, 1)';
     navIconStroke = 'rgba(255, 255, 255, 1)';
