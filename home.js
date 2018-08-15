@@ -208,6 +208,10 @@ $(document).ready(function() {
     navBgHover = 'rgba(255, 255, 255, 1)';
     navBorder = 'rgba(255, 255, 255, 1)';
     navIconColor = 'rgba(255, 255, 255, 1)';
+    
+    console.log('about to set nav color...');
+    $('#menu').css('border-right','1px solid '+navBorder);
+    $('#info').css('border-left','1px solid '+navBorder);
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
     $('.navIcon polygon, .navIcon rect').css('stroke','rgba(0, 0, 0, 1)');
@@ -217,10 +221,6 @@ $(document).ready(function() {
     } else {
       $('#menu, #info').css('background',navBg);
     }
-
-    console.log('about to set nav color...');
-    $('#menu').css('border-right','1px solid '+navBorder);
-    $('#info').css('border-left','1px solid '+navBorder);
 
     $('#content').css({
       'z-index':'1',
