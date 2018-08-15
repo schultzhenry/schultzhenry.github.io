@@ -163,9 +163,10 @@ $(document).ready(function() {
       'top':'0px',
       'left':'0px',
       'width':'100vw',
-      'height':'100vh'
+      'height':'100vh',
+      'background-position':'0px 0px'
     })
-    
+
     $('#infoText').css({
       'position': 'absolute',
       'top': '16px',
