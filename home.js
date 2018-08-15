@@ -607,6 +607,13 @@ $(document).ready(function() {
       'https://schultzhenry.com/#analogies'
     ].indexOf(loc) >= 0) {
       console.log('Loading analogies page...');
+      if (play == false) {
+        $('#control').attr('src', 'pause.svg');
+        play = true;
+      }
+      clearInterval(interval);
+      clearTimeout(delay);
+      clearTimeout(pickDelay);
       analogies();
     } else if ([
       'http://schultzhenry.com/#engender',
@@ -621,28 +628,6 @@ $(document).ready(function() {
 
   $(window).on('popstate', function(event) {
     respond();
-  });
-
-  $('.homeButton').click(function() {
-    console.log('Loading homepage...')
-    // home();
-  });
-
-  $('.analogiesButton').click(function() {
-    console.log('Loading analogies page...')
-    if (play == false) {
-      $('#control').attr('src', 'pause.svg');
-      play = true;
-    }
-    clearInterval(interval);
-    clearTimeout(delay);
-    clearTimeout(pickDelay);
-    // analogies();
-  });
-
-  $('.engenderButton').click(function() {
-    console.log('Loading Engender page...');
-    engender();
   });
 
   $('.searchlightButton').click(function() {
