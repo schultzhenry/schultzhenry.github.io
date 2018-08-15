@@ -467,7 +467,7 @@ $(document).ready(function() {
           "padding-right: 64px;" +
         "}" +
       "} " +
-      "@media screen and (max-width: 620px) { " +
+      "@media screen and (max-width: 660px) { " +
         "#engenderContent { " +
           "width: Calc(100vw - 86px); " +
         "} " +
