@@ -473,6 +473,8 @@ $(document).ready(function() {
         "} " +
         ".engenderText { " +
           "font-size: 20px; " +
+          "padding-left: 0px;" +
+          "padding-right: 0px;" +
         "}" +
       "} " +
       "@media screen and (max-width: 360px) { " +
@@ -481,6 +483,8 @@ $(document).ready(function() {
         "} " +
         ".engenderText { " +
           "font-size: 16px; " +
+          "padding-left: 0px;" +
+          "padding-right: 0px;" +
         "}" +
       "} "
     );
