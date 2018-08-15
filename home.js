@@ -566,8 +566,8 @@ $(document).ready(function() {
   $('.analogiesButton').click(function() {
     window.clearInterval(interval);
     console.log('cleared interval');
-    window.clearTimeout(delay);
-    console.log('cleared delay');
+    // window.clearTimeout(delay);
+    // console.log('cleared delay');
     window.clearTimeout(pickDelay);
     console.log('cleared pickDelay');
     console.log('calling analogies()...');
