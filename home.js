@@ -55,12 +55,12 @@ $(document).ready(function() {
              navSvg3;
 
   menuClose = navSvg1 + 'id="menuClose" ' + navSvg2 +
-              '<polygon fill="white" ' +
-              'points="35.6,17.6 32.6,12.4 25,16.8 25,8 19,8 19,16.8 11.4,12.4 8.4,17.6 16,22 8.4,26.4 11.4,31.6 19,27.2 19,36 25,36 25,27.2 32.6,31.6 35.6,26.4 28,22 	"/>'
+              '<rect fill="white" x="8" y="19" class="st0" width="28" height="6"/>' +
               navSvg3;
 
   infoOpen = navSvg1 + 'id="infoOpen" ' + navSvg2 +
-             '<rect fill="white" x="8" y="19" class="st0" width="28" height="6"/>'
+             '<polygon fill="white" ' +
+             'points="35.6,17.6 32.6,12.4 25,16.8 25,8 19,8 19,16.8 11.4,12.4 8.4,17.6 16,22 8.4,26.4 11.4,31.6 19,27.2 19,36 25,36 25,27.2 32.6,31.6 35.6,26.4 28,22 	"/>' +
              navSvg3;
 
   infoClose = navSvg1 + 'id="infoClose" ' + navSvg2 +
