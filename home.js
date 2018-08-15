@@ -594,6 +594,10 @@ $(document).ready(function() {
 
   window.onpopstate = respond();
 
+  $(window).on('popstate', function(event) {
+    alert("pop");
+  });
+
   $('.homeButton').click(function() {
     console.log('Loading homepage...')
     home();
