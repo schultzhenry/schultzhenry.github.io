@@ -404,7 +404,7 @@ $(document).ready(function() {
 
     clearPage();
 
-    navBg = 'rgba(230, 230, 250, 1)';
+    navBg = 'rgba(230, 230, 250, 0.65)';
     navBgHover = 'rgba(230, 230, 250, 1)';
     navBorder = 'rgba(0, 0, 0, 0)';
     navIconColor = 'rgba(230, 230, 250, 1)';
