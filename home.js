@@ -218,6 +218,7 @@ $(document).ready(function() {
       $('#menu, #info').css('background',navBg);
     }
 
+    console.log('about to set nav color...');
     $('#menu').css('border-right','1px solid '+navBorder);
     $('#info').css('border-left','1px solid '+navBorder);
 
