@@ -48,7 +48,6 @@ $(document).ready(function() {
   $('#info').append('<svg class="navIcon" id="infoClose"></svg>');
   $('#infoClose').append('<rect x="19" y="8" width="6" height="28"/>');
 
-  $('.navIcon').attr('data-name','Layer 1');
   $('.navIcon').attr('xmlns','http://www.w3.org/2000/svg');
   $('.navIcon').attr('viewBox','0 0 44 44');
   $('.navIcon').attr('width','44px');
