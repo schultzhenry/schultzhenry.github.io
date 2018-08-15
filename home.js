@@ -637,7 +637,7 @@ $(document).ready(function() {
     clearInterval(interval);
     clearTimeout(delay);
     clearTimeout(pickDelay);
-    analogies();
+    // analogies();
   });
 
   $('.engenderButton').click(function() {
