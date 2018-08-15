@@ -8,7 +8,7 @@ $(document).ready(function() {
   // Nav styling variables
   var navBg = 'rgba(255, 0, 0, 0.75)';
   var navBgHover = 'rgba(255, 0, 0, 1)';
-  var navBorder = 'rgba(0, 0, 0, 1)';
+  var navBorder = 'rgba(0, 0, 0, 0)';
   var navIconColor = 'rgba(255, 0, 0, 1)';
 
   var delay;
