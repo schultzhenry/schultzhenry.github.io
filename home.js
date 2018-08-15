@@ -212,17 +212,13 @@ $(document).ready(function() {
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
     if (touchDevice == true) {
-      $('#menu').css('background',navBgHover);
+      $('#menu, #info').css('background',navBgHover);
     } else {
-      $('#menu').css('background',navBg);
+      $('#menu, #info').css('background',navBg);
     }
 
-    $('#menu').css({
-      'border-right':'1px solid ' + navBorder
-    });
-    $('#info').css({
-      'border-left':'1px solid ' + navBorder
-    });
+    $('#menu').css('border-right','1px solid '+navBorder);
+    $('#info').css('border-left','1px solid '+navBorder);
 
     $('#content').css({
       'z-index':'1',
