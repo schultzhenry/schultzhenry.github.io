@@ -88,6 +88,6 @@
   color: white;
 }
 
-button:focus {
+button:focus, a:focus {
   outline: 0;
 }
