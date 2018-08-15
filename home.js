@@ -213,7 +213,7 @@ $(document).ready(function() {
 
     $('.analogiesStyles').empty();
 
-    navBg = 'rgba(255, 255, 255, 1)';
+    navBg = 'rgba(255, 255, 255, 0.85)';
     navBgHover = 'rgba(255, 255, 255, 1)';
     navBorder = 'rgba(0, 0, 0, 1)';
     navIconColor = 'rgba(255, 255, 255, 1)';
