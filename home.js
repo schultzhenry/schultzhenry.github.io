@@ -467,14 +467,12 @@ $(document).ready(function() {
           "padding-right: 64px;" +
         "}" +
       "} " +
-      "@media screen and (max-width: 520px) { " +
+      "@media screen and (max-width: 620px) { " +
         "#engenderContent { " +
           "width: Calc(100vw - 86px); " +
         "} " +
         ".engenderText { " +
           "font-size: 20px; " +
-          "padding-left: 24px;" +
-          "padding-right: 24px;" +
         "}" +
       "} " +
       "@media screen and (max-width: 360px) { " +
