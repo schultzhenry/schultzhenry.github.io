@@ -16,7 +16,7 @@ $(document).ready(function() {
   var infoBorder = 'rgba(0, 0, 0, 1)';
   var infoButton = 'rgba(255, 0, 0, 1)';
 
-  var delay;
+  // var delay;
   var pickDelay;
   var interval;
 
@@ -301,21 +301,27 @@ $(document).ready(function() {
       }, (speed * 10));
     };
 
-    function setup() {
-      console.log('starting setup function');
-      delay = setTimeout(function() {
-        console.log('set delay variable');
-        $(".item").fadeTo(0,0);
-        $("#one").text(pick());
-        $("#two").text(pick());
-        $("#three").text(pick());
-        $("#four").text(pick());
-        $(".item").fadeTo(speed,1);
-        animate();
-      }, 600);
-    };
+    // function setup() {
+    //   console.log('starting setup function');
+    //   delay = setTimeout(function() {
+    //     console.log('set delay variable');
+    //     $(".item").fadeTo(0,0);
+    //     $("#one").text(pick());
+    //     $("#two").text(pick());
+    //     $("#three").text(pick());
+    //     $("#four").text(pick());
+    //     $(".item").fadeTo(speed,1);
+    //     animate();
+    //   }, 600);
+    // };
 
-    setup();
+    $(".item").fadeTo(0,0);
+    $("#one").text(pick());
+    $("#two").text(pick());
+    $("#three").text(pick());
+    $("#four").text(pick());
+    $(".item").fadeTo(speed,1);
+    animate();
 
     $('#analogies').mouseenter(function() {
       $('#cursor').removeClass('cursorDefault');
