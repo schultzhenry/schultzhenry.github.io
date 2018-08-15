@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   var menuToggle = false;
+  var infoToggle = false;
   var curSize = 26;
   var touchDevice = false;
 
@@ -47,16 +48,13 @@ $(document).ready(function() {
              '<polygon fill="white" ' +
              'points="25,19 25,8 19,8 19,19 8,19 8,25 19,25 19,36 25,36 25,25 36,25 36,19 	"/>' +
              navSvg3;
-
   menuClose = navSvg1 + 'id="menuClose" ' + navSvg2 +
               '<rect fill="white" x="8" y="19" class="st0" width="28" height="6"/>' +
               navSvg3;
-
   infoOpen = navSvg1 + 'id="infoOpen" ' + navSvg2 +
              '<polygon fill="white" ' +
              'points="35.6,17.6 32.6,12.4 25,16.8 25,8 19,8 19,16.8 11.4,12.4 8.4,17.6 16,22 8.4,26.4 11.4,31.6 19,27.2 19,36 25,36 25,27.2 32.6,31.6 35.6,26.4 28,22 	"/>' +
              navSvg3;
-
   infoClose = navSvg1 + 'id="infoClose" ' + navSvg2 +
               '<rect fill="white" x="19" y="8" class="st0" width="6" height="28"/>'
               navSvg3;
@@ -73,8 +71,15 @@ $(document).ready(function() {
     'height':'44px'
   });
 
-  $( "#menu" ).click(function() {
+  $('#menu').click(function() {
     if (menuToggle == false) {
+      if (infoToggle == true) {
+        infoToggle = false;
+        $('#infoClose').css('visibility','hidden');
+        $('#infoOpen').css('visibility','visible');
+        $('#info').removeClass('openInfo');
+        $('#info').addClass('closedInfo');
+      }
       menuToggle = true;
       $('#menuOpen').css('visibility','hidden');
       $('#menuClose').css('visibility','visible');
@@ -86,6 +91,29 @@ $(document).ready(function() {
       $('#menuOpen').css('visibility','visible');
       $(this).removeClass('openMenu');
       $(this).addClass('closedMenu');
+    }
+  });
+
+  $('#info').click(function() {
+    if (infoToggle == false) {
+      if (menuToggle == true) {
+        menuToggle = false;
+        $('#menuClose').css('visibility','hidden');
+        $('#menuOpen').css('visibility','visible');
+        $('#menu').removeClass('openMenu');
+        $('#menu').addClass('closedMenu');
+      }
+      infoToggle = true;
+      $('#infoOpen').css('visibility','hidden');
+      $('#infoClose').css('visibility','visible');
+      $(this).removeClass('closedInfo');
+      $(this).addClass('openInfo');
+    } else {
+      infoToggle = false;
+      $('#infoClose').css('visibility','hidden');
+      $('#infoOpen').css('visibility','visible');
+      $(this).removeClass('openInfo');
+      $(this).addClass('closedInfo');
     }
   });
 
