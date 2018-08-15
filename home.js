@@ -191,7 +191,10 @@ $(document).ready(function() {
       });
     };
 
-    $('#infoText').text("Hey!");
+    $('#infoText').text(
+      'Thanks for visiting my website. ' +
+      'It\'s still under development, so check back soon to see more! '
+    );
   };
 
   function analogies() {
