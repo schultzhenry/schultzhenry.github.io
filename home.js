@@ -17,6 +17,7 @@ $(document).ready(function() {
   var infoButton = 'rgba(255, 0, 0, 1)';
 
   // var delay;
+  var delay;
   var pickDelay;
   var interval;
 
@@ -301,27 +302,21 @@ $(document).ready(function() {
       }, (speed * 10));
     };
 
-    // function setup() {
-    //   console.log('starting setup function');
-    //   delay = setTimeout(function() {
-    //     console.log('set delay variable');
-    //     $(".item").fadeTo(0,0);
-    //     $("#one").text(pick());
-    //     $("#two").text(pick());
-    //     $("#three").text(pick());
-    //     $("#four").text(pick());
-    //     $(".item").fadeTo(speed,1);
-    //     animate();
-    //   }, 600);
-    // };
+    function setup() {
+      console.log('starting setup function');
+      delay = setTimeout(function() {
+        console.log('set delay variable');
+        $(".item").fadeTo(0,0);
+        $("#one").text(pick());
+        $("#two").text(pick());
+        $("#three").text(pick());
+        $("#four").text(pick());
+        $(".item").fadeTo(speed,1);
+        animate();
+      }, 600);
+    };
 
-    $(".item").fadeTo(0,0);
-    $("#one").text(pick());
-    $("#two").text(pick());
-    $("#three").text(pick());
-    $("#four").text(pick());
-    $(".item").fadeTo(speed,1);
-    animate();
+    setup();
 
     $('#analogies').mouseenter(function() {
       $('#cursor').removeClass('cursorDefault');
@@ -559,18 +554,13 @@ $(document).ready(function() {
   respond();
 
   $('.homeButton').click(function() {
-    console.log('Loading about page.');
     home();
   });
 
   $('.analogiesButton').click(function() {
     window.clearInterval(interval);
-    console.log('cleared interval');
-    // window.clearTimeout(delay);
-    // console.log('cleared delay');
+      window.clearTimeout(delay);
     window.clearTimeout(pickDelay);
-    console.log('cleared pickDelay');
-    console.log('calling analogies()...');
     analogies();
   });
 
