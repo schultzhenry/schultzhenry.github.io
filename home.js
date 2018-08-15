@@ -39,7 +39,7 @@ $(document).ready(function() {
     detectMouse
   );
 
-  $('#menu').append('<img id="test" src="images/nav-icons-01.svg" alt="icon1">');
+  $('#menu').append('<img id="test" src="images/site-icons-01.svg" alt="icon1">');
   $('#test').css('fill','green');
 
   $('#menu').append('<svg class="navIcon" id="menuOpen"></svg>');
