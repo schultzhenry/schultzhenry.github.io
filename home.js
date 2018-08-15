@@ -34,14 +34,12 @@ $(document).ready(function() {
   );
 
   navSvg1 = '<svg version="1.1" ';
-
   navSvg2 = 'class="navIcon"' +
             'xmlns="http://www.w3.org/2000/svg" ' +
             'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
             'x="0px" y="0px" viewBox="0 0 44 44" ' +
             'style="enable-background:new 0 0 44 44;" ' +
             'xml:space="preserve">'
-
   navSvg3 = '</svg>'
 
   menuOpen = navSvg1 + 'id="menuOpen" ' + navSvg2 +
@@ -149,7 +147,7 @@ $(document).ready(function() {
       'top': '16px',
       'left': '44px',
       'font-size': '18pt',
-      'padding-right': '44px',
+      'padding-right': '40px',
       'color':'black'
     });
   }
