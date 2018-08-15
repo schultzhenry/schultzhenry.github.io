@@ -559,7 +559,7 @@ $(document).ready(function() {
 
   $('.analogiesButton').click(function() {
     window.clearInterval(interval);
-      window.clearTimeout(delay);
+    window.clearTimeout(delay);
     window.clearTimeout(pickDelay);
     analogies();
   });
