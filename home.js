@@ -199,7 +199,6 @@ $(document).ready(function() {
 
   function analogies() {
 
-
     $('#content').empty();
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
