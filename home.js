@@ -149,7 +149,8 @@ $(document).ready(function() {
       'top': '16px',
       'left': '44px',
       'font-size': '18pt',
-      'padding-right': '44px'
+      'padding-right': '44px',
+      'color':'black'
     });
   }
 
