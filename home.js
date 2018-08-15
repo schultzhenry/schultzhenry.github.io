@@ -10,6 +10,7 @@ $(document).ready(function() {
   var navBgHover = 'rgba(255, 0, 0, 1)';
   var navBorder = 'rgba(0, 0, 0, 0)';
   var navIconColor = 'rgba(255, 0, 0, 1)';
+  var navIconStroke = 'rgba(0, 0, 0, 0)';
 
   var delay;
   var pickDelay;
@@ -141,6 +142,7 @@ $(document).ready(function() {
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
   }
+
   // Setup content for about page.
   function home() {
 
@@ -150,6 +152,7 @@ $(document).ready(function() {
     navBgHover = 'rgba(255, 0, 0, 1)';
     navBorder = 'rgba(0, 0, 0, 1)';
     navIconColor = 'rgba(255, 0, 0, 1)';
+    navIconStroke = 'rgba(0, 0, 0, 1)';
 
     // Number of spray images to choose from.
     var imgNum = 10;
@@ -173,7 +176,7 @@ $(document).ready(function() {
     }
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
-    $('.navIcon polygon, .navIcon rect').css('stroke',navBorder);
+    $('.navIcon polygon, .navIcon rect').css('stroke',navIconStroke);
 
     function randomizer(range) {
       return Math.floor(Math.random()*range);
@@ -210,11 +213,12 @@ $(document).ready(function() {
     navBgHover = 'rgba(255, 255, 255, 1)';
     navBorder = 'rgba(0, 0, 0, 1)';
     navIconColor = 'rgba(255, 255, 255, 1)';
+    navIconStroke = 'rgba(0, 0, 0, 1)';
 
     $('#menu, #info').css('border','none');
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
-    $('.navIcon polygon, .navIcon rect').css('stroke','rgba(0, 0, 0, 1)');
+    $('.navIcon polygon, .navIcon rect').css('stroke',navIconStroke);
 
     if (touchDevice == true) {
       $('#menu, #info').css('background',navBgHover);
@@ -394,6 +398,23 @@ $(document).ready(function() {
   function engender() {
 
     clearPage();
+
+    navBg = 'rgba(230, 230, 250, 1)';
+    navBgHover = 'rgba(230, 230, 250, 1)';
+    navBorder = 'rgba(0, 0, 0, 0)';
+    navIconColor = 'rgba(230, 230, 250, 1)';
+    navIconStroke = 'rgba(0, 0, 0, 1)';
+
+    $('#menu, #info').css('border','none');
+
+    $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
+    $('.navIcon polygon, .navIcon rect').css('stroke',navIconStroke);
+
+    if (touchDevice == true) {
+      $('#menu, #info').css('background',navBgHover);
+    } else {
+      $('#menu, #info').css('background',navBg);
+    }
 
     $('#content').css({
       'text-align':'center',
