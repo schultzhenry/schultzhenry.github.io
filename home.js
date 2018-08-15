@@ -55,7 +55,6 @@ $(document).ready(function() {
 
   $('#menu').append(menuOpen);
   $('#info').append(infoOpen);
-  $('#menu, info').css('border','1px solid white');
 
   $('.navIcon').css({
     'width':'44px',
@@ -200,7 +199,6 @@ $(document).ready(function() {
 
   function analogies() {
 
-    $('#menu, #info').css('border','none');
 
     $('#content').empty();
     $('#content').removeAttr('style');
@@ -209,7 +207,7 @@ $(document).ready(function() {
 
     navBg = 'rgba(255, 255, 255, 1)';
     navBgHover = 'rgba(255, 255, 255, 1)';
-    navBorder = 'rgba(255, 255, 255, 1)';
+    navBorder = 'rgba(0, 0, 0, 1)';
     navIconColor = 'rgba(255, 255, 255, 1)';
 
     console.log('about to set nav color...');
