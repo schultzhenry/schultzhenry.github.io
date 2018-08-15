@@ -491,7 +491,6 @@ $(document).ready(function() {
     $('#engenderLogo').css({
       'margin':'auto',
       'width':'96px',
-      'background':'white',
       'margin-bottom':'24px'
     });
 
