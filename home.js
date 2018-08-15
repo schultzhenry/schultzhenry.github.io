@@ -14,6 +14,7 @@ $(document).ready(function() {
   var delay;
   var pickDelay;
   var interval;
+  var pageDelay;
 
   var play = true;
   var array = ["#one", "#two", "#three", "#four"];
@@ -601,7 +602,10 @@ $(document).ready(function() {
     clearInterval(interval);
     clearTimeout(delay);
     clearTimeout(pickDelay);
-    analogies();
+    pageDelay = setTimeout(function() {
+      analogies();
+      clearTimeout(pageDelay);
+    }, 600);
   });
 
   $('.engenderButton').click(function() {
