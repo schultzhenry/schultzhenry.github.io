@@ -193,10 +193,7 @@ $(document).ready(function() {
     };
 
     $('#infoText').text(
-      'Thanks for visiting my website. ' +
-      'It\'s still under development. ' +
-      'If you\'d like to see more of my work, ' +
-      'check back soon!'
+      'Thanks for visiting my website! ' +
     );
   };
 
