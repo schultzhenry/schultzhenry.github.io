@@ -190,6 +190,8 @@ $(document).ready(function() {
         'pointer-events':'none'
       });
     };
+
+    // $('#info').append()
   };
 
   function analogies() {
