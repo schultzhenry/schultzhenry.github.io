@@ -287,13 +287,13 @@ $(document).ready(function() {
       "}" +
       "@media screen and (max-width: 480px) {" +
         ".item {" +
-          "font-size:22px;" +
+          "font-size:26px;" +
           "padding:4px 4px 0px 4px;" +
         "}" +
       "}" +
       "@media screen and (max-width: 300px) {" +
         ".item {" +
-          "font-size:16px;" +
+          "font-size:18px;" +
           "padding:2px 2px 0px 2px;" +
         "}" +
       "}"
