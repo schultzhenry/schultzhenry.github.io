@@ -19,6 +19,13 @@ $(document).ready(function() {
   var play = true;
   var speed = 800;
 
+  $('#body').css({
+    'position':'fixed',
+    'top':'0px',
+    'left':'0px',
+    'width':'100vw',
+    'height':'100vh'
+  })
   // Remember device as touch capable if touch
   // action detected.
   var detectMouse = function(e){
@@ -151,6 +158,14 @@ $(document).ready(function() {
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
 
+    $('#body').css({
+      'position':'fixed',
+      'top':'0px',
+      'left':'0px',
+      'width':'100vw',
+      'height':'100vh'
+    })
+    
     $('#infoText').css({
       'position': 'absolute',
       'top': '16px',
