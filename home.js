@@ -592,6 +592,8 @@ $(document).ready(function() {
 
   respond();
 
+  window.onhashchange = respond();
+
   $('.homeButton').click(function() {
     console.log('Loading homepage...')
     home();
