@@ -410,6 +410,8 @@ $(document).ready(function() {
     navIconColor = 'rgba(230, 230, 250, 1)';
     navIconStroke = 'rgba(0, 0, 0, 1)';
 
+    $('body').css('background','lavender');
+
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
 
     $('#menu, #info').css('border','none');
@@ -444,7 +446,6 @@ $(document).ready(function() {
       'left': '50%',
       'transform': 'translate(-50%, 0%)',
       'height':'100vh',
-      'background':'lavender',
       'overflow':'auto'
     });
 
