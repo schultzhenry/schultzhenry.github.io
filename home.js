@@ -69,7 +69,7 @@ $(document).ready(function() {
     'padding-right': '40px',
     'color':'black'
   });
-  
+
   $('#menu').click(function() {
     if (menuToggle == false) {
       if (infoToggle == true) {
@@ -571,7 +571,6 @@ $(document).ready(function() {
     clearPage();
 
     $('body').css('background','black');
-    $('#content').append('<p color="white">working on this one...</p>');
     $('#infoText').css('color','white');
 
     navBg = 'rgba(0, 0, 0, 1)';
