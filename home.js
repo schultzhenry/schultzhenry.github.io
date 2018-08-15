@@ -415,10 +415,10 @@ $(document).ready(function() {
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
 
     $('#menu').css({
-      'border-right':'1px solid ' + navBorder
+      'border-right':'2px solid ' + navBorder
     });
     $('#info').css({
-      'border-left':'1px solid ' + navBorder
+      'border-left':'2px solid ' + navBorder
     });
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
