@@ -472,12 +472,12 @@ $(document).ready(function() {
           "width: Calc(100vw - 86px); " +
         "} " +
         ".engenderText { " +
-          "font-size: 20px; " +
+          "font-size: 21px; " +
           "padding-left: 0px;" +
           "padding-right: 0px;" +
         "}" +
       "} " +
-      "@media screen and (max-width: 360px) { " +
+      "@media screen and (max-width: 460px) { " +
         "#engenderContent { " +
           "width: Calc(100vw - 86px); " +
         "} " +
