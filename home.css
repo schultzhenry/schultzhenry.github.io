@@ -81,3 +81,10 @@
   position: absolute;
   top: 0px;
 }
+
+.infoText {
+  position: absolute;
+  top: 44px;
+  left: 44px;
+  font-size: 28pt;
+}
