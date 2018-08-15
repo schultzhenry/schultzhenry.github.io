@@ -406,7 +406,7 @@ $(document).ready(function() {
 
     navBg = 'rgba(230, 230, 250, 1)';
     navBgHover = 'rgba(230, 230, 250, 1)';
-    navBorder = 'Thistle';
+    navBorder = 'rgba(0, 0, 0, 0)';
     navIconColor = 'rgba(230, 230, 250, 1)';
     navIconStroke = 'rgba(0, 0, 0, 1)';
 
@@ -414,12 +414,7 @@ $(document).ready(function() {
 
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
 
-    $('#menu').css({
-      'border-right':'2px solid ' + navBorder
-    });
-    $('#info').css({
-      'border-left':'2px solid ' + navBorder
-    });
+    $('#menu, #info').css('border','none');
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
     $('.navIcon polygon, .navIcon rect').css('stroke',navIconStroke);
