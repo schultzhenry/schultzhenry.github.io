@@ -69,8 +69,10 @@ $(document).ready(function() {
 
   $('#menu').append(menuOpen);
   $('#menu').append(menuClose);
+  $('#menuClose').css('visibility','hidden');
   $('#menu').append(infoOpen);
   $('#menu').append(infoClose);
+  $('#infoClose').css('visibility','hidden');
 
   $('.navIcon').css({
     'width':'44px',
