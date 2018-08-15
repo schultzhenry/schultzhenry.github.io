@@ -462,12 +462,22 @@ $(document).ready(function() {
           "width: Calc(100vw - 86px); " +
         "} " +
         ".engenderText { " +
-          "font-size: 20px; " +
+          "font-size: 24px; " +
           "padding-left: 24px;" +
           "padding-right: 24px;" +
         "}" +
       "} " +
       "@media screen and (max-width: 520px) { " +
+        "#engenderContent { " +
+          "width: Calc(100vw - 86px); " +
+        "} " +
+        ".engenderText { " +
+          "font-size: 20px; " +
+          "padding-left: 24px;" +
+          "padding-right: 24px;" +
+        "}" +
+      "} " +
+      "@media screen and (max-width: 360px) { " +
         "#engenderContent { " +
           "width: Calc(100vw - 86px); " +
         "} " +
