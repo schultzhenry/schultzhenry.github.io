@@ -625,7 +625,7 @@ $(document).ready(function() {
 
   $('.homeButton').click(function() {
     console.log('Loading homepage...')
-    home();
+    // home();
   });
 
   $('.analogiesButton').click(function() {
