@@ -84,7 +84,7 @@
   font-weight: bold;
 }
 
-#menuOpen {
+#menuOpen, #menuClose {
   position: absolute;
   top: 0px;
   right: 0px;
