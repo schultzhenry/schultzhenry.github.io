@@ -528,7 +528,24 @@ $(document).ready(function() {
     clearPage();
 
     $('body').css('background','black');
-    $('#content').append('<p>working on this one...</p>');
+    $('#content').append('<p color="white">working on this one...</p>');
+
+    navBg = 'rgba(0, 0, 0, 1)';
+    navBgHover = 'rgba(0, 0, 0, 1)';
+    navBorder = 'rgba(0, 0, 0, 0)';
+    navIconColor = 'rgba(0, 0, 0, 1)';
+    navIconStroke = 'rgba(255, 255, 255, 1)';
+
+    $('#menu, #info').css('border','none');
+
+    $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
+    $('.navIcon polygon, .navIcon rect').css('stroke',navIconStroke);
+
+    if (touchDevice == true) {
+      $('#menu, #info').css('background',navBgHover);
+    } else {
+      $('#menu, #info').css('background',navBg);
+    }
 
   }
   function contact() {
