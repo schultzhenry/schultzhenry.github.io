@@ -344,6 +344,7 @@ $(document).ready(function() {
           play = true;
         } else {
           clearTimeout(delay);
+          clearTimeout(pickDelay);
           clearInterval(interval);
           $('#control').attr('src', 'play.svg');
           play = false;
@@ -558,9 +559,13 @@ $(document).ready(function() {
   });
 
   $('.analogiesButton').click(function() {
-    window.clearInterval(interval);
-    window.clearTimeout(delay);
-    window.clearTimeout(pickDelay);
+    if (play == false) {
+      $('#control').attr('src', 'pause.svg');
+      play = true;
+    }
+    clearInterval(interval);
+    clearTimeout(delay);
+    clearTimeout(pickDelay);
     analogies();
   });
 
