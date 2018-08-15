@@ -325,8 +325,8 @@ $(document).ready(function() {
       return emojis[i];
     }
 
-    function pickdelay(c1, c2, c3) {
-      pickDelay = setTimeout(function(c1, c2, c3) {
+    function pickdelay() {
+      pickDelay = setTimeout(function() {
         $(c1).text(pick());
         $(c2).text(pick());
         $(c3).text(pick());
@@ -335,12 +335,12 @@ $(document).ready(function() {
 
     function animate() {
       interval = setInterval(function() {
-        c1 = array[randomizer(array.length)];
-        c2 = array[randomizer(array.length)];
-        c3 = array[randomizer(array.length)];
+        let c1 = array[randomizer(array.length)];
+        let c2 = array[randomizer(array.length)];
+        let c3 = array[randomizer(array.length)];
         let selectors = c1 + ", " + c2 + ", " + c3;
         $(selectors).fadeTo(speed,0);
-        pickdelay(c1, c2, c3);
+        pickdelay();
         $(selectors).fadeTo(speed,1);
         $(".emoji").css("background", "white");
       }, (speed * 10));
