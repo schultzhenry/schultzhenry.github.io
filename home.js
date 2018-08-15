@@ -51,11 +51,11 @@ $(document).ready(function() {
   $('.navIcon').attr('data-name','Layer 1');
   $('.navIcon').attr('xmlns','http://www.w3.org/2000/svg');
   $('.navIcon').attr('viewBox','0 0 44 44');
+  $('.navIcon').attr('width','44px');
+  $('.navIcon').attr('height','44px');
   $('.navIcon').css('position','absolute');
   $('.navIcon').css('z-index','2000');
   $('.navIcon').css('fill','green');
-  $('.navIcon').css('width','44px');
-  $('.navIcon').css('height','44px');
 
   $('.navIcon polygon, .navIcon rect').attr('style','fill:green');
 
