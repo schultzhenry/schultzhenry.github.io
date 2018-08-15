@@ -156,6 +156,8 @@ $(document).ready(function() {
     navIconColor = 'rgba(255, 0, 0, 1)';
     navIconStroke = 'rgba(0, 0, 0, 1)';
 
+    $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
+
     // Number of spray images to choose from.
     var imgNum = 10;
 
@@ -218,6 +220,7 @@ $(document).ready(function() {
     navIconStroke = 'rgba(0, 0, 0, 1)';
 
     $('#menu, #info').css('border','none');
+    $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
     $('.navIcon polygon, .navIcon rect').css('stroke',navIconStroke);
@@ -407,6 +410,8 @@ $(document).ready(function() {
     navIconColor = 'rgba(230, 230, 250, 1)';
     navIconStroke = 'rgba(0, 0, 0, 1)';
 
+    $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
+
     $('#menu, #info').css('border','none');
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
@@ -549,7 +554,7 @@ $(document).ready(function() {
       $('#menu, #info').css('background',navBg);
     }
 
-    $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
+    $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuWhite');
 
   }
 
@@ -586,6 +591,8 @@ $(document).ready(function() {
       'text-decoration':'none',
     });
 
+    $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
+
     // When mouse hovers on contact button
     $('#contact').mouseenter(function() {
       $('#content').append('<img id="plane" src="plane.svg" />');
@@ -614,6 +621,8 @@ $(document).ready(function() {
   }
 
   function respond() {
+    $('#menu a, #menu a:visited, #info a, #info a:visited').removeClass('menuWhite');
+    $('#menu a, #menu a:visited, #info a, #info a:visited').removeClass('menuBlack');
     let loc = window.location.href;
     console.log("Visiting " + String(loc));
     if ([
