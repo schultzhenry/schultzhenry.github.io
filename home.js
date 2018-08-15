@@ -8,13 +8,12 @@ $(document).ready(function() {
   var menuBg = 'rgba(255, 0, 0, 0.75)';
   var menuBgHover = 'rgba(255, 0, 0, 1)';
   var menuBorder = 'rgba(0, 0, 0, 1)';
-  var menuButton = 'rgba(255, 0, 0, 1)';
+  var navIconColor = 'rgba(255, 0, 0, 1)';
 
   // Info styling variables
   var infoBg = 'rgba(255, 0, 0, 0.75)';
   var infoBgHover = 'rgba(255, 0, 0, 1)';
   var infoBorder = 'rgba(0, 0, 0, 1)';
-  var infoButton = 'rgba(255, 0, 0, 1)';
 
   // var delay;
   var delay;
@@ -83,14 +82,12 @@ $(document).ready(function() {
       menuToggle = true;
       $('#menuOpen').css('visibility','hidden');
       $('#menuClose').css('visibility','visible');
-      $(this).
       $(this).removeClass('closedMenu');
       $(this).addClass('openMenu');
     } else {
       menuToggle = false;
       $('#menuClose').css('visibility','hidden');
       $('#menuOpen').css('visibility','visible');
-      $('#menuButton').text('+');
       $(this).removeClass('openMenu');
       $(this).addClass('closedMenu');
     }
