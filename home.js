@@ -553,7 +553,7 @@ $(document).ready(function() {
     } else {
       $('#menu, #info').css('background',navBg);
     }
-
+    $('#menu a, #menu a:visited, #info a, #info a:visited').removeClass('menuBlack');
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuWhite');
 
   }
