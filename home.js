@@ -463,8 +463,8 @@ $(document).ready(function() {
         "} " +
         ".engenderText { " +
           "font-size: 24px; " +
-          "padding-left: 24px;" +
-          "padding-right: 24px;" +
+          "padding-left: 64px;" +
+          "padding-right: 64px;" +
         "}" +
       "} " +
       "@media screen and (max-width: 520px) { " +
