@@ -39,16 +39,16 @@ $(document).ready(function() {
     detectMouse
   );
 
-  plus = '<?xml version="1.0" encoding="utf-8"?>' +
-         '<svg version="1.1" id="Layer_1" ' +
+  plus = '<svg version="1.1" id="Layer_1" ' +
          'xmlns="http://www.w3.org/2000/svg" ' +
          'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
          'x="0px" y="0px" viewBox="0 0 44 44" ' +
          'style="enable-background:new 0 0 44 44;" ' +
          'xml:space="preserve">' +
          '<polygon fill="green" points="25,19 25,8 19,8 19,19 8,19 8,25 19,25 19,36 25,36 25,25 36,25 36,19 	"/></svg>'
-         
+
   $('#menu').append('<img id="test" src="images/site-icons-01.svg" alt="icon1">');
+  $('#menu').append(plus);
   $('#test svg polygon').css('fill','blue');
 
   $('#menu').append('<svg class="navIcon" id="menuOpen"></svg>');
