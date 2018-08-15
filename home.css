@@ -83,3 +83,9 @@
   -webkit-text-stroke: 1.5px black;
   font-weight: bold;
 }
+
+#menuOpen {
+  position: absolute;
+  top: -40px;
+  right: 12px;
+}
