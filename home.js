@@ -162,7 +162,7 @@ $(document).ready(function() {
     navBg = 'rgba(255, 0, 0, 0.75)';
     navBgHover = 'rgba(255, 0, 0, 1)';
     navBorder = 'rgba(0, 0, 0, 1)';
-    navIconColor = 'rgba(255, 255, 255, 1)';
+    navIconColor = 'rgba(255, 0, 255, 1)';
 
     // Number of spray images to choose from.
     var imgNum = 10;
