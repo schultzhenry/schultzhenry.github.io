@@ -355,11 +355,6 @@ $(document).ready(function() {
         }
       }
     });
-
-    $('.menuButton').click(function() {
-      clearTimeout(delay);
-      clearInterval(interval);
-    });
   }
 
   function engender() {
