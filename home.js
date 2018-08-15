@@ -483,8 +483,6 @@ $(document).ready(function() {
         "} " +
         ".engenderText { " +
           "font-size: 16px; " +
-          "padding-left: 24px;" +
-          "padding-right: 24px;" +
         "}" +
       "} "
     );
