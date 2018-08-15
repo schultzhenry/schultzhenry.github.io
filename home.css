@@ -74,7 +74,7 @@
 }
 
 #menuOpen, #infoOpen {
-  transition: all 0.4s;
+  transition: color 0.4s;
   position: absolute;
   top: 0px;
 }
