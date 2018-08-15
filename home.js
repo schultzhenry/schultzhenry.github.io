@@ -55,6 +55,7 @@ $(document).ready(function() {
 
   $('#menu').append(menuOpen);
   $('#info').append(infoOpen);
+  $('#menu, info').css('border','none');
 
   $('.navIcon').css({
     'width':'44px',
