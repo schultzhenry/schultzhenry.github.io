@@ -213,7 +213,7 @@ $(document).ready(function() {
 
     $('.analogiesStyles').empty();
 
-    navBg = 'rgba(255, 255, 255, 0.85)';
+    navBg = 'rgba(255, 255, 255, 0.9)';
     navBgHover = 'rgba(255, 255, 255, 1)';
     navBorder = 'rgba(0, 0, 0, 1)';
     navIconColor = 'rgba(255, 255, 255, 1)';
@@ -404,7 +404,7 @@ $(document).ready(function() {
 
     clearPage();
 
-    navBg = 'rgba(230, 230, 250, 0.85)';
+    navBg = 'rgba(230, 230, 250, 0.9)';
     navBgHover = 'rgba(230, 230, 250, 1)';
     navBorder = 'rgba(0, 0, 0, 0)';
     navIconColor = 'rgba(230, 230, 250, 1)';
