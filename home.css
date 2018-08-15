@@ -80,18 +80,14 @@
   top: 4px;
 }
 
-#infoText {
-  position: absolute;
-  top: 16px;
-  left: 44px;
-  font-size: 18pt;
-  padding-right: 44px;
-}
-
 .menuBlack {
   color: black;
 }
 
 .menuWhite {
   color: white;
+}
+
+button:focus {
+  outline: 0;
 }
