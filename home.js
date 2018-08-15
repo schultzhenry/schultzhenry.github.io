@@ -39,36 +39,43 @@ $(document).ready(function() {
     detectMouse
   );
 
-  plus = '<svg version="1.1" id="Layer_1" ' +
-         'xmlns="http://www.w3.org/2000/svg" ' +
-         'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
-         'x="0px" y="0px" viewBox="0 0 44 44" ' +
-         'style="enable-background:new 0 0 44 44;" ' +
-         'xml:space="preserve">' +
-         '<polygon fill="green" points="25,19 25,8 19,8 19,19 8,19 8,25 19,25 19,36 25,36 25,25 36,25 36,19 	"/></svg>'
+  navSvg1 = '<svg version="1.1" id="Layer_1" ' +
+            'class="navIcon"' +
+            'xmlns="http://www.w3.org/2000/svg" ' +
+            'xmlns:xlink="http://www.w3.org/1999/xlink" ' +
+            'x="0px" y="0px" viewBox="0 0 44 44" ' +
+            'style="enable-background:new 0 0 44 44;" ' +
+            'xml:space="preserve">'
 
-  $('#menu').append('<img id="test" src="images/site-icons-01.svg" alt="icon1">');
-  $('#menu').append(plus);
-  $('#test svg polygon').css('fill','blue');
+  navSvg2 = '</svg>'
 
-  $('#menu').append('<svg class="navIcon" id="menuOpen"></svg>');
-  $('#menuOpen').append('<polygon fill="blue" points="25 19 25 8 19 8 19 19 8 19 8 25 19 25 19 36 25 36 25 25 36 25 36 19 25 19"/>');
-  $('#menu').append('<svg class="navIcon" id="menuClose"></svg>');
-  $('#menuClose').append('<rect x="19" y="8" width="6" height="28" transform="translate(44) rotate(90)"/>');
-  $('#info').append('<svg class="navIcon" id="infoOpen"></svg>');
-  $('#infoOpen').append('<polygon points="35.62 17.6 32.62 12.4 25 16.8 25 8 19 8 19 16.8 11.38 12.4 8.38 17.6 16 22 8.38 26.4 11.38 31.6 19 27.2 19 36 25 36 25 27.2 32.62 31.6 35.62 26.4 28 22 35.62 17.6"/>');
-  $('#info').append('<svg class="navIcon" id="infoClose"></svg>');
-  $('#infoClose').append('<rect x="19" y="8" width="6" height="28"/>');
+  menuOpen = navSvg1 +
+             '<polygon fill="white" ' +
+             'points="25,19 25,8 19,8 19,19 8,19 8,25 19,25 19,36 25,36 25,25 36,25 36,19 	"/>' +
+             navSvg2;
 
-  $('.navIcon').attr('xmlns','http://www.w3.org/2000/svg');
-  $('.navIcon').attr('viewBox','0 0 44 44');
-  $('.navIcon').attr('width','44px');
-  $('.navIcon').attr('height','44px');
-  $('.navIcon').css('position','relative');
-  $('.navIcon').css('z-index','2000');
-  $('.navIcon').css('fill','green');
+  menuClose = navSvg1 +
+              '<polygon fill="white" ' +
+              'points="35.6,17.6 32.6,12.4 25,16.8 25,8 19,8 19,16.8 11.4,12.4 8.4,17.6 16,22 8.4,26.4 11.4,31.6 19,27.2 19,36 25,36 25,27.2 32.6,31.6 35.6,26.4 28,22 	"/>'
+              navSvg2;
 
-  $('.navIcon polygon, .navIcon rect').attr('style','fill:green');
+  infoOpen = navSvg1 +
+             '<rect fill="white" x="8" y="19" class="st0" width="28" height="6"/>'
+             navSvg2;
+
+  infoClose = navSvg1 +
+              '<rect fill="white" x="19" y="8" class="st0" width="6" height="28"/>'
+              navSvg2;
+
+  $('#menu').append(menuOpen);
+  $('#menu').append(menuClose);
+  $('#menu').append(infoOpen);
+  $('#menu').append(infoClose);
+
+  $('.navIcon').css({
+    'width':'44px',
+    'height':'44px'
+  });
 
   // Setup content for about page.
   function home() {
