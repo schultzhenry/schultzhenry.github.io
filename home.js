@@ -199,6 +199,8 @@ $(document).ready(function() {
 
   function analogies() {
 
+    $('#menu, #info').css('border','none');
+
     $('#content').empty();
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
@@ -208,7 +210,7 @@ $(document).ready(function() {
     navBgHover = 'rgba(255, 255, 255, 1)';
     navBorder = 'rgba(255, 255, 255, 1)';
     navIconColor = 'rgba(255, 255, 255, 1)';
-    
+
     console.log('about to set nav color...');
     $('#menu').css('border-right','1px solid '+navBorder);
     $('#info').css('border-left','1px solid '+navBorder);
