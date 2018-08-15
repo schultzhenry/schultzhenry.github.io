@@ -621,6 +621,24 @@ $(document).ready(function() {
     ].indexOf(loc) >= 0) {
       console.log('Loading engender page...');
       engender();
+    } else if ([
+      'http://schultzhenry.com/#instructions',
+      'https://schultzhenry.com/#instructions'
+    ].indexOf(loc) >= 0) {
+      console.log('Loading instructions page...');
+      // instructions();
+    } else if ([
+      'http://schultzhenry.com/#searchlight',
+      'https://schultzhenry.com/#searchlight'
+    ].indexOf(loc) >= 0) {
+      console.log('Loading searchlight page...');
+      searchlight();
+    } else if ([
+      'http://schultzhenry.com/#contact',
+      'https://schultzhenry.com/#contact'
+    ].indexOf(loc) >= 0) {
+      console.log('Loading contact page...');
+      contact();
     }
   }
 
@@ -628,16 +646,6 @@ $(document).ready(function() {
 
   $(window).on('popstate', function(event) {
     respond();
-  });
-
-  $('.searchlightButton').click(function() {
-    console.log('Loading searchlight page...');
-    searchlight();
-  })
-
-  $('.contactButton').click(function() {
-    console.log('Loading contact page...');
-    contact();
   });
 
 });
