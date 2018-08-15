@@ -212,7 +212,7 @@ $(document).ready(function() {
     };
 
     $('#infoText').text(
-      'Thanks for visiting my website! '
+      'Thanks for stopping by!'
     );
   };
 
