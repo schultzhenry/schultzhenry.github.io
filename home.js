@@ -592,10 +592,8 @@ $(document).ready(function() {
 
   respond();
 
-  window.onpopstate = respond();
-
   $(window).on('popstate', function(event) {
-    alert("pop");
+    respond();
   });
 
   $('.homeButton').click(function() {
