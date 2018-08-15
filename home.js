@@ -52,7 +52,7 @@ $(document).ready(function() {
   $('.navIcon').attr('viewBox','0 0 44 44');
   $('.navIcon').attr('width','44px');
   $('.navIcon').attr('height','44px');
-  $('.navIcon').css('position','absolute');
+  $('.navIcon').css('position','relative');
   $('.navIcon').css('z-index','2000');
   $('.navIcon').css('fill','green');
 
