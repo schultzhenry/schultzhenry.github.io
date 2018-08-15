@@ -431,14 +431,13 @@ $(document).ready(function() {
   function engender() {
 
     clearPage();
+    $('body').css('background','lavender');
 
     navBg = 'rgba(230, 230, 250, 0.9)';
     navBgHover = 'rgba(230, 230, 250, 1)';
     navBorder = 'rgba(0, 0, 0, 0)';
     navIconColor = 'rgba(230, 230, 250, 1)';
     navIconStroke = 'rgba(0, 0, 0, 1)';
-
-    $('body').css('background','lavender');
 
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
 
@@ -466,6 +465,7 @@ $(document).ready(function() {
 
     $('#content').append('<div id=\'engenderContent\'></div');
     $('#engenderContent').css({
+      'background':'lavender',
       'position': 'absolute',
       'margin': '0',
       'padding-top':'64px',
