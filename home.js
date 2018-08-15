@@ -191,7 +191,7 @@ $(document).ready(function() {
       });
     };
 
-    // $('#info').append()
+    $('#infoText').text("Hey!");
   };
 
   function analogies() {
