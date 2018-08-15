@@ -16,7 +16,6 @@ $(document).ready(function() {
   var interval;
 
   var play = true;
-  var array = ["#one", "#two", "#three", "#four"];
   var speed = 800;
 
   // Remember device as touch capable if touch
@@ -315,6 +314,8 @@ $(document).ready(function() {
       "🕯", "🔍", "🗞", "♻️", "💯", "❤️"
     ];
 
+    var array = ["#one", "#two", "#three", "#four"];
+
     function randomizer(range) {
       return Math.floor(Math.random() * range);
     }
@@ -325,7 +326,7 @@ $(document).ready(function() {
     }
 
     function pickdelay(c1, c2, c3) {
-      pickDelay = setTimeout( (c1, c2, c3) => {
+      pickDelay = setTimeout(function(c1, c2, c3) {
         $(c1).text(pick());
         $(c2).text(pick());
         $(c3).text(pick());
