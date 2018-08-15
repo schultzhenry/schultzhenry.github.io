@@ -54,6 +54,8 @@ $(document).ready(function() {
   $('.navIcon').css('position','absolute');
   $('.navIcon').css('z-index','2000');
   $('.navIcon').css('fill','green');
+  $('.navIcon').css('width','44px');
+  $('.navIcon').css('height','44px');
 
   $('.navIcon polygon, .navIcon rect').attr('style','fill:green');
 
