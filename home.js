@@ -211,6 +211,7 @@ $(document).ready(function() {
     navIconColor = 'rgba(255, 255, 255, 1)';
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
+    $('.navIcon polygon, .navIcon rect').css('stroke','rgba(0, 0, 0, 1)');
     if (touchDevice == true) {
       $('#menu, #info').css('background',navBgHover);
     } else {
