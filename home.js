@@ -14,7 +14,6 @@ $(document).ready(function() {
   var delay;
   var pickDelay;
   var interval;
-  var pageDelay;
 
   var play = true;
   var array = ["#one", "#two", "#three", "#four"];
@@ -139,6 +138,7 @@ $(document).ready(function() {
 
   // Setup content for about page.
   function home() {
+
     $('#content').empty();
     $('#content').removeAttr('style');
     $('body').removeAttr('style');
@@ -602,10 +602,7 @@ $(document).ready(function() {
     clearInterval(interval);
     clearTimeout(delay);
     clearTimeout(pickDelay);
-    pageDelay = setTimeout(function() {
-      analogies();
-      clearTimeout(pageDelay);
-    }, 600);
+    analogies();
   });
 
   $('.engenderButton').click(function() {
