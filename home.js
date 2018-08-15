@@ -198,6 +198,17 @@ $(document).ready(function() {
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
     $('.navIcon polygon, .navIcon rect').css('stroke',navIconStroke);
 
+    $('#content').css({
+      'text-align':'center',
+      'position': 'fixed',
+      'top': '0px',
+      'left': '0px',
+      'width': '100vw',
+      'height': '100vh',
+      'margin':'auto',
+      'overflow':'auto'
+    });
+
     function randomizer(range) {
       return Math.floor(Math.random()*range);
     }
@@ -250,7 +261,7 @@ $(document).ready(function() {
     $('#content').css({
       'z-index':'1',
       'text-align':'center',
-      'position': 'absolute',
+      'position': 'fixed',
       'top': '0px',
       'left': '0px',
       'width': '100vw',
@@ -443,7 +454,7 @@ $(document).ready(function() {
 
     $('#content').css({
       'text-align':'center',
-      'position': 'absolute',
+      'position': 'fixed',
       'top': '0px',
       'left': '0px',
       'width': '100vw',
@@ -592,6 +603,17 @@ $(document).ready(function() {
     $('#menu a, #menu a:visited, #info a, #info a:visited').removeClass('menuBlack');
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuWhite');
 
+    $('#content').css({
+      'text-align':'center',
+      'position': 'fixed',
+      'top': '0px',
+      'left': '0px',
+      'width': '100vw',
+      'height': '100vh',
+      'margin':'auto',
+      'overflow':'auto'
+    });
+    
     if (touchDevice == true) {
       $('#content').append(
         '<p style="color:white">Searchlight is a bookmarklet that ' +
