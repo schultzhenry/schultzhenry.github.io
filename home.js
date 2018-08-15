@@ -61,6 +61,15 @@ $(document).ready(function() {
 
   $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
 
+  $('#infoText').css({
+    'position': 'absolute',
+    'top': '16px',
+    'left': '44px',
+    'font-size': '18pt',
+    'padding-right': '40px',
+    'color':'black'
+  });
+  
   $('#menu').click(function() {
     if (menuToggle == false) {
       if (infoToggle == true) {
