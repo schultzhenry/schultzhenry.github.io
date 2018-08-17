@@ -28,7 +28,7 @@ $(document).ready(function() {
     'height':'100vh',
     'z-index':'1',
   });
-  
+
   // Remember device as touch capable if touch
   // action detected.
   var detectMouse = function(e){
@@ -497,7 +497,6 @@ $(document).ready(function() {
 
     $('#content').append('<div id=\'engenderContent\'></div');
     $('#engenderContent').css({
-      'background':'lavender',
       'position': 'absolute',
       'margin': '0',
       'padding-top':'64px',
@@ -554,7 +553,7 @@ $(document).ready(function() {
     $('#engenderLogo').css({
       'margin':'auto',
       'width':'96px',
-      'margin-bottom':'24px'
+      'margin-bottom':'24px',
     });
 
     $('#engenderContent').append(
@@ -563,19 +562,22 @@ $(document).ready(function() {
       'Engender to advocate for equity and inclusion at Yale. ' +
       'Then, as now, we believed that institutions can only ' +
       'contribute to an equitable society if they effect ' +
-      'inclusive membership policies.</p>' +
-      '<p class="engenderText">&#8195;For our first initiative, we are working on gender integration ' +
-      'of Greek organizations given their discrim&shy;inatory ' +
-      'nature. It is our view that this unchallenged discrim&shy;ination ' +
-      'enables the harmful behaviors including sexual harassment ' +
-      'and assault, bias incidents, hazing and substance abuse that are endemic to ' +
+      'inclusive membership policies. ' +
+
+      'For our first initiative, we are working on gender integration ' +
+      'of Greek organizations given their discrim&shy;inatory nature. ' +
+      'It is our view that this unchallenged discrim&shy;ination ' +
+      'enables the harmful behaviors including hazing, substance abuse ' +
+      'and acts of bias and hate that are unfortunately so common in ' +
       'these groups.</p>' +
-      '<p class="engenderText" id="p2">&#8195;During my time with Engender, ' +
-      'I have managed our team&#8217;s internal ' +
-      'and external communications, facilitated new member applications ' +
+
+      '<p class="engenderText" id="p2">&#8195;During my time with ' +
+      'Engender, I have managed our team&#8217;s internal and ' +
+      'external communications, facilitated new member applications ' +
       'and onboarding, written up policy recommendations for the Yale ' +
       'admin&shy;istration, designed our visual identity and organized a ' +
       'group of women and non-binary students to rush a fraternity. ' +
+
       'You can read more about Engender on our ' +
       '<a class="engenderLink" href="http://engender.space">website</a> ' +
       'or connect with us on <a class="engenderLink" ' +
