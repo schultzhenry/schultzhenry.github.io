@@ -25,8 +25,10 @@ $(document).ready(function() {
     'top':'0px',
     'left':'0px',
     'width':'100vw',
-    'height':'100vh'
-  })
+    'height':'100vh',
+    'z-index':'1',
+  });
+  
   // Remember device as touch capable if touch
   // action detected.
   var detectMouse = function(e){
@@ -189,17 +191,16 @@ $(document).ready(function() {
     navIconColor = 'rgba(255, 0, 0, 1)';
     navIconStroke = 'rgba(0, 0, 0, 1)';
 
+    // Change page background
+    bgColor = 'rgba(255, 0, 0, 1)';
     $('#background').css({
-      'background':bgColor
+      'background':bgColor,
     });
-    
+
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
 
     // Number of spray images to choose from.
     var imgNum = 10;
-
-    // Randomly arrange spray images on page.
-    $('body').css({'background':'red'});
 
     $('#menu').css({
       'border-right':'1px solid ' + navBorder
@@ -259,6 +260,12 @@ $(document).ready(function() {
 
     clearPage();
 
+    // Change page background
+    bgColor = 'rgba(255, 255, 255, 1)';
+    $('#background').css({
+      'background':bgColor,
+    });
+
     $('.analogiesStyles').empty();
 
     navBg = 'rgba(255, 255, 255, 0.9)';
@@ -269,7 +276,6 @@ $(document).ready(function() {
 
     $('#menu, #info').css('border','none');
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
-    $('body').css('background','white');
 
     $('.navIcon polygon, .navIcon rect').css('fill',navIconColor);
     $('.navIcon polygon, .navIcon rect').css('stroke',navIconStroke);
@@ -452,7 +458,12 @@ $(document).ready(function() {
   function engender() {
 
     clearPage();
-    $('body').css('background','lavender');
+
+    // Change page background
+    bgColor = 'lavender';
+    $('#background').css({
+      'background':bgColor,
+    });
 
     navBg = 'rgba(230, 230, 250, 0.9)';
     navBgHover = 'rgba(230, 230, 250, 1)';
