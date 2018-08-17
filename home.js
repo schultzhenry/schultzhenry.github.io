@@ -225,6 +225,10 @@ $(document).ready(function() {
       'overflow':'auto'
     });
 
+    $('#background').css({
+      'background':'green'
+    });
+
     function randomizer(range) {
       return Math.floor(Math.random()*range);
     }
