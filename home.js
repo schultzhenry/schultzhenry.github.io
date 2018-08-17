@@ -5,6 +5,7 @@ $(document).ready(function() {
   var curSize = 26;
   var touchDevice = false;
 
+  var bgColor = 'rgba(255, 0, 0, 1)';
   // Nav styling variables
   var navBg = 'rgba(255, 0, 0, 0.75)';
   var navBgHover = 'rgba(255, 0, 0, 1)';
@@ -188,6 +189,10 @@ $(document).ready(function() {
     navIconColor = 'rgba(255, 0, 0, 1)';
     navIconStroke = 'rgba(0, 0, 0, 1)';
 
+    $('#background').css({
+      'background':bgColor
+    });
+    
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
 
     // Number of spray images to choose from.
@@ -223,10 +228,6 @@ $(document).ready(function() {
       'height': '100vh',
       'margin':'auto',
       'overflow':'auto'
-    });
-
-    $('#background').css({
-      'background':'green'
     });
 
     function randomizer(range) {
