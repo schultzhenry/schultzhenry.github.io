@@ -566,7 +566,7 @@ $(document).ready(function() {
 
       'For our first initiative, we are working on gender integration ' +
       'of Greek organizations given their discrim&shy;inatory nature ' +
-      'and dis&shy;proportionate control over social life on campus. ' +
+      'and dis&shy;proportionate control over campus social life. ' +
       'It is our view that this unchallenged discrim&shy;ination ' +
       'enables the harmful behaviors including hazing, substance abuse ' +
       'and acts of bias and hate that so many members of these groups ' +
