@@ -586,7 +586,7 @@ $(document).ready(function() {
       'href="https://www.facebook.com/engenderequality/">Facebook</a> ' +
       'and <a class="engenderLink" ' +
       'href="https://twitter.com/engenderyale">Twitter</a> ' +
-      'or click the links below to read some coverage pertaining ' +
+      'or see the links below for coverage pertaining ' +
       'to our efforts.</p>'
     );
 
