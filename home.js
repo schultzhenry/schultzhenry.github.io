@@ -596,13 +596,13 @@ $(document).ready(function() {
       'text-align':'justify',
       'margin':'0px',
       'hyphens':'manual',
-      'line-height':'1.4em'
+      'line-height':'1.3em'
     });
     $('.engenderText a').css({
       'color':'black',
       'text-decoration':'none',
       'border-bottom':'1px dotted black',
-      'line-height':'1.4em'
+      'line-height':'1.3em'
     });
 
     $('.engenderLink').mouseenter(function() {
