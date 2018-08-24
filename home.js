@@ -591,11 +591,12 @@ $(document).ready(function() {
       'or see the links below for coverage pertaining ' +
       'to our efforts.</p>' +
 
+      '<br />' +
       '<p class="engenderText">' +
       '04.2018\t' +
       '<a class="engenderLink" href="https://law.yale.edu/yls-today/news/yale-law-hosts-panel-metoo-movement-0">' +
-      'Yale Law School</a>\n' +
-      '\tPanel: Sexual Harassment Law in the Age of Trump and #MeToo' +
+      'YLS</a>, ' +
+      '\tPanel on Sexual Harassment Law' +
       '</p>'
     );
 
