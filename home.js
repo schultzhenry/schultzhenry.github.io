@@ -593,10 +593,9 @@ $(document).ready(function() {
 
       '<br />' +
       '<p class="engenderText">' +
-      '04.2018\t' +
       '<a class="engenderLink" href="https://law.yale.edu/yls-today/news/yale-law-hosts-panel-metoo-movement-0">' +
-      'YLS</a>, ' +
-      '\tPanel on Sexual Harassment Law' +
+      'Yale Law School</a>, ' +
+      '\tPanel on Sexual Harassment Law (04/2018)' +
       '</p>'
     );
 
