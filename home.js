@@ -485,7 +485,7 @@ $(document).ready(function() {
     }
 
     $('#content').css({
-      'text-align':'justify',
+      'text-align':'center',
       'position': 'fixed',
       'top': '0px',
       'left': '0px',
@@ -588,7 +588,7 @@ $(document).ready(function() {
       $('.engenderText').css({
         'padding-top':'0px',
         'padding-bottom':'0px',
-        'text-align':'left',
+        'text-align':'justify',
         'margin':'0px',
         'hyphens':'manual'
       });
