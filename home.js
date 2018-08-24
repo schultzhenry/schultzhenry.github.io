@@ -485,7 +485,7 @@ $(document).ready(function() {
     }
 
     $('#content').css({
-      'text-align':'center',
+      'text-align':'justify',
       'position': 'fixed',
       'top': '0px',
       'left': '0px',
