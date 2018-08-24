@@ -571,45 +571,50 @@ $(document).ready(function() {
       'and acts of bias and hate that are unfortunately so common in ' +
       'these groups.</p>' +
 
-      '<p class="engenderText" id="p2">&#8195;During my time with ' +
+      '<p class="engenderText">' +
+      '&#8195;During my time with ' +
       'Engender, I have managed our team&#8217;s internal and ' +
       'external communications, facilitated new member applications ' +
       'and onboarding, written up policy recommendations for the Yale ' +
       'admin&shy;istration, designed our visual identity and organized a ' +
-      'group of women and non-binary students to rush a fraternity. ' +
+      'group of women and non-binary students to rush a fraternity.</p>' +
 
-      'You can read more about Engender on our ' +
-      '<a class="engenderLink" href="http://engender.space">website</a> ' +
-      'or connect with us on <a class="engenderLink" ' +
+      '<p class="engenderText">' +
+      '&#8195;More information about Engender is available on our ' +
+      '<a class="engenderLink" href="http://engender.space">website</a>. ' +
+      'You can also connect with us on <a class="engenderLink" ' +
       'href="https://www.facebook.com/engenderequality/">Facebook</a> ' +
       'and <a class="engenderLink" ' +
-      'href="https://twitter.com/engenderyale">Twitter</a>.' +
-      '</p>');
-      $('.engenderText').css({
-        'padding-top':'0px',
-        'padding-bottom':'0px',
-        'text-align':'justify',
-        'margin':'0px',
-        'hyphens':'manual'
-      });
-      $('.engenderText a').css({
-        'color':'black',
-        'text-decoration':'none',
-        'border-bottom':'1px dotted black',
-        'line-height':'1.4em'
-      });
+      'href="https://twitter.com/engenderyale">Twitter</a>,' +
+      'or see the links below for notable events pertaining to our efforts.' +
+      '</p>' +
+      ''
+    );
 
-      $('.engenderLink').mouseenter(function() {
-        $(this).css({
-          'border-bottom':'1px solid black'
-        });
-      });
-      $('.engenderLink').mouseleave(function() {
-        $(this).css({
-          'border-bottom':'1px dotted black'
-        });
-      });
+    $('.engenderText').css({
+      'padding-top':'0px',
+      'padding-bottom':'0px',
+      'text-align':'justify',
+      'margin':'0px',
+      'hyphens':'manual'
+    });
+    $('.engenderText a').css({
+      'color':'black',
+      'text-decoration':'none',
+      'border-bottom':'1px dotted black',
+      'line-height':'1.4em'
+    });
 
+    $('.engenderLink').mouseenter(function() {
+      $(this).css({
+        'border-bottom':'1px solid black'
+      });
+    });
+    $('.engenderLink').mouseleave(function() {
+      $(this).css({
+        'border-bottom':'1px dotted black'
+      });
+    });
   };
 
   function searchlight() {
