@@ -593,7 +593,7 @@ $(document).ready(function() {
 
       '<p class="engenderText">' +
       '04.2018\t' +
-      '<a href="https://law.yale.edu/yls-today/news/yale-law-hosts-panel-metoo-movement-0">' +
+      '<a class="engenderLink" href="https://law.yale.edu/yls-today/news/yale-law-hosts-panel-metoo-movement-0">' +
       'YLS Panel: Sexual Harassment Law in the Age of Trump and #MeToo</a>' +
       '</p>'
     );
