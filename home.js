@@ -595,7 +595,8 @@ $(document).ready(function() {
       'padding-bottom':'0px',
       'text-align':'justify',
       'margin':'0px',
-      'hyphens':'manual'
+      'hyphens':'manual',
+      'line-height':'1.4em'
     });
     $('.engenderText a').css({
       'color':'black',
