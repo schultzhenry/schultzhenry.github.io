@@ -519,7 +519,7 @@ $(document).ready(function() {
       "} " +
       "@media screen and (max-width: 888px) { " +
         "#engenderContent { " +
-          "width: Calc(100vw - 86px); " +
+          "width: Calc(100vw - 88px); " +
         "} " +
         ".engenderText { " +
           "font-size: 24px; " +
@@ -529,7 +529,7 @@ $(document).ready(function() {
       "} " +
       "@media screen and (max-width: 660px) { " +
         "#engenderContent { " +
-          "width: Calc(100vw - 86px); " +
+          "width: Calc(100vw - 88px); " +
         "} " +
         ".engenderText { " +
           "font-size: 21px; " +
@@ -539,7 +539,7 @@ $(document).ready(function() {
       "} " +
       "@media screen and (max-width: 460px) { " +
         "#engenderContent { " +
-          "width: Calc(100vw - 86px); " +
+          "width: Calc(100vw - 88px); " +
         "} " +
         ".engenderText { " +
           "font-size: 16px; " +
