@@ -568,8 +568,8 @@ $(document).ready(function() {
       'of Greek organizations given their discrim&shy;inatory nature. ' +
       'It is our view that this unchallenged discrim&shy;ination ' +
       'enables the harmful behaviors including hazing, substance abuse ' +
-      'and acts of bias and hate that are unfortunately so common in ' +
-      'these groups.</p>' +
+      'and acts of bias and hate that are unfortunately so common among ' +
+      'members of these groups.</p>' +
 
       '<p class="engenderText">' +
       '&#8195;During my time with ' +
