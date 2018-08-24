@@ -566,7 +566,7 @@ $(document).ready(function() {
 
       'For our first initiative, we are working on gender integration ' +
       'of Greek organizations given their discrim&shy;inatory nature ' +
-      'and disproportionate control over social life on campus. ' +
+      'and dis&shy;proportionate control over social life on campus. ' +
       'It is our view that this unchallenged discrim&shy;ination ' +
       'enables the harmful behaviors including hazing, substance abuse ' +
       'and acts of bias and hate that so many members of these groups ' +
@@ -575,7 +575,7 @@ $(document).ready(function() {
       '<p class="engenderText">' +
       '&#8195;During my time with ' +
       'Engender, I have managed our team&#8217;s internal and ' +
-      'external communications, facilitated new member applications ' +
+      'external comm&shy;unications, facilitated new member app&shy;lications ' +
       'and onboarding, written up policy recommendations for the Yale ' +
       'admin&shy;istration, designed our visual identity and organized a ' +
       'group of women and non-binary students to rush a fraternity.</p>' +
