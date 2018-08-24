@@ -594,8 +594,8 @@ $(document).ready(function() {
       '<br />' +
       '<p class="engenderText">' +
       '<a class="engenderLink" href="https://law.yale.edu/yls-today/news/yale-law-hosts-panel-metoo-movement-0">' +
-      'Yale Law School</a>, ' +
-      '\tPanel on Sexual Harassment Law (04/2018)' +
+      'YLS</a>, ' +
+      'Sexual Harassment Law Panel (04/2018)' +
       '</p>'
     );
 
