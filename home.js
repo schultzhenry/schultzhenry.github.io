@@ -5,7 +5,7 @@ $(document).ready(function() {
   var curSize = 26;
   var touchDevice = false;
 
-  var bgColor = 'rgba(255, 0, 0, 1)';
+  var bgColor = 'rgba(141, 134, 134, 1)';
   // Nav styling variables
   var navBg = 'rgba(255, 0, 0, 0.75)';
   var navBgHover = 'rgba(255, 0, 0, 1)';
