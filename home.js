@@ -185,14 +185,14 @@ $(document).ready(function() {
 
     clearPage();
 
-    navBg = 'rgba(255, 0, 0, 0.75)';
-    navBgHover = 'rgba(255, 0, 0, 1)';
+    navBg = 'rgba(141, 134, 134, 1)';
+    navBgHover = 'rgba(141, 134, 134, 1)';
     navBorder = 'rgba(0, 0, 0, 1)';
-    navIconColor = 'rgba(255, 0, 0, 1)';
+    navIconColor = 'rgba(141, 134, 134, 1)';
     navIconStroke = 'rgba(0, 0, 0, 1)';
 
     // Change page background
-    bgColor = 'rgba(255, 0, 0, 1)';
+    bgColor = 'rgba(141, 134, 134, 1)';
     $('#background').css({
       'background':bgColor,
     });
