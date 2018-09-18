@@ -72,7 +72,7 @@ $(document).ready(function() {
   $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
 
   $('#emailButton').css({
-    'font-size':'12pt'
+    'font-size':'10pt'
   });
 
   $('#infoText, #infoText a').css({
