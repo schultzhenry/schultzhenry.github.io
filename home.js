@@ -74,7 +74,7 @@ $(document).ready(function() {
   $('#infoText, #infoText a').css({
     'position': 'absolute',
     'top': '16px',
-    'left': '44px',
+    'left': '0px',
     'font-size': '16pt',
     'padding-right': '40px',
     'color':'black',
@@ -175,7 +175,7 @@ $(document).ready(function() {
     $('#infoText, #infoText a').css({
       'position': 'absolute',
       'top': '16px',
-      'left': '44px',
+      'left': '0px',
       'font-size': '16pt',
       'padding-right': '40px',
       'color':'black'
