@@ -460,15 +460,15 @@ $(document).ready(function() {
     clearPage();
 
     // Change page background
-    bgColor = 'white';
+    bgColor = 'lavender';
     $('#background').css({
       'background':bgColor,
     });
 
-    navBg = 'white';
-    navBgHover = 'white';
+    navBg = 'rgba(230, 230, 250, 0.9)';
+    navBgHover = 'rgba(230, 230, 250, 1)';
     navBorder = 'rgba(0, 0, 0, 0)';
-    navIconColor = 'white';
+    navIconColor = 'rgba(230, 230, 250, 1)';
     navIconStroke = 'rgba(0, 0, 0, 1)';
 
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
@@ -587,7 +587,7 @@ $(document).ready(function() {
       'You can also connect with us on <a class="engenderLink" ' +
       'href="https://www.facebook.com/engenderequality/">Facebook</a> ' +
       'and <a class="engenderLink" ' +
-      'href="https://twitter.com/engenderyale">Twitter</a>.' +
+      'href="https://twitter.com/engenderyale">Twitter</a>. ' +
     );
 
     $('.engenderText').css({
