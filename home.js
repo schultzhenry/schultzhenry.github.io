@@ -600,6 +600,7 @@ $(document).ready(function() {
       'line-height':'1.3em'
     });
     $('.engenderText a').css({
+      'font-family':'sans-serif',
       'color':'black',
       'text-decoration':'none',
       'border-bottom':'1px dotted black',
