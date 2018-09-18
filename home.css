@@ -26,6 +26,10 @@
   z-index: 1000;
 }
 
+#infoText, #infoText a {
+  font-size: 16pt;
+}
+
 #menu a, #menu a:visited {
   margin-left: 44px;
   margin-right: 108px;
