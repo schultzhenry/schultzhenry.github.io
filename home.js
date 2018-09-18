@@ -75,7 +75,7 @@ $(document).ready(function() {
     'position': 'absolute',
     'top': '16px',
     'left': '44px',
-    'font-size': '18pt',
+    'font-size': '16pt',
     'padding-right': '40px',
     'color':'black'
   });
