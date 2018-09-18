@@ -587,16 +587,7 @@ $(document).ready(function() {
       'You can also connect with us on <a class="engenderLink" ' +
       'href="https://www.facebook.com/engenderequality/">Facebook</a> ' +
       'and <a class="engenderLink" ' +
-      'href="https://twitter.com/engenderyale">Twitter</a> ' +
-      'or see the links below for coverage pertaining ' +
-      'to our efforts.</p>' +
-
-      '<br />' +
-      '<p class="engenderText">' +
-      '<a class="engenderLink" href="https://law.yale.edu/yls-today/news/yale-law-hosts-panel-metoo-movement-0">' +
-      'YLS</a>, ' +
-      'Sexual Harassment Law Panel (04/2018)' +
-      '</p>'
+      'href="https://twitter.com/engenderyale">Twitter</a>.' +
     );
 
     $('.engenderText').css({
