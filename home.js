@@ -71,7 +71,7 @@ $(document).ready(function() {
 
   $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
 
-  $('#infoText').css({
+  $('#infoText, #infoText a').css({
     'position': 'absolute',
     'top': '16px',
     'left': '44px',
