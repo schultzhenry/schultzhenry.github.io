@@ -460,16 +460,16 @@ $(document).ready(function() {
     clearPage();
 
     // Change page background
-    bgColor = 'lavender';
+    bgColor = 'white';
     $('#background').css({
       'background':bgColor,
     });
 
-    navBg = 'rgba(230, 230, 250, 0.9)';
-    navBgHover = 'rgba(230, 230, 250, 1)';
+    navBg = 'white';
+    navBgHover = 'white';
     navBorder = 'rgba(0, 0, 0, 0)';
-    navIconColor = 'rgba(230, 230, 250, 1)';
-    navIconStroke = 'rgba(0, 0, 0, 1)';
+    navIconColor = 'white';
+    navIconStroke = 'white';
 
     $('#menu a, #menu a:visited, #info a, #info a:visited').addClass('menuBlack');
 
