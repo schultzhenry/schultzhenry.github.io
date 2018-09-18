@@ -172,7 +172,7 @@ $(document).ready(function() {
       'background-position':'0px 0px'
     })
 
-    $('#infoText').css({
+    $('#infoText, #infoText a').css({
       'position': 'absolute',
       'top': '16px',
       'left': '44px',
@@ -613,7 +613,7 @@ $(document).ready(function() {
     clearPage();
 
     $('body').css('background','black');
-    $('#infoText').css('color','white');
+    $('#infoText, #infoText a').css('color','white');
 
     navBg = 'rgba(0, 0, 0, 1)';
     navBgHover = 'rgba(0, 0, 0, 1)';
