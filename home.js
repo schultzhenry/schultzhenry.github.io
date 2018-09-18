@@ -570,16 +570,7 @@ $(document).ready(function() {
       'It is our view that this unchallenged discrim&shy;ination ' +
       'enables the harmful behaviors including hazing, substance abuse ' +
       'and acts of bias and hate that so many members of these groups ' +
-      'unfortunately exhibit.</p>' +
-
-      '<p class="engenderText">' +
-      '&#8195;During my time with ' +
-      'Engender, I have managed our team&#8217;s internal and ' +
-      'external comm&shy;unications, fac&shy;il&shy;itated new member ' +
-      'app&shy;lications ' +
-      'and onboarding, written up policy rec&shy;ommendations for the Yale ' +
-      'admin&shy;istration, designed our visual identity and organized a ' +
-      'group of women and non-binary students to rush a fraternity.</p>' +
+      'unfortunately exhibit.</p><br />' +
 
       '<p class="engenderText">' +
       '&#8195;More information about Engender is available on our ' +
