@@ -593,7 +593,7 @@ $(document).ready(function() {
     $('.engenderText').css({
       'padding-top':'0px',
       'padding-bottom':'0px',
-      'text-align':'justify',
+      'text-align':'left',
       'margin':'0px',
       'hyphens':'manual',
       'line-height':'1.3em'
