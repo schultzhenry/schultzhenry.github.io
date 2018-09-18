@@ -250,10 +250,6 @@ $(document).ready(function() {
         'pointer-events':'none'
       });
     };
-
-    $('#infoText').text(
-      'Thanks for stopping by! Reach me at <a href=\"mailto:natalie.schultz-henry@yale.edu\">natalie.schultz-henry@yale.edu</a>.'
-    );
   };
 
   function analogies() {
