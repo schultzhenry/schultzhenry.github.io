@@ -100,3 +100,7 @@
 button:focus, a:focus {
   outline: 0;
 }
+
+.emailButton {
+  font-size: 16pt;
+}
