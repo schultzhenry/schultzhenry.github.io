@@ -77,7 +77,8 @@ $(document).ready(function() {
     'left': '44px',
     'font-size': '16pt',
     'padding-right': '40px',
-    'color':'black'
+    'color':'black',
+    'justify':'left'
   });
 
   $('#menu').click(function() {
