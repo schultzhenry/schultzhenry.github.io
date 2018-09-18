@@ -78,7 +78,8 @@ $(document).ready(function() {
     'font-size': '16pt',
     'padding-right': '40px',
     'color':'black',
-    'justify':'left'
+    'justify':'left',
+    'display':'inline'
   });
 
   $('#menu').click(function() {
