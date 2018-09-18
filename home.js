@@ -573,7 +573,7 @@ $(document).ready(function() {
       'unfortunately exhibit.</p><br />' +
 
       '<p class="engenderText">' +
-      '&#8195;More information about Engender is available on our ' +
+      'More information about Engender is available on our ' +
       '<a class="engenderLink" href="http://engender.space">website</a>. ' +
       'You can also connect with us on <a class="engenderLink" ' +
       'href="https://www.facebook.com/engenderequality/">Facebook</a> ' +
