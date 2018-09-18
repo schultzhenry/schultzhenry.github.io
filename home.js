@@ -252,7 +252,7 @@ $(document).ready(function() {
     };
 
     $('#infoText').text(
-      'Thanks for stopping by! Reach me at natalie.schultz-henry@yale.edu'
+      'Thanks for stopping by! Reach me at <a href="mailto:natalie.schultz-henry@yale.edu">natalie.schultz-henry@yale.edu</a>.'
     );
   };
 
