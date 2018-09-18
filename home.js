@@ -512,7 +512,7 @@ $(document).ready(function() {
       "@media screen and (min-width: 888px) { " +
         "#engenderContent { width: 802px; } " +
         ".engenderText { " +
-          "font-size: 26px; " +
+          "font-size: 25px; " +
           "padding-left: 64px;" +
           "padding-right: 64px;" +
         "}" +
@@ -591,6 +591,7 @@ $(document).ready(function() {
     );
 
     $('.engenderText').css({
+      'font-family':'sans-serif',
       'padding-top':'0px',
       'padding-bottom':'0px',
       'text-align':'left',
