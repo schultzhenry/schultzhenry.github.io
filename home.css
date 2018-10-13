@@ -27,3 +27,8 @@
 button:focus, a:focus {
   outline: 0;
 }
+
+a {
+  color: black;
+  text-decoration: underline;
+}
