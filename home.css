@@ -20,6 +20,7 @@
   color: black;
   background-color: Linen;
   padding: 16px 16px 16px 16px;
+  z-index: 1;
 }
 
 .menuButton {
