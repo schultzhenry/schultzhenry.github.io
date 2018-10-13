@@ -19,6 +19,10 @@
   padding: 16px 16px 16px 16px;
 }
 
+.menuButton {
+  display: block;
+}
+
 button:focus, a:focus {
   outline: 0;
 }
