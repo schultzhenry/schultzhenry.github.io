@@ -19,7 +19,6 @@
 #content {
   color: black;
   position: fixed;
-  border: 2px solid red;
   /* background-color: Linen; */
   padding: 16px 16px 16px 16px;
   z-index: 1;
