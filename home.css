@@ -7,7 +7,6 @@
 
 #background {
   position: fixed;
-  color: Linen;
   padding: 0px, 0px, 0px, 0px;
   top: 0px;
   left: 0px;
@@ -17,6 +16,7 @@
 }
 
 #content {
+  color: Linen;
   padding: 16px 16px 16px 16px;
 }
 
