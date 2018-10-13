@@ -18,7 +18,7 @@
 
 #content {
   color: black;
-  background-color: Linen;
+  /* background-color: Linen; */
   padding: 16px 16px 16px 16px;
   z-index: 1;
 }
