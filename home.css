@@ -46,17 +46,18 @@ a:hover {
   bottom: 0px;
   left: 0px;
   width: 100vw;
-  height: 40px;
   z-index: 2;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #header {
   top: 0px;
+  height: 40px;
 }
+
 #footer {
-  height: 32px;
   bottom: 0px;
+  height: 32px;
 }
 
 #emailButton {
