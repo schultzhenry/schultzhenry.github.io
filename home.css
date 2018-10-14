@@ -73,11 +73,13 @@ a:hover {
 #header {
   top: 0px;
   height: 40px;
+  border: 1px solid red;
 }
 
 #footer {
   bottom: 0px;
   height: 28px;
+  border: 1px solid red;
 }
 
 #emailButton {
