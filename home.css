@@ -87,10 +87,14 @@ a:hover {
 }
 
 .menuButton {
-  vertical-align: middle;
+  transition: all 0.4s;
   font-family: Minion;
   text-shadow: 0px 0px 3px black;
   font-size: 48px;
   text-align: center;
-  display: block;
+}
+
+.menuButton:hover {
+  transition: all 0.4s;
+  text-shadow: 0px 0px 3px black;
 }
