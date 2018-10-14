@@ -117,7 +117,6 @@ a:hover {
 .solar-syst {
   width: 80vmin;
   height: 80vmin;
-  border: 1px solid black;
 }
 .solar-syst:after {
   content: "";
@@ -143,7 +142,6 @@ a:hover {
 }
 
 .earth {
-  border: 1px solid blue;
   height: 80vmin;
   width: 80vmin;
   margin-top: -40vmin;
@@ -168,7 +166,7 @@ a:hover {
   margin-left: -1vmin;
   margin-top: -1vmin;
   border-radius: 50%;
-  box-shadow: 0 -22px 0 -9px black;
+  box-shadow: 0 -22px 0 -9px magenta;
   -webkit-animation: orb 26.9284225898s linear infinite;
           animation: orb 26.9284225898s linear infinite;
 }
