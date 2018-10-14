@@ -152,7 +152,6 @@ a:hover {
           animation: orb 31557600s linear infinite;
 }
 .earth:before {
-  border: 1px solid yellow;
   height: 2vmin;
   width: 2vmin;
   background: black;
@@ -160,7 +159,6 @@ a:hover {
   margin-left: -1vmin;
 }
 .earth:after {
-  border: 1px solid green;
   position: absolute;
   content: "";
   height: 2vmin;
@@ -169,8 +167,8 @@ a:hover {
   top: 0px;
   margin-left: -1vmin;
   margin-top: -1vmin;
-  border-radius: 100px;
-  box-shadow: 0 -10px 0 -8px black;
+  border-radius: 50%;
+  box-shadow: 0 -10px 0 -10px black;
   -webkit-animation: orb 26.9284225898s linear infinite;
           animation: orb 26.9284225898s linear infinite;
 }
