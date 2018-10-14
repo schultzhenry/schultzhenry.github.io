@@ -24,6 +24,15 @@
   z-index: 1;
 }
 
+button:focus, a:focus {
+  outline: 0;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
 .anchor {
   position: fixed;
   text-align: center;
@@ -43,15 +52,10 @@
   bottom: 0px;
 }
 
+#emailButton {
+  text-decoration: none;
+}
+
 .menuButton {
   display: block;
-}
-
-button:focus, a:focus {
-  outline: 0;
-}
-
-a {
-  color: black;
-  text-decoration: underline;
 }
