@@ -92,6 +92,7 @@ a:hover {
   font-size: 48px;
   text-align: center;
   display: block;
+  letter-spacing: -1px;
 }
 
 .menuButton:hover {
