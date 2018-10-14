@@ -144,8 +144,8 @@ a:hover {
   width: 80vmin;
   margin-top: -40vmin;
   margin-left: -40vmin;
-  -webkit-animation: orb 360s linear infinite;
-          animation: orb 360s linear infinite;
+  -webkit-animation: orb 3600s linear infinite;
+          animation: orb 3600s linear infinite;
 }
 .earth:before {
   height: 6px;
