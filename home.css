@@ -170,7 +170,9 @@ a:hover {
   -webkit-animation: orb 26.9284225898s linear infinite;
           animation: orb 26.9284225898s linear infinite;
 }
-
+.earth p {
+  text-align: center;
+}
 @-webkit-keyframes orb {
   from {
     -webkit-transform: rotate(0deg);
