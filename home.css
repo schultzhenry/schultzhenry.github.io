@@ -126,17 +126,14 @@ a:hover {
   top: -2px;
   border-radius: 100px;
 }
+
 .solar-syst div {
-  border-radius: 1000px;
   top: 50%;
   left: 50%;
   position: absolute;
-  z-index: 999;
-}
-.solar-syst div:not(.sun) {
   border: 1px solid red;
 }
-.solar-syst div:not(.sun):before {
+.solar-syst div:before {
   left: 50%;
   border-radius: 100px;
   content: "";
@@ -144,8 +141,8 @@ a:hover {
 }
 
 .earth {
-  height: 145px;
-  width: 145px;
+  height: 3vmin;
+  width: 3vmin;
   margin-top: -72.5px;
   margin-left: -72.5px;
   -webkit-animation: orb 360s linear infinite;
