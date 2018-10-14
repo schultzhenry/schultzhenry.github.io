@@ -11,12 +11,12 @@
 }
 
 ::selection {
-  color: white;
-  background: Gold; /* WebKit/Blink Browsers */
+  color: rgb(246, 224, 214);
+  background: red; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  color: white;
-  background: Gold; /* Gecko Browsers */
+  color: rgb(246, 224, 214);
+  background: red; /* Gecko Browsers */
 }
 
 #background {
