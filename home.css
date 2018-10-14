@@ -19,21 +19,23 @@
 
 #background {
   position: fixed;
-  background-color: rgb(246, 224, 214);
-  padding: 0px, 0px, 0px, 0px;
+  z-index: 0;
   top: 0px;
   left: 0px;
   width: 120vw;
   height: 120vh;
-  z-index: 0;
+  background-color: rgb(246, 224, 214);
+  padding: 0px, 0px, 0px, 0px;
 }
 
 #content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: black;
   position: fixed;
   text-align: center;
-  vertical-align: middle;
-  padding: 40px 40px 40px 40px;
+  padding: 40px;
   top: 0px;
   left: 0px;
   width: 100vw;
