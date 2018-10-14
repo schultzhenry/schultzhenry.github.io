@@ -142,6 +142,7 @@ a:hover {
 }
 
 .earth {
+  border: 1px solid blue;
   height: 80vmin;
   width: 80vmin;
   margin-top: -40vmin;
