@@ -117,7 +117,7 @@ a:hover {
 .solar-syst {
   width: 80vmin;
   height: 80vmin;
-  border: 1px solid magenta;
+  border: 1px solid black;
 }
 .solar-syst:after {
   content: "";
