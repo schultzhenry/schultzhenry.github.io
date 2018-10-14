@@ -113,10 +113,8 @@ a:hover {
 
 
 .solar-syst {
-  margin: 0 auto;
   width: 80vmin;
   height: 80vmin;
-  position: relative;
 }
 .solar-syst:after {
   content: "";
