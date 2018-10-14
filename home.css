@@ -132,6 +132,7 @@ a:hover {
   left: 50%;
   position: absolute;
   border: 1px solid red;
+  border-radius: 50%;
 }
 .solar-syst div:before {
   left: 50%;
@@ -179,7 +180,6 @@ a:hover {
             transform: rotate(360deg);
   }
 }
-
 @keyframes orb {
   from {
     -webkit-transform: rotate(0deg);
