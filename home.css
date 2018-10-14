@@ -166,7 +166,7 @@ a:hover {
   margin-left: -1vmin;
   margin-top: -1vmin;
   border-radius: 50%;
-  box-shadow: 0 -22px 0 -9px magenta;
+  box-shadow: 0 -22px 0 -9px black;
   -webkit-animation: orb 26.9284225898s linear infinite;
           animation: orb 26.9284225898s linear infinite;
 }
