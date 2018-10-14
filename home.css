@@ -124,7 +124,7 @@ a:hover {
   height: 2px;
   width: 2px;
   top: -2px;
-  border-radius: 50%;
+  border-radius: 100px;
 }
 
 .solar-syst div {
@@ -135,22 +135,22 @@ a:hover {
 }
 .solar-syst div:before {
   left: 50%;
-  border-radius: 50%;
+  border-radius: 100px;
   content: "";
   position: absolute;
 }
 
 .earth {
-  height: 3vmin;
-  width: 3vmin;
+  height: 145px;
+  width: 145px;
   margin-top: -72.5px;
   margin-left: -72.5px;
   -webkit-animation: orb 360s linear infinite;
           animation: orb 360s linear infinite;
 }
 .earth:before {
-  height: 3vmin;
-  width: 3vmin;
+  height: 6px;
+  width: 6px;
   background: black;
   margin-top: -3px;
   margin-left: -3px;
@@ -164,7 +164,7 @@ a:hover {
   top: 0px;
   margin-left: -9px;
   margin-top: -9px;
-  border-radius: 50%;
+  border-radius: 100px;
   box-shadow: 0 -10px 0 -8px black;
   -webkit-animation: orb 26.9284225898s linear infinite;
           animation: orb 26.9284225898s linear infinite;
@@ -174,7 +174,8 @@ a:hover {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-  } to {
+  }
+  to {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
   }
@@ -184,7 +185,8 @@ a:hover {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-  } to {
+  }
+  to {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
   }
