@@ -5,6 +5,13 @@
           box-sizing: border-box;
 }
 
+::selection {
+  background: Gold; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: Gold; /* Gecko Browsers */
+}
+
 #background {
   position: fixed;
   background-color: rgb(246, 224, 214);
