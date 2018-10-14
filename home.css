@@ -151,6 +151,7 @@ a:hover {
           animation: orb 31557600s linear infinite;
 }
 .earth:before {
+  border: 1px solid yellow;
   height: 2vmin;
   width: 2vmin;
   background: black;
