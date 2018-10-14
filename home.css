@@ -92,6 +92,7 @@ a:hover {
   text-shadow: 0px 0px 3px black;
   font-size: 48px;
   text-align: center;
+  display: block;
 }
 
 .menuButton:hover {
