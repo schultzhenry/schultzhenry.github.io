@@ -26,8 +26,8 @@
   z-index: 0;
   top: 0px;
   left: 0px;
-  width: 120vw;
-  height: 120vh;
+  width: 100vw;
+  height: 100vh;
   background-color: rgb(246, 224, 214);
   padding: 0px, 0px, 0px, 0px;
 }
