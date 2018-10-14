@@ -42,7 +42,6 @@ button:focus, a:focus {
 a {
   color: black;
   transition: all 0.4s;
-  text-decoration: underline;
 }
 
 a:hover {
