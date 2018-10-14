@@ -159,12 +159,12 @@ a:hover {
 .earth:after {
   position: absolute;
   content: "";
-  height: 18px;
-  width: 18px;
+  height: 2vmin;
+  width: 2vmin;
   left: 50%;
   top: 0px;
-  margin-left: -9px;
-  margin-top: -9px;
+  margin-left: -1vmin;
+  margin-top: -1vmin;
   border-radius: 100px;
   box-shadow: 0 -10px 0 -8px black;
   -webkit-animation: orb 26.9284225898s linear infinite;
