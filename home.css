@@ -24,7 +24,7 @@
   z-index: 1;
 }
 
-#footer {
+.anchor {
   position: fixed;
   text-align: center;
   padding: 0px 0px 0px 0px;
@@ -33,6 +33,13 @@
   width: 100vw;
   height: 24px;
   z-index: 2;
+}
+
+#header {
+  top: 0px;
+}
+#footer {
+  bottom: 0px;
 }
 
 .menuButton {
