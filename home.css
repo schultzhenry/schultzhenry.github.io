@@ -124,7 +124,7 @@ a:hover {
   height: 2px;
   width: 2px;
   top: -2px;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 .solar-syst div {
@@ -135,7 +135,7 @@ a:hover {
 }
 .solar-syst div:before {
   left: 50%;
-  border-radius: 100px;
+  border-radius: 50%;
   content: "";
   position: absolute;
 }
