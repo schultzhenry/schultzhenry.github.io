@@ -18,6 +18,10 @@
 }
 
 #background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: 0;
   top: 0px;
@@ -29,7 +33,6 @@
 }
 
 #day {
-  position: fixed;
   z-index: 1;
   border-radius: 50;
   border: 1px solid red;
