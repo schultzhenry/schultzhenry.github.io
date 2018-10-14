@@ -140,10 +140,10 @@ a:hover {
 }
 
 .earth {
-  height: 360px;
-  width: 360px;
-  margin-top: -180px;
-  margin-left: -180px;
+  height: 80vmin;
+  width: 80vmin;
+  margin-top: -40vmin;
+  margin-left: -40vmin;
   -webkit-animation: orb 360s linear infinite;
           animation: orb 360s linear infinite;
 }
