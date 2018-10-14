@@ -62,11 +62,13 @@ a:hover {
 }
 
 #header {
+  color: red;
   top: 0px;
   height: 40px;
 }
 
 #footer {
+  color: red;
   bottom: 0px;
   height: 28px;
 }
