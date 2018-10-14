@@ -78,6 +78,7 @@ a:hover {
 }
 
 .menuButton {
+  font-size: 32px;
   text-align: center;
   display: block;
 }
