@@ -173,6 +173,7 @@ a:hover {
 .earth p {
   font-size: 1vmin;
   text-align: center;
+  padding:0.5em;
 }
 
 @-webkit-keyframes orb {
