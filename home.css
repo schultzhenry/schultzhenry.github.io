@@ -14,11 +14,11 @@
 
 ::selection {
   color: rgb(246, 224, 214);
-  background: red; /* WebKit/Blink Browsers */
+  background: black; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
   color: rgb(246, 224, 214);
-  background: red; /* Gecko Browsers */
+  background: black; /* Gecko Browsers */
 }
 
 #background {
@@ -88,6 +88,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 #header {
