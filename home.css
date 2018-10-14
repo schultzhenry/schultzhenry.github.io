@@ -160,6 +160,7 @@ a:hover {
   margin-left: -1vmin;
 }
 .earth:after {
+  border: 1px solid green;
   position: absolute;
   content: "";
   height: 2vmin;
