@@ -148,11 +148,11 @@ a:hover {
           animation: orb 3600s linear infinite;
 }
 .earth:before {
-  height: 6px;
-  width: 6px;
+  height: 2vmin;
+  width: 2vmin;
   background: black;
-  margin-top: -3px;
-  margin-left: -3px;
+  margin-top: -1vmin;
+  margin-left: -1vmin;
 }
 .earth:after {
   position: absolute;
