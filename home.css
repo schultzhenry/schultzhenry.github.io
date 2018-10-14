@@ -35,7 +35,7 @@ a {
 
 a:hover {
   transition: all 0.6s;
-  text-shadow: 0px 2px black;
+  text-shadow: 0px 0px 4px black;
 }
 
 .anchor {
