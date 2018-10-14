@@ -28,10 +28,10 @@
   align-items: center;
   position: fixed;
   z-index: 0;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
+  top: -20vh;
+  left: -20vw;
+  width: 140vw;
+  height: 140vh;
   background-color: rgb(195, 172, 162);
   padding: 0px, 0px, 0px, 0px;
 }
