@@ -12,4 +12,10 @@ $(document).ready(function() {
   $(".earth").mouseout(function() {
     $( "#earth-label" ).text("");
   });
+  $(".menuButton").mouseover(function() {
+    $("*:not(this)").css('filter', 'blur(3px)');
+  });
+  $(".menuButton").mouseover(function() {
+    $("*:not(this)").css('filter', 'none');
+  });
 });
