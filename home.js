@@ -9,4 +9,7 @@ $(document).ready(function() {
   $(".earth").mouseover(function() {
     $( "#earth-label" ).text("today!");
   });
+  $(".earth").mouseout(function() {
+    $( "#earth-label" ).text("");
+  });
 });
