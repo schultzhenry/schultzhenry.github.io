@@ -3,7 +3,7 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-          animation-delay: 0.1s;
+          animation-delay: 0.2s;
           transition: all 0.4s;
 }
 
@@ -147,8 +147,6 @@ a:hover {
   margin-top: -40vmin;
   margin-left: -40vmin;
   transition: all 0s;
-  /* -webkit-animation: orb 31557600s linear infinite;
-          animation: orb 31557600s linear infinite; */
 }
 .earth:before {
   height: 2vmin;
@@ -170,30 +168,9 @@ a:hover {
   border-radius: 50%;
   box-shadow: 0 -22px 0 -9px black;
   z-index: 20;
-  /* -webkit-animation: orb 9828.87424s linear infinite;
-          animation: orb 9828.87424s linear infinite; */
 }
 .earth p {
   font-size: 1vmin;
   text-align: center;
   padding:0.5em;
 }
-
-/* @-webkit-keyframes orb {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  } to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes orb {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  } to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-} */
