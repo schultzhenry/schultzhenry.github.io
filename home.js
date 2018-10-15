@@ -9,5 +9,6 @@ $(document).ready(function() {
   console.log('so far so good');
   $(".earth").css('transform', 'rotate(' + day.toString() + ')');
 
+  console.log(day.tostring());
   console.log('did it all');
 });
