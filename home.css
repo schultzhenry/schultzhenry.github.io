@@ -144,30 +144,41 @@ a:hover {
 .earth {
   height: 80vmin;
   width: 80vmin;
-  margin-top: -40vmin;
-  margin-left: -40vmin;
+  /* margin-top: -40vmin;
+  margin-left: -40vmin; */
   transition: all 0s;
-}
-.earth:before {
+  background: black;
   height: 2vmin;
   width: 2vmin;
-  background: black;
   margin-top: -1vmin;
   margin-left: -1vmin;
-  z-index: 20;
-}
-.earth:after {
   position: absolute;
   content: "";
-  height: 2vmin;
-  width: 2vmin;
   left: 50%;
   top: 0px;
-  margin-left: -1vmin;
-  margin-top: -1vmin;
   border-radius: 50%;
   box-shadow: 0 -22px 0 -9px black;
-  z-index: 20;
+}
+.earth:before {
+  /* height: 2vmin;
+  width: 2vmin; */
+  /* background: black; */
+  /* margin-top: -1vmin;
+  margin-left: -1vmin; */
+  /* z-index: 20; */
+}
+.earth:after {
+  /* position: absolute;
+  content: ""; */
+  /* height: 2vmin;
+  width: 2vmin; */
+  /* left: 50%;
+  top: 0px; */
+  /* margin-left: -1vmin;
+  margin-top: -1vmin; */
+  /* border-radius: 50%;
+  box-shadow: 0 -22px 0 -9px black; */
+  /* z-index: 20; */
 }
 .earth p {
   font-size: 1vmin;
