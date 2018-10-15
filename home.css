@@ -147,7 +147,6 @@ a:hover {
   margin-top: -40vmin;
   margin-left: -40vmin;
   transition: all 0s;
-    background: black;
 }
 .earth:before {
   height: 2vmin;
