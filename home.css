@@ -14,11 +14,11 @@
 
 ::selection {
   color: rgb(246, 224, 214);
-  background: black; /* WebKit/Blink Browsers */
+  background: black;
 }
 ::-moz-selection {
-  color: rgb(246, 224, 214);
-  background: black; /* Gecko Browsers */
+  color: rgb(246,224,214);
+  background: black;
 }
 
 #background {
@@ -32,8 +32,8 @@
   left: -20vw;
   width: 140vw;
   height: 140vh;
-  background-color: rgb(226, 196, 182);
-  padding: 0px, 0px, 0px, 0px;
+  background-color: rgb(226,196,182);
+  padding: 0px;
 }
 
 #content {
