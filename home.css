@@ -146,8 +146,8 @@ a:hover {
   width: 80vmin;
   margin-top: -40vmin;
   margin-left: -40vmin;
-  -webkit-animation: orb 31557600s linear infinite;
-          animation: orb 31557600s linear infinite;
+  /* -webkit-animation: orb 31557600s linear infinite;
+          animation: orb 31557600s linear infinite; */
 }
 .earth:before {
   height: 2vmin;
@@ -167,8 +167,8 @@ a:hover {
   margin-top: -1vmin;
   border-radius: 50%;
   box-shadow: 0 -22px 0 -9px black;
-  -webkit-animation: orb 9828.87424s linear infinite;
-          animation: orb 9828.87424s linear infinite;
+  /* -webkit-animation: orb 9828.87424s linear infinite;
+          animation: orb 9828.87424s linear infinite; */
 }
 .earth p {
   font-size: 1vmin;
@@ -176,7 +176,7 @@ a:hover {
   padding:0.5em;
 }
 
-@-webkit-keyframes orb {
+/* @-webkit-keyframes orb {
   from {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -193,4 +193,4 @@ a:hover {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
-}
+} */
