@@ -147,7 +147,6 @@ a:hover {
   margin-top: -40vmin;
   margin-left: -40vmin;
   transition: all 0s;
-  z-index: 20;
   /* -webkit-animation: orb 31557600s linear infinite;
           animation: orb 31557600s linear infinite; */
 }
@@ -157,6 +156,7 @@ a:hover {
   background: black;
   margin-top: -1vmin;
   margin-left: -1vmin;
+  z-index: 20;
 }
 .earth:after {
   position: absolute;
@@ -169,6 +169,7 @@ a:hover {
   margin-top: -1vmin;
   border-radius: 50%;
   box-shadow: 0 -22px 0 -9px black;
+  z-index: 20;
   /* -webkit-animation: orb 9828.87424s linear infinite;
           animation: orb 9828.87424s linear infinite; */
 }
