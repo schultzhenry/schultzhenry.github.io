@@ -13,7 +13,7 @@ $(document).ready(function() {
     $( "#earth-label" ).text("");
   });
   $(".menuButton").mouseover(function() {
-    $("*:not(this)").css('filter', 'blur(3px)');
+    $("#background, .anchor").css('filter', 'blur(3px)');
   });
   $(".menuButton").mouseover(function() {
     $("*:not(this)").css('filter', 'none');
