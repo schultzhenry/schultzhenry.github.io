@@ -4,7 +4,7 @@ $(document).ready(function() {
   var month = today.getUTCMonth();
   var day = today.getUTCDate();
 
-  day = day + ((month + 1) * 30.4375);
+  day = day + (month * 30.4375);
 
   console.log('so far so good');
   $(".earth").css('transform', 'rotate(' + day.toString() + 'deg)');
