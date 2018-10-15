@@ -147,6 +147,7 @@ a:hover {
   margin-top: -40vmin;
   margin-left: -40vmin;
   transition: all 0s;
+  z-index: 20;
   /* -webkit-animation: orb 31557600s linear infinite;
           animation: orb 31557600s linear infinite; */
 }
