@@ -9,6 +9,6 @@ $(document).ready(function() {
   console.log('so far so good');
   $(".earth").css('transform', 'rotate(' + day.toString() + 'deg)');
 
-  console.log(day.tostring());
+  console.log(day.toString());
   console.log('did it all');
 });
