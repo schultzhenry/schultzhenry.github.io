@@ -150,7 +150,6 @@ a:hover {
 }
 
 .earth:after {
-  background: black;
   position: absolute;
   content: "";
   height: 2vmin;
@@ -161,6 +160,7 @@ a:hover {
   margin-top: -1vmin;
   border-radius: 50%;
   z-index: 20;
+  border: 1px solid red;
 }
 .earth p {
   font-size: 1vmin;
