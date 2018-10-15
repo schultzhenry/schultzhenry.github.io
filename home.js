@@ -13,9 +13,9 @@ $(document).ready(function() {
     $( "#earth-label" ).text("");
   });
   $(".menuButton").mouseover(function() {
-    $("*:not(this)").css('filter', 'blur(3px)');
+    $("#background").css('filter', 'blur(3px)');
   });
   $(".menuButton").mouseout(function() {
-    $("*:not(this)").css('filter', 'none');
+    $("#background").css('filter', 'none');
   });
 });
