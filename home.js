@@ -6,6 +6,6 @@ $(document).ready(function() {
 
   day = day + ((month + 1) * 30.4375);
 
-  $(.earth:after).css('transform', 'rotate('day')');
-  
+  $(.earth:after).css('transform', 'rotate(' + day.toString() + ')');
+
 });
