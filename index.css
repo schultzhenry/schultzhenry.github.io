@@ -227,8 +227,11 @@ h4 {
     line-height: 1.2em;
     padding: 0px;
   }
+  .description h3 {
+    font-size: 24px;
+  }
   h4 {
-    margin-top: -8px;
+    margin-top: -6px;
     padding-top: 0px;
     font-size: 18px;
   }
