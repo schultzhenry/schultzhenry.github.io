@@ -209,7 +209,7 @@ h4 {
   .graphics {
     margin-top: 24px;
     align-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 36px;
   }
   .graphics, .description {
     padding: 0px;
@@ -234,5 +234,8 @@ h4 {
     margin-top: -6px;
     padding-top: 0px;
     font-size: 18px;
+  }
+  .prev, .next {
+    bottom: -18px;
   }
 }
