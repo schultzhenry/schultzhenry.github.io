@@ -22,7 +22,7 @@ $(document).ready(function() {
   var sectionLabels = ["Home", "116th", "Engender", "Duby Team", "Fuzzy Grids II", "About"];
 
   $(".nav div").each(function(i) {
-    $(this).on("click", function() {
+    $(this).on("click touchstart", function() {
       $.scrollify.move(i);
     }).on("mouseover", function () {
       $("#pnav" + i).text( sectionLabels[i] );
@@ -41,11 +41,11 @@ $(document).ready(function() {
   var DubyTotal = 8;
   var DubyList = 0;
 
-  $("#Duby .prev").on("click", function () {
+  $("#Duby .prev").on("click touchstart", function () {
     DubyList = Dec(DubyList, DubyTotal);
     $("#DubyImage").attr("src", "thumbnails/t-duby-" + String(DubyList) + ".jpg");
   });
-  $("#Duby .next").on("click", function () {
+  $("#Duby .next").on("click touchstart", function () {
     DubyList = Inc(DubyList, DubyTotal);
     $("#DubyImage").attr("src", "thumbnails/t-duby-" + String(DubyList) + ".jpg");
   });
@@ -53,11 +53,11 @@ $(document).ready(function() {
   var FuzzyTotal = 4;
   var FuzzyList = 1;
 
-  $("#Fuzzy .prev").on("click", function () {
+  $("#Fuzzy .prev").on("click touchstart", function () {
     FuzzyList = Dec(FuzzyList, FuzzyTotal);
     $("#FuzzyImage").attr("src", "thumbnails/t-fuzzy-" + String(FuzzyList) + ((FuzzyList == 3) ? ".gif" : ".jpg"));
   });
-  $("#Fuzzy .next").on("click", function () {
+  $("#Fuzzy .next").on("click touchstart", function () {
     FuzzyList = Inc(FuzzyList, FuzzyTotal);
     $("#FuzzyImage").attr("src", "thumbnails/t-fuzzy-" + String(FuzzyList) + ((FuzzyList == 3) ? ".gif" : ".jpg"));
   });
@@ -65,11 +65,11 @@ $(document).ready(function() {
   var ZineTotal = 15;
   var ZineList = 12;
 
-  $("#Zine .prev").on("click", function () {
+  $("#Zine .prev").on("click touchstart", function () {
     ZineList = Dec(ZineList, ZineTotal);
     $("#ZineImage").attr("src", "zine-116/zine-116-" + ((ZineList < 10) ? ("0" + String(ZineList)) : String(ZineList)) + ".png");
   });
-  $("#Zine .next").on("click", function () {
+  $("#Zine .next").on("click touchstart", function () {
     ZineList = Inc(ZineList, ZineTotal);
     $("#ZineImage").attr("src", "zine-116/zine-116-" + ((ZineList < 10) ? ("0" + String(ZineList)) : String(ZineList)) + ".png");
   });
