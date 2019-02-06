@@ -7,7 +7,10 @@
     <!-- <link rel="icon" type="image/png" href="icon.png"> -->
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Changa:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scrollify.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123845366-1"></script>
     <script>
@@ -19,63 +22,162 @@
     <script src="index.js"></script>
   </head>
   <body>
-    <div id="header">
-      <p id="headertext">Natalie Schultz-Henry is an undergraduate student of computer science and graphic design. Reach her at <a href="mailto:natalie.schultz-henry@yale.edu">natalie.schultz-henry@yale.edu</a>.</p>
-    </div>
-    <div id="view">
-      <div id="up-arrow"><p id="up-arrow-symbol">↑</p></div>
 
-      <div class="container">
-
-
-        <div class="item" id="zine-116">
-          <a href="/zine-116.html">
-            <img src="thumbnails/t-zine-116.png"/>
-          </a>
-          <p>116th</p>
+      <div class="view" id="view1">
+        <div class="item">
+          <div class="description">
+            <p id="headertext">Hi! I'm Natalie Schultz-Henry.<br />
+              I study computer science and graphic design.<br />
+              Reach me at <a href="mailto:natalie.schultz-henry@yale.edu">natalie.schultz-henry@yale.edu</a>.
+            </p>
+          </div>
         </div>
-
-        <div class="item" id="engender">
-          <a href="/engender.html">
-            <img src="thumbnails/t-engender.jpg"/>
-          </a>
-          <p>Engender</p>
-        </div>
-
-        <div class="item" id="searchlight">
-          <a href="/searchlight.html">
-              <video autoplay="true">
-               <source src="thumbnails/t-searchlight.mp4" type="video/mp4">
-              </video>
-          </a>
-          <p>Searchlight</p>
-        </div>
-        <div class="item" id="keyboard">
-          <a href="/keyboard.html">
-            <img src="thumbnails/t-keyboard.jpg"/>
-          </a>
-          <p>Keyboard</p>
-        </div>
-        <div class="item" id="analogies">
-          <a href="/analogies.html">
-            <img src="thumbnails/t-emojis.png"/>
-          </a>
-          <p>Analogies</p>
-        </div>
-
-        <div class="item" id="thesis">
-          <a href="/thesis.html">
-            <img src="thumbnails/t-thesis.png"/>
-          </a>
-          <p><a href="/thesis.html">Senior Project</a></p>
-        </div>
-
-        <div class="item" id="final">
-          <p id="down-arrow">↓</p>
-        </div>
-
       </div>
-    </div>
+      <div class="view" id="view2">
+        <div class="item" id="Zine">
+          <div class="graphics">
+            <div class="prev ZineButton">←</div>
+            <div class="next ZineButton">→</div>
+            <img id="ZineImage" src="zine-116/zine-116-12.png"/>
+          </div>
 
+          <div class="description">
+            <div>
+              <h3>116th</h3><h4>2018</h4>
+            </div>
+            <p>
+              In partial fulfillment of Yale's Graphic Design Methodologies
+              course with Pamela Hovland, I designed this zine to celebrate
+              the historic representation of women in the 116th Congress.
+              <br /><br />
+              The body of the zine lists all congressional representatives
+              from the 1st Congress, which began meeting in 1789, to the 116th Congress, elected
+              in 2018. Names of women are printed in green.
+              <br /><br />
+              10 copies of the zine were printed for the
+              <a href="https://www.instagram.com/oddsandendsartbookfair/">Odds and Ends Art Book Fair</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="view" id="view3">
+        <div class="item">
+          <div class="graphics">
+            <img src="thumbnails/t-engender.jpg"/>
+          </div>
+
+          <div class="description">
+            <div>
+              <h3>Engender</h3><h4>2016-now</h4>
+            </div>
+            <p>In 2016, events involving race and gender-based discrimination
+              motivated a group of classmates and I to correct structural inequalities on our campus.
+              To organize around this goal, we founded Engender.
+              <br /><br />
+              Currently, Engender advocates for reforming Greek organizations given their
+              discriminatory nature and disproportionate control over undergraduate social life.
+              The existing structure of these organizations enables harmful behaviors
+              including hazing, substance abuse, sexual misconduct, and acts of hate that occur frequently
+              on American college campuses to the detriment of students' mental and physical wellbeing.
+              Our organization advocates for better oversight of these organizations as well as membership
+              policies designed to celebrate rather than punish difference.
+              <br /><br />
+              My personal responsibilities for Engender have included communications, identity, branding,
+              member onboarding, and organizing a group of women and nonbinary students to rush a fraternity.
+              <br /><br />
+              See Engender's
+              <a class="engenderLink" href="http://engender.space">website</a>,
+              <a class="engenderLink" href="https://www.facebook.com/engenderequality/">Facebook</a> or
+              <a class="engenderLink" href="https://twitter.com/engenderyale">Twitter</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="view" id="view4">
+
+        <div class="item" id="Duby">
+          <div class="graphics">
+            <div class="prev DubyButton">←</div>
+            <div class="next DubyButton">→</div>
+            <img id="DubyImage" src="thumbnails/t-duby-0.jpg"/>
+          </div>
+
+          <div class="description">
+            <h3>Duby Team</h3>
+            <h4>2017-2018</h4>
+            <p>
+              Evan Duby, a broker with Compass, specializes in townhouse and apartment
+              sales throughout brownstone Brooklyn. While I took gap year from college,
+              Evan hired me to design print and online marketing materials in addition
+              to managing client relations and marketing strategy for his agent team
+              based in Park Slope. See Evan's page on
+              <a href="https://www.compass.com/agents/nyc/evan-duby/">Compass</a>.
+              <br /><br />
+              Upon return to school, I continued to design for the team remotely until
+              beginning a new position on campus.
+              <br /><br />
+              Selected monthly print mailers shown here.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="view" id="view5">
+
+        <div class="item" id="Fuzzy">
+          <div class="graphics">
+            <div class="prev FuzzyButton">←</div>
+            <div class="next FuzzyButton">→</div>
+            <img id="FuzzyImage" src="thumbnails/t-fuzzy-1.jpg"/>
+          </div>
+
+          <div class="description">
+            <h3>Fuzzy Grids II</h3><h4>2014</h4>
+            <p>
+              While interning at Predock_Frane architects, I helped design and fabricate Fuzzy Grids II,
+              an interactive art installation at the Getty Center.
+              <br /><br />
+              <i> Fuzzy Grids II is a field of colorful large-scale cubes set on the grid of the Getty Center's
+              Arrival Plaza. The white boxes reference the monochrome surfaces of Richard Meier's architecture,
+              while the color is sampled from the polychromatic Robert Irwin-designed garden.
+              In collaboration with sound artist Chris Rountree, who supplies an idiosyncratic soundtrack to
+              guide participants with different tempos and atmospheres, Predock_Frane Architects have designed
+              a flexible kit of parts that visitors can manipulate—like a giant game board—to form patterns,
+              images, and even three-dimensional landscapes.</i><br /><br />
+              — <a href="http://www.getty.edu/education/kids_families/programs/fuzzy_grids.html">The J. Paul Getty Museum</a>
+              <br /><br />
+              All work shown here was created while working at Predock_Frane Architects; consequently,
+              all rights are reserved by Predock_Frane Architects.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="view" id="view6">
+        <div class="item" id="About">
+          <div class="graphics">
+            <img id="AboutImage" src="thumbnails/t-me.jpg"/>
+          </div>
+
+          <div class="description">
+            <h3>About</h3>
+            <p>
+              Wow, you made it through all that scrolling!
+              <br /><br />
+              Looking for more? Stalk my <a href="https://github.com/schultzhenry">Github</a>,
+              <a href="https://www.linkedin.com/in/schultzhenry/">LinkedIn</a>, <br />or email
+              me at <a href="mailto:natalie.schultz-henry@yale.edu">natalie.schultz-henry@yale.edu</a>.
+              <br /><br />
+              Resume available upon request.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <div id="nav0" class="active"><p id="pnav0"></p></div>
+        <div id="nav1"><p id="pnav1"></p></div>
+        <div id="nav2"><p id="pnav2"></p></div>
+        <div id="nav3"><p id="pnav3"></p></div>
+        <div id="nav4"><p id="pnav4"></p></div>
+        <div id="nav5"><p id="pnav5"></p></div>
+      </div>
   </body>
 </html>

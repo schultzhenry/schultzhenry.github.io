@@ -8,157 +8,220 @@
 }
 ::selection {
   color: rgb(255,255,255);
-  background: blue;
+  background: black;
 }
 ::-moz-selection {
   color: rgb(255,255,255);
-  background: blue;
+  background: black;
 }
-:root {
-  --bg: white;
-  --container-height: 520px;
+
+body {
+  -webkit-scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
+  scroll-snap-type: mandatory;
+  -webkit-scroll-snap-points-y: repeat(100vh);
+  -ms-scroll-snap-points-y: repeat(100ch);
+  scroll-snap-points-x: repeat(100%);
+  /* scroll-snap-destination: 50% 50%; */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
  margin: 0px;
  padding: 0px;
- overflow-x: hidden;
- background: var(--bg);
+ overflow-x: auto;
+ background: #E8DDDC;
+ /* background-image: linear-gradient(white, AliceBlue); */
 }
 
-a {
-  text-decoration: none;
-  color: black;
+a { text-decoration: none; color: black; font-family: 'Changa', sans-serif; font-size: 1.075em; letter-spacing:-0.02em; }
+a:hover { font-style: italic; }
+
+h3 {
+  font-size:32px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 0.8em;
 }
-a:hover {
-  font-style: italic;
+h4 {
+  font-family: 'Changa', sans-serif;
+  font-size: 32px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 0.8em;
+  padding-bottom: 1em;
+  font-weight:300;
 }
 
+.nav {
+  z-index: 1000;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: column;
+}
 
+.nav div {
+  margin: 4px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid black;
+  font-size: 12px;
+}
 
-#header {
-  max-width: 632px;
-  height: calc(100vh - 72px);
-  margin: auto;
-  text-align: center;
-  font-size: 24px;
-  line-height: 1.2em;
+.nav div:hover {
+  background: black;
+}
+
+.nav div p {
+  width: 96px;
   position: relative;
+  top: -18px;
+  left: 20px;
+  font-size: 14.5px;
+}
+
+.nav .active {
+  transition: background 0s;
+  background: black;
 }
 
 #headertext {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding-left: 48px;
-  padding-right: 48px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.2em;
+  margin: auto;
+  width: 28em;
 }
 
-.container {
-  height: var(--container-height);
-  position: relative;
-  left: 0px;
-  width: 100%;
+.view {
+  height: 100vh;
+  width: 860px;
+  margin: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: flex-end;
-  white-space: nowrap;
-  overflow: auto;
+  align-items: center;
 }
 
 .item {
-  position: sticky;
-  position: -webkit-sticky;
-  left: 0px;
-  padding: 22px;
-  margin: 0px;
-  display: flex;
-  flex: none;
-  height: 100%;
-  justify-content: flex-start;
-  overflow: hidden;
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-  flex-direction: column;
-  background: rgba(255,255,255,0.9);
-}
-
-img, video {
-  background: var(--bg);
-  height: 380px;
-  padding: 0px;
-  margin: 0px;
-  overflow: hidden;
-  border: 1px solid black;
-}
-
-.item p {
-  background: rgba(255,255,255,1);
-  padding: 12px;
-  padding-left: 0px;
-  margin: 0px;
-  font-size: 18px;
-}
-
-.item p:hover {
-  background: var(--bg);
-  color: black;
-}
-
-#view {
-  position: fixed;
-  bottom: calc(-18px - var(--container-height));
-  left: 0px;
+  position: relative;
   width: 100%;
-  height: 680px;
   display: flex;
-  flex: none;
+  justify-content: flex-start;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100%);
+}
+
+.prev, .next {
+  z-index: 0;
+  color: red;
+  cursor: pointer;
+  color: black;
+  font-size: 28px;
+  position: absolute;
+  bottom: -28px;
+  width: 20px;
+  height: 20px;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.prev {
+  text-align: left;
+  left: calc(40% - 12px);
+}
+
+.next {
+  text-align: right;
+  right: calc(40% + 12px);
+}
+
+.footer {
+  text-align: center;
+}
+
+.graphics img {
+  width: calc(100% - 12px);
+  overflow: hidden;
+}
+
+.graphics, .description {
+  width: 50%;
+  position: relative;
+}
+
+.description {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 12px;
   flex-direction: column;
 }
 
-#up-arrow {
-  width: 48px;
-  margin: auto;
-  margin-bottom: 0px;
-  height: 72px;
-}
-#up-arrow p {
-  margin: auto;
+.description h3 {
+  line-height: 0.74em;
+  font-size: 36px;
+  margin: 0px;
   padding: 0px;
-  text-align: center;
-  font-size: 48px;
-  cursor: pointer;
+  padding-bottom: 0.5em;
 }
 
-#thesis {
-  border-right: 1px solid black;
+.description p {
+  line-height: 1.2em;
 }
 
-#first p {
-  margin-top: 0px;
-  padding-top: 0px;
-  font-size: 48px;
-  text-align: center;
-}
-
-#first, #final {
-  border-left: none;
-  width: 100vw;
-  background: var(--bg);
-  position: relative;
-}
-
-#down-arrow {
-  position: relative;
-  top: -36px;
-  margin: auto;
-  margin-top: 0px;
-  padding: 0px;
-  text-align: center;
-  font-size: 48px;
-  cursor: pointer;
+@media only screen and (max-width: 980px) {
+  .item {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .view {
+    max-width: 320px;
+    margin: auto;
+    align-items: flex-start;
+  }
+  #view1 {
+    align-items: center;
+  }
+  .graphics img {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: block;
+  }
+  .graphics {
+    margin-top: 22px;
+    align-content: center;
+    margin-bottom: 60px;
+  }
+  .graphics, .description {
+    padding: 0px;
+    width: 100%;
+  }
+  .description p {
+    margin-top: 0px;
+    font-size: 11px;
+  }
+  #headertext {
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2em;
+    padding: 0px;
+  }
+  h4 {
+    margin-top: -8px;
+    padding-top: 0px;
+    font-size: 18px;
+  }
 }
