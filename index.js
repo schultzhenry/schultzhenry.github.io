@@ -1,11 +1,21 @@
 $(document).ready(function() {
+  if (window.innerHeight < 980) {
+    $(".desktop").hide();
+  } else {
+    $(".desktop").show();
+  }
+
+  window.onresize = function () {
+    if (window.innerHeight < 980) {
+      $(".desktop").hide();
+    } else {
+      $(".desktop").show();
+    }
+  };
 
   $.scrollify({
 		section:".view",
     scrollbars:false,
-    // before:function(i,panels) {
-    //   var ref = panels[i].attr("section");
-    // },
     after:function(i,panels) {
       $(".view").each(function(i) {
         activeClass = "";
