@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  $('.item-details').hide();
+
   // Handle expand button clicks
   $(".expand-button").on("click touchstart", function () {
     var that = $(this);
@@ -9,7 +11,16 @@ $(document).ready(function() {
     $('.item-details').each(function(i, obj) {
       if ($(obj).parent().parent().attr('id') == thisID) {
         let itemDetails = thisObj.children().eq(1).find('.item-details');
-        that.text() == '+' ? itemDetails.hide() : itemDetails.show();
+        that.text() == '+' ? itemDetails.hide() : itemDetails.show()
+          .css({
+            'display': 'flex',
+            'width': '100%',
+            'justify-content': 'space-between'});
+        if (itemDetails.attr("class").indexOf("long") > -1) {
+          itemDetails.css('flex-direction', 'row');
+        } else {
+          itemDetails.css('flex-direction', 'column');
+        }
       } else {
         $(obj).hide();
         $(obj).parent().parent().children().eq(0).children().eq(0).text('+');

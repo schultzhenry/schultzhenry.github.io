@@ -52,9 +52,19 @@ hr {
   /* margin-bottom: 12px; */
 }
 
-.item-details {
+/* .item-details {
   display: none;
+} */
+
+/* .item-details wide {
+  display: flex !important;
+  flex-direction: column !important;
 }
+
+.item-details long {
+  display: flex !important;
+  flex-direction: row !important;
+} */
 
 a {
   text-decoration: none;
@@ -164,9 +174,16 @@ h4 {
   text-align: center;
 }
 
+.long .graphics {
+  max-width: 50%;
+}
+
+.wide .graphics {
+  max-width: 100%;
+}
+
 .graphics img {
-  /* width: calc(100% - 12px); */
-  width: 200px;
+  width: 100%;
   overflow: hidden;
   border: 1px solid black;
   margin-top: 6px;
