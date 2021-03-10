@@ -52,6 +52,10 @@ hr {
   /* margin-bottom: 12px; */
 }
 
+.item-details {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -113,10 +117,6 @@ h4 {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.item-details {
-  display: none;
 }
 
 .left-space, .right-space {
