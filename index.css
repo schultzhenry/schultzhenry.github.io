@@ -6,6 +6,15 @@
           animation-delay: 0.1s;
           transition: all 0.6s;
 }
+
+.expand-button {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 100;
+}
+
 ::selection {
   color: rgb(255,255,255);
   background: black;
@@ -28,22 +37,70 @@ body {
 }
 
 body {
- margin: 0px;
- padding: 0px;
- overflow-x: auto;
- background: white;
- /* background: #E8DDDC; */
+  width: 100%;
+  /* height: 100%; */
+  padding-top: 12px;
+  margin: 0px;
+  /* background-color: whiteSmoke; */
+  overflow-x: auto;
 }
 
-a { text-decoration: none; color: black; font-family: 'Changa', sans-serif; font-size: 1.075em; letter-spacing:-0.02em; }
-a:hover { font-style: italic; }
+hr {
+  border: none;
+  /* border-top: 1px solid grey; */
+  /* margin-top: 12px; */
+  /* margin-bottom: 12px; */
+}
+
+/* .item-details {
+  display: none;
+} */
+
+/* .item-details wide {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.item-details long {
+  display: flex !important;
+  flex-direction: row !important;
+} */
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+h1 {
+  width: 100%;
+  font-size: 28px;
+  margin: 0px;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  width:100%;
+  font-size:22px;
+  line-height: 1.1em;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 0.25em;
+}
 
 h3 {
-  font-size:32px;
-  margin: 0px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.1em;
   padding: 0px;
-  line-height: 0.8em;
+  margin: 0px;
+  margin-bottom: 0.25em;
 }
+
 h4 {
   font-family: 'Changa', sans-serif;
   font-size: 32px;
@@ -54,72 +111,34 @@ h4 {
   font-weight:300;
 }
 
-.nav {
-  z-index: 1000;
-  position: fixed;
-  left: 20px;
-  top: 20px;
-  font-size: 1.4em;
-  display: flex;
-  flex-direction: column;
-}
-
-.nav div {
-  margin: 4px;
-  width: 12px;
-  height: 12px;
-  border: 1px solid black;
-  font-size: 12px;
-}
-
-.nav div:hover {
-  background: black;
-}
-
-.nav div p {
-  width: 96px;
-  position: relative;
-  top: -18px;
-  left: 20px;
-  font-size: 14.5px;
-}
-
-.nav .active {
-  transition: background 0s;
-  background: black;
-}
-
-#header {
-  padding: 0px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-#headertext {
-  text-align: center;
-  font-size: 24px;
-  line-height: 1.2em;
-  margin: auto;
-  width: 100%;
-  padding: 0px;
-}
-
-.view {
-  height: 100vh;
-  width: 860px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
-
 .item {
-  position: relative;
+  max-width: 620px;
+  margin: auto;
+  /* padding-left: 24px; */
+  /* padding-right: 24px; */
+  /* margin-bottom: 12px; */
+  /* background-color: white; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item-body {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.left-space, .right-space {
+  /* text-align: center; */
+  /* background: yellow; */
+  min-width: 32px;
+  max-width:32px;
+}
+
+.item img {
+  /* float: right;
+  clear: right; */
 }
 
 .prev, .next {
@@ -155,87 +174,25 @@ h4 {
   text-align: center;
 }
 
-.graphics img {
-  width: calc(100% - 12px);
-  overflow: hidden;
+.long .graphics {
+  max-width: 50%;
 }
 
-.graphics, .description {
-  width: 50%;
-  position: relative;
+.wide .graphics {
+  max-width: 100%;
+}
+
+.graphics img {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid black;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .description {
   display: flex;
   align-items: flex-start;
   text-align: left;
-  padding-left: 12px;
   flex-direction: column;
-}
-
-.description h3 {
-  line-height: 0.74em;
-  font-size: 36px;
-  margin: 0px;
-  padding: 0px;
-  padding-bottom: 0.5em;
-}
-
-.description p {
-  line-height: 1.2em;
-}
-
-@media only screen and (max-width: 980px) {
-  .item {
-    max-width: 480px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .view {
-    max-width: 280px;
-    margin: auto;
-    align-items: flex-start;
-  }
-  #view1 {
-    align-items: center;
-  }
-  .graphics img {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-    display: block;
-  }
-  .graphics {
-    margin-top: 24px;
-    align-content: center;
-    margin-bottom: 36px;
-  }
-  .graphics, .description {
-    padding: 0px;
-    width: 100%;
-  }
-  .description p {
-    margin-top: 0px;
-    font-size: 11px;
-  }
-  #headertext {
-    margin-top: 16px;
-    width: 70%;
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.2em;
-    padding: 0px;
-  }
-  .description h3 {
-    font-size: 24px;
-  }
-  h4 {
-    margin-top: -6px;
-    padding-top: 0px;
-    font-size: 18px;
-  }
-  .prev, .next {
-    bottom: -18px;
-  }
 }
