@@ -1,30 +1,44 @@
 $(document).ready(function() {
 
-  $('.item-details').hide();
+  $('a').attr('target','_blank');
 
-  // Handle expand button clicks
-  $(".expand-button").on("click touchstart", function () {
-    var that = $(this);
-    var thisObj = that.parent().parent();
-    var thisID = thisObj.attr('id');
-    that.text() == '+' ? that.text('-') : that.text('+');
-    $('.item-details').each(function(i, obj) {
-      if ($(obj).parent().parent().attr('id') == thisID) {
-        let itemDetails = thisObj.children().eq(1).find('.item-details');
-        that.text() == '+' ? itemDetails.hide() : itemDetails.show()
-          .css({
-            'display': 'flex',
-            'width': '100%',
-            'justify-content': 'space-between'});
-        if (itemDetails.attr("class").indexOf("long") > -1) {
-          itemDetails.css('flex-direction', 'row');
-        } else {
-          itemDetails.css('flex-direction', 'column');
+  $.scrollify({
+		section:".view",
+    scrollbars:false,
+    // before:function(i,panels) {
+    //   var ref = panels[i].attr("section");
+    // },
+    after:function(i,panels) {
+      $(".view").each(function(i) {
+        activeClass = "";
+        console.log($.scrollify.currentIndex());
+        if(i===$.scrollify.currentIndex()) {
+          activeClass = "active";
         }
-      } else {
-        $(obj).hide();
-        $(obj).parent().parent().children().eq(0).children().eq(0).text('+');
-      }
+        $("#nav"+i).attr("class", activeClass);
+        $(this).attr("class", "view " + activeClass);
+      })
+    }
+  });
+
+  var sectionLabels = [
+    "Home",
+    "Mayor Scott's First 100 Days",
+    "COVID-19 Dashboard",
+    "116th",
+    "Engender",
+    "Duby Team",
+    "Fuzzy Grids II",
+    "About"
+  ];
+
+  $(".nav div").each(function(i) {
+    $(this).on("click touchstart", function() {
+      $.scrollify.move(i);
+    }).on("mouseover", function () {
+      $("#pnav" + i).text( sectionLabels[i] );
+    }).on("mouseleave", function () {
+      $("#pnav" + i).text( "" );
     });
   });
 
@@ -70,5 +84,36 @@ $(document).ready(function() {
     ZineList = Inc(ZineList, ZineTotal);
     $("#ZineImage").attr("src", "zine-116/zine-116-" + ((ZineList < 10) ? ("0" + String(ZineList)) : String(ZineList)) + ".png");
   });
+
+  requestAnimationFrame(animateDiv);
+
+  function makeNewPosition(){
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height()+100;
+    var w = $(window).width()+100;
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    return [nh-50,nw-50];
+  }
+
+  function calcSpeed(prev, next) {
+    var x = Math.abs(prev[1] - next[1]);
+    var y = Math.abs(prev[0] - next[0]);
+    var greatest = x > y ? x : y;
+    var speedModifier = 0.1;
+    var speed = Math.ceil(greatest/speedModifier);
+    return speed;
+  }
+
+  function animateDiv(){
+    $('.dot').each(function(i,obj) {
+      var newq = makeNewPosition();
+      var oldq = $(obj).offset();
+      var speed = calcSpeed([oldq.top, oldq.left], newq);
+      $(obj).animate({ top: newq[0], left: newq[1] }, speed, function(){
+        requestAnimationFrame(animateDiv());
+      });
+    });
+  };
 
 });
