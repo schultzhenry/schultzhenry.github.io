@@ -138,7 +138,7 @@ h4 {
 
 .nav div p {
   width: 72px;
-  display: inline-block;
+  /* display: inline-block; */
   width: auto;
   position: relative;
   top: -18px;
@@ -193,12 +193,27 @@ h4 {
 }
 
 .item.wide {
+  width: 580px !important;
+  max-height: calc(100vh*0.9) !important;
   flex-direction: column !important;
+  align-items: center;
+  justify-content: center;
 }
 
 .graphics.wide, .description.wide {
   padding: 0px;
   width: 100%;
+}
+
+.description.wide h3 {
+  font-size: 28px;
+  padding-top: 0px;
+  padding-bottom: 8px;
+}
+
+.description.wide h4 {
+  padding-top: 0px;
+  padding-bottom: 8px;
 }
 
 .prev, .next {
@@ -272,15 +287,13 @@ h4 {
 
 @media only screen and (max-width: 900px) {
   .view {
-    width: calc(100vh*0.4);
-    height: calc(100vh - 48px);
-    /* width: calc(max(260px, 100vw - 192px)); */
     justify-content: center;
     align-items: center;
     margin: auto;
   }
   .item {
-    /* height: calc(100vh - 48px); */
+    width: calc(100vh*0.4);
+    height: calc(100vh - 48px);
     max-width: 320px;
     display: flex;
     flex-direction: column;

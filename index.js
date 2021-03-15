@@ -16,7 +16,8 @@ $(document).ready(function() {
           activeClass = "active";
         }
         $("#nav"+i).attr("class", activeClass);
-        $(this).attr("class", "view " + activeClass);
+        console.log($(this).attr("class"));
+        $(this).attr("class", String($(this).attr("class")) + " " + activeClass);
       })
     }
   });
@@ -85,35 +86,35 @@ $(document).ready(function() {
     $("#ZineImage").attr("src", "zine-116/zine-116-" + ((ZineList < 10) ? ("0" + String(ZineList)) : String(ZineList)) + ".png");
   });
 
-  requestAnimationFrame(animateDiv);
-
-  function makeNewPosition(){
-    // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height()+100;
-    var w = $(window).width()+100;
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
-    return [nh-50,nw-50];
-  }
-
-  function calcSpeed(prev, next) {
-    var x = Math.abs(prev[1] - next[1]);
-    var y = Math.abs(prev[0] - next[0]);
-    var greatest = x > y ? x : y;
-    var speedModifier = 0.1;
-    var speed = Math.ceil(greatest/speedModifier);
-    return speed;
-  }
-
-  function animateDiv(){
-    $('.dot').each(function(i,obj) {
-      var newq = makeNewPosition();
-      var oldq = $(obj).offset();
-      var speed = calcSpeed([oldq.top, oldq.left], newq);
-      $(obj).animate({ top: newq[0], left: newq[1] }, speed, function(){
-        requestAnimationFrame(animateDiv());
-      });
-    });
-  };
+  // requestAnimationFrame(animateDiv);
+  //
+  // function makeNewPosition(){
+  //   // Get viewport dimensions (remove the dimension of the div)
+  //   var h = $(window).height()+100;
+  //   var w = $(window).width()+100;
+  //   var nh = Math.floor(Math.random() * h);
+  //   var nw = Math.floor(Math.random() * w);
+  //   return [nh-50,nw-50];
+  // }
+  //
+  // function calcSpeed(prev, next) {
+  //   var x = Math.abs(prev[1] - next[1]);
+  //   var y = Math.abs(prev[0] - next[0]);
+  //   var greatest = x > y ? x : y;
+  //   var speedModifier = 0.1;
+  //   var speed = Math.ceil(greatest/speedModifier);
+  //   return speed;
+  // }
+  //
+  // function animateDiv(){
+  //   $('.dot').each(function(i,obj) {
+  //     var newq = makeNewPosition();
+  //     var oldq = $(obj).offset();
+  //     var speed = calcSpeed([oldq.top, oldq.left], newq);
+  //     $(obj).animate({ top: newq[0], left: newq[1] }, speed, function(){
+  //       requestAnimationFrame(animateDiv());
+  //     });
+  //   });
+  // };
 
 });
